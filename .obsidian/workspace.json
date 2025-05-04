@@ -1,0 +1,228 @@
+{
+  "main": {
+    "id": "1df65b95e7652c2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e3cb702dbdf5036",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4627214e3f9ea4ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "задачи.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "задачи"
+            }
+          },
+          {
+            "id": "ffd165e028b6c26e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "задачи.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "задачи"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e438c0fa1b9961be",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2495707dfcccd45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "263decf4c0b98da3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "402b54f595f8af71",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "689675a80c78a07d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 242.5
+  },
+  "right": {
+    "id": "3f73fb5aadaed71d",
+    "type": "split",
+    "children": [
+      {
+        "id": "813ff01b528c4ac9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d27b38f0114beb02",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "frontend/@layer.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for @layer"
+            }
+          },
+          {
+            "id": "3ad299d84dc1b28d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "frontend/@layer.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from @layer"
+            }
+          },
+          {
+            "id": "df21e17d3d37daee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6ec055ff39a9ef2a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "frontend/@layer.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of @layer"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ffd165e028b6c26e",
+  "lastOpenFiles": [
+    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
+    "МЕДСЕРВИС - 21 - 28 дней.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Welcome.md",
+    "Pasted image 20250310162318.png",
+    "Pasted image 20250310144621.png",
+    "Pasted image 20250310114440.png",
+    "Pasted image 20250310113710.png",
+    "Вопросы.md",
+    "Pasted image 20250504133857.png",
+    "Pasted image 20250504133705.png",
+    "задачи.md",
+    "Pasted image 20250422221141.png",
+    "Pasted image 20250422215921.png",
+    "Pasted image 20250422165332.png",
+    "Pasted image 20250422163458.png",
+    "Вопросы с ютуба.md",
+    "go/ai/Advanced Concurrency Patterns/Understanding Mutexes and RWMutexes in Depth.md",
+    "go/ai/Advanced Concurrency Patterns",
+    "go/ai",
+    "go",
+    "frontend/сеть/Модель OSI.md",
+    "frontend/сеть/TCP (Transmission Control Protocol) и UDP (User Datagram Protocol).md",
+    "frontend/сеть",
+    "frontend/render/Оптимизация производительности фронтенда. Часть 1. Critical Render Path.md",
+    "frontend/render/Оптимизация производительности фронтенда. Часть 2. Event loop, layout, paint, composite.md",
+    "frontend/render/Блокировка рендеринга CSS.md",
+    "frontend/render/Критические этапы рендеринга.md",
+    "frontend/Picture.md",
+    "frontend/Методы `getServerSideProps`, `getStaticProps` и `getStaticPaths` в Next.js.md",
+    "frontend/css/CSS performance optimization.md",
+    "frontend/css/@layer.md",
+    "frontend/render/Repaints and reflows.md",
+    "frontend/render/Взаимодействие со следующей отрисовкой (INP).md",
+    "frontend/render/Первая содержательная краска (FCP).md",
+    "frontend/render",
+    "frontend/css",
+    "frontend"
+  ]
+}
