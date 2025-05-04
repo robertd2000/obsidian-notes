@@ -1,38 +1,38 @@
 {
   "main": {
-    "id": "1df65b95e7652c2c",
+    "id": "f85506c2c7362a25",
     "type": "split",
     "children": [
       {
-        "id": "6e3cb702dbdf5036",
+        "id": "73b13357bde753a4",
         "type": "tabs",
         "children": [
           {
-            "id": "4627214e3f9ea4ba",
+            "id": "3d016481463ebf7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "Вопросы"
             }
           },
           {
-            "id": "ffd165e028b6c26e",
+            "id": "6fc4ab15a212a6d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "Вопросы"
             }
           }
         ],
@@ -42,15 +42,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e438c0fa1b9961be",
+    "id": "7dfdd271068b17ca",
     "type": "split",
     "children": [
       {
-        "id": "c2495707dfcccd45",
+        "id": "032474b68db0a92f",
         "type": "tabs",
         "children": [
           {
-            "id": "263decf4c0b98da3",
+            "id": "f060ec763355442d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -59,11 +59,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Файловый менеджер"
             }
           },
           {
-            "id": "402b54f595f8af71",
+            "id": "9b016d0df0ee8504",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -76,40 +76,40 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Поиск"
             }
           },
           {
-            "id": "689675a80c78a07d",
+            "id": "10494fc7bea5ffbb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Закладки"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 300
   },
   "right": {
-    "id": "3f73fb5aadaed71d",
+    "id": "a521d827df22a6a9",
     "type": "split",
     "children": [
       {
-        "id": "813ff01b528c4ac9",
+        "id": "df49ae230f024c11",
         "type": "tabs",
         "children": [
           {
-            "id": "d27b38f0114beb02",
+            "id": "25a6805e28f42b5c",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "frontend/@layer.md",
+                "file": "Без названия 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,51 +119,46 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for @layer"
+              "title": "Обратные ссылки для Без названия 2"
             }
           },
           {
-            "id": "3ad299d84dc1b28d",
+            "id": "a599a76db0c12cbf",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "frontend/@layer.md",
+                "file": "Без названия 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from @layer"
+              "title": "Исходящие ссылки из Без названия 2"
             }
           },
           {
-            "id": "df21e17d3d37daee",
+            "id": "30fafd44c61696a4",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "Теги"
             }
           },
           {
-            "id": "6ec055ff39a9ef2a",
+            "id": "9ac447b1291802f3",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "frontend/@layer.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "Без названия 2.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of @layer"
+              "title": "Структура Без названия 2"
             }
           }
         ]
@@ -175,54 +170,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "ffd165e028b6c26e",
+  "active": "6fc4ab15a212a6d7",
   "lastOpenFiles": [
-    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
-    "МЕДСЕРВИС - 21 - 28 дней.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "Welcome.md",
-    "Pasted image 20250310162318.png",
-    "Pasted image 20250310144621.png",
-    "Pasted image 20250310114440.png",
-    "Pasted image 20250310113710.png",
-    "Вопросы.md",
-    "Pasted image 20250504133857.png",
-    "Pasted image 20250504133705.png",
     "задачи.md",
-    "Pasted image 20250422221141.png",
-    "Pasted image 20250422215921.png",
-    "Pasted image 20250422165332.png",
-    "Pasted image 20250422163458.png",
-    "Вопросы с ютуба.md",
-    "go/ai/Advanced Concurrency Patterns/Understanding Mutexes and RWMutexes in Depth.md",
-    "go/ai/Advanced Concurrency Patterns",
-    "go/ai",
-    "go",
-    "frontend/сеть/Модель OSI.md",
-    "frontend/сеть/TCP (Transmission Control Protocol) и UDP (User Datagram Protocol).md",
-    "frontend/сеть",
-    "frontend/render/Оптимизация производительности фронтенда. Часть 1. Critical Render Path.md",
-    "frontend/render/Оптимизация производительности фронтенда. Часть 2. Event loop, layout, paint, composite.md",
-    "frontend/render/Блокировка рендеринга CSS.md",
-    "frontend/render/Критические этапы рендеринга.md",
-    "frontend/Picture.md",
-    "frontend/Методы `getServerSideProps`, `getStaticProps` и `getStaticPaths` в Next.js.md",
-    "frontend/css/CSS performance optimization.md",
-    "frontend/css/@layer.md",
-    "frontend/render/Repaints and reflows.md",
-    "frontend/render/Взаимодействие со следующей отрисовкой (INP).md",
-    "frontend/render/Первая содержательная краска (FCP).md",
-    "frontend/render",
-    "frontend/css",
-    "frontend"
+    "Редактор сайтов.md",
+    "React.md",
+    "Pasted image 20240702113927.png",
+    "Pasted image 20240702113430.png",
+    "Вопросы.md",
+    "собес",
+    "algorithms/75/Stack/150. Evaluate Reverse Polish Notation.md",
+    "algorithms/75/Stack/232. Implement Queue using Stacks.md",
+    "algorithms/75/Array/39. Combination Sum.md",
+    "algorithms/75/Array/238. Product of Array Except Self.md",
+    "algorithms/75/Array/15. 3Sum.md",
+    "algorithms/75/Array/57. Insert Interval.md",
+    "Pasted image 20240821105625.png",
+    "Без названия 2.md",
+    "темы для изучения/Cross-Origin Resource Sharing (CORS).md",
+    "Без названия.md",
+    "темы для изучения/Темы для изучения.md",
+    "темы для изучения/Критические этапы рендеринга.md",
+    "Без названия 1.md",
+    "темы для изучения/shouldComponentUpdate.md",
+    "темы для изучения/Intersection Observer API (IOA).md",
+    "algorithms/42. Trapping Rain Water.md",
+    "algorithms/15. 3Sum.md",
+    "algorithms/125. Valid Palindrome.md",
+    "algorithms/347. Top K Frequent Elements.md",
+    "algorithms/49. Group Anagrams.md",
+    "algorithms/Без названия 2.md",
+    "\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\".md",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
+    "Pasted image 20240704143141.png",
+    "Pasted image 20240704143006.png",
+    "Pasted image 20240704142943.png",
+    "Pasted image 20240704142809.png",
+    "Pasted image 20240704142531.png",
+    "algorithms/75/Stack",
+    "algorithms/75/Array",
+    "algorithms/75",
+    "Pasted image 20240629164428.png",
+    "Pasted image 20240628141708.png",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/ГЛАВА 2",
+    "algorithms/150 LeetCode/Two Pointers",
+    "algorithms/150 LeetCode/Array and String",
+    "algorithms/150 LeetCode",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
+    "Без названия 1.canvas",
+    "Без названия.canvas"
   ]
 }
