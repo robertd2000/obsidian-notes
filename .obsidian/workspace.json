@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "Вопросы с ютуба.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "Вопросы с ютуба"
             }
           }
         ],
@@ -185,6 +185,8 @@
   },
   "active": "ffd165e028b6c26e",
   "lastOpenFiles": [
+    "Вопросы.md",
+    "задачи.md",
     "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
     "МЕДСЕРВИС - 21 - 28 дней.md",
     "Untitled 1.md",
@@ -194,10 +196,8 @@
     "Pasted image 20250310144621.png",
     "Pasted image 20250310114440.png",
     "Pasted image 20250310113710.png",
-    "Вопросы.md",
     "Pasted image 20250504133857.png",
     "Pasted image 20250504133705.png",
-    "задачи.md",
     "Pasted image 20250422221141.png",
     "Pasted image 20250422215921.png",
     "Pasted image 20250422165332.png",
