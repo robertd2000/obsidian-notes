@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "Вопросы"
             }
           },
           {
-            "id": "ffd165e028b6c26e",
+            "id": "1b0abe60267daa7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +35,7 @@
               "title": "Вопросы с ютуба"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,46 +182,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ffd165e028b6c26e",
+  "active": "4627214e3f9ea4ba",
   "lastOpenFiles": [
+    "Вопросы с ютуба.md",
     "Вопросы.md",
     "задачи.md",
-    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
-    "МЕДСЕРВИС - 21 - 28 дней.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "Welcome.md",
-    "Pasted image 20250310162318.png",
-    "Pasted image 20250310144621.png",
-    "Pasted image 20250310114440.png",
-    "Pasted image 20250310113710.png",
-    "Pasted image 20250504133857.png",
-    "Pasted image 20250504133705.png",
-    "Pasted image 20250422221141.png",
-    "Pasted image 20250422215921.png",
-    "Pasted image 20250422165332.png",
-    "Pasted image 20250422163458.png",
-    "Вопросы с ютуба.md",
-    "go/ai/Advanced Concurrency Patterns/Understanding Mutexes and RWMutexes in Depth.md",
-    "go/ai/Advanced Concurrency Patterns",
-    "go/ai",
-    "go",
-    "frontend/сеть/Модель OSI.md",
-    "frontend/сеть/TCP (Transmission Control Protocol) и UDP (User Datagram Protocol).md",
-    "frontend/сеть",
-    "frontend/render/Оптимизация производительности фронтенда. Часть 1. Critical Render Path.md",
-    "frontend/render/Оптимизация производительности фронтенда. Часть 2. Event loop, layout, paint, composite.md",
-    "frontend/render/Блокировка рендеринга CSS.md",
-    "frontend/render/Критические этапы рендеринга.md",
-    "frontend/Picture.md",
-    "frontend/Методы `getServerSideProps`, `getStaticProps` и `getStaticPaths` в Next.js.md",
-    "frontend/css/CSS performance optimization.md",
-    "frontend/css/@layer.md",
-    "frontend/render/Repaints and reflows.md",
-    "frontend/render/Взаимодействие со следующей отрисовкой (INP).md",
-    "frontend/render/Первая содержательная краска (FCP).md",
-    "frontend/render",
-    "frontend/css",
-    "frontend"
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.3 Разработка алгоритмов.md",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.2 Анализ алгоритмов.md",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.1 Сортировка вставкой.md",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/ГЛАВА 1 Роль алгоритмов в вычислениях.md",
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
+    "Книги",
+    "темы для изучения/Темы для изучения.md",
+    "темы для изучения/Семантическая вёрстка.md",
+    "темы для изучения/Селекторы атрибутов.md",
+    "темы для изучения/Псевдоэлементы.md",
+    "темы для изучения/Псевдоклассы.md",
+    "темы для изучения/Обход графа.md",
+    "темы для изучения/Критические этапы рендеринга.md",
+    "темы для изучения/Всплытие и погружение.md",
+    "темы для изучения/Виды input-элементов.md",
+    "темы для изучения/Using HTTP cookies.md",
+    "темы для изучения/shouldComponentUpdate.md",
+    "темы для изучения/Promise.md",
+    "темы для изучения/position.md",
+    "темы для изучения/Intersection Observer API (IOA).md",
+    "темы для изучения/Cross-Origin Resource Sharing (CORS).md",
+    "темы для изучения/BOM.md",
+    "темы для изучения",
+    "algorithms/75/Stack/232. Implement Queue using Stacks.md",
+    "algorithms/75/Stack/20. Valid Parentheses.md",
+    "algorithms/75/Stack/150. Evaluate Reverse Polish Notation.md",
+    "algorithms/75/Stack",
+    "algorithms/75/Array",
+    "algorithms/150 LeetCode/Two Pointers",
+    "algorithms/150 LeetCode/Array and String",
+    "algorithms/75",
+    "algorithms/150 LeetCode",
+    "Pasted image 20240821105625.png",
+    "Pasted image 20240704143141.png",
+    "Pasted image 20240704143006.png",
+    "Pasted image 20240704142943.png",
+    "Pasted image 20240704142809.png",
+    "Pasted image 20240704142531.png",
+    "Pasted image 20240702113927.png",
+    "Pasted image 20240702113430.png",
+    "Pasted image 20240629164428.png",
+    "Pasted image 20240628141708.png"
   ]
 }
