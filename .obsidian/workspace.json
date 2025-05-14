@@ -182,8 +182,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4627214e3f9ea4ba",
+  "active": "263decf4c0b98da3",
   "lastOpenFiles": [
+    "rabbit-animal-object.svg",
+    "proto-user-admin.svg",
+    "proto-animal-rabbit.svg",
+    "proto-animal-rabbit-walk.svg",
+    "proto-animal-rabbit-walk-3.svg",
+    "proto-animal-rabbit-walk-2.svg",
+    "proto-animal-rabbit-chain.svg",
+    "object-prototype-empty.svg",
     "Вопросы с ютуба.md",
     "Вопросы.md",
     "задачи.md",
@@ -213,7 +221,6 @@
     "темы для изучения",
     "algorithms/75/Stack/232. Implement Queue using Stacks.md",
     "algorithms/75/Stack/20. Valid Parentheses.md",
-    "algorithms/75/Stack/150. Evaluate Reverse Polish Notation.md",
     "algorithms/75/Stack",
     "algorithms/75/Array",
     "algorithms/150 LeetCode/Two Pointers",
@@ -222,13 +229,6 @@
     "algorithms/150 LeetCode",
     "Pasted image 20240821105625.png",
     "Pasted image 20240704143141.png",
-    "Pasted image 20240704143006.png",
-    "Pasted image 20240704142943.png",
-    "Pasted image 20240704142809.png",
-    "Pasted image 20240704142531.png",
-    "Pasted image 20240702113927.png",
-    "Pasted image 20240702113430.png",
-    "Pasted image 20240629164428.png",
-    "Pasted image 20240628141708.png"
+    "Pasted image 20240704143006.png"
   ]
 }
