@@ -182,8 +182,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "263decf4c0b98da3",
+  "active": "4627214e3f9ea4ba",
   "lastOpenFiles": [
+    "eventflow.svg",
+    "event-order-bubbling.svg",
     "rabbit-animal-object.svg",
     "proto-user-admin.svg",
     "proto-animal-rabbit.svg",
@@ -227,8 +229,6 @@
     "algorithms/150 LeetCode/Array and String",
     "algorithms/75",
     "algorithms/150 LeetCode",
-    "Pasted image 20240821105625.png",
-    "Pasted image 20240704143141.png",
-    "Pasted image 20240704143006.png"
+    "Pasted image 20240821105625.png"
   ]
 }
