@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы.md",
+                "file": "задачи по деревьям.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
+              "title": "задачи по деревьям"
             }
           },
           {
@@ -184,6 +184,8 @@
   },
   "active": "4627214e3f9ea4ba",
   "lastOpenFiles": [
+    "Вопросы.md",
+    "задачи по деревьям.md",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
@@ -194,9 +196,7 @@
     "proto-animal-rabbit-walk-3.svg",
     "proto-animal-rabbit-walk-2.svg",
     "proto-animal-rabbit-chain.svg",
-    "object-prototype-empty.svg",
     "Вопросы с ютуба.md",
-    "Вопросы.md",
     "задачи.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.3 Разработка алгоритмов.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.2 Анализ алгоритмов.md",
