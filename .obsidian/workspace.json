@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6e3cb702dbdf5036",
+        "id": "423d5a1fdd423466",
         "type": "tabs",
         "children": [
           {
-            "id": "4627214e3f9ea4ba",
+            "id": "623ccf926194a726",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи по деревьям.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи по деревьям"
-            }
-          },
-          {
-            "id": "1b0abe60267daa7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Вопросы с ютуба.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Вопросы с ютуба"
+              "title": "Вопросы"
             }
           }
         ]
@@ -182,10 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4627214e3f9ea4ba",
+  "active": "263decf4c0b98da3",
   "lastOpenFiles": [
-    "Вопросы.md",
+    "задачи.md",
+    "Вопросы с ютуба.md",
     "задачи по деревьям.md",
+    "Вопросы.md",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
@@ -196,8 +184,6 @@
     "proto-animal-rabbit-walk-3.svg",
     "proto-animal-rabbit-walk-2.svg",
     "proto-animal-rabbit-chain.svg",
-    "Вопросы с ютуба.md",
-    "задачи.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.3 Разработка алгоритмов.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.2 Анализ алгоритмов.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.1 Сортировка вставкой.md",
