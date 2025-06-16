@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы.md",
+                "file": "задачи.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
+              "title": "задачи"
             }
           },
           {
@@ -184,10 +184,18 @@
   },
   "active": "67d82404bc366ea1",
   "lastOpenFiles": [
-    "Вопросы с ютуба.md",
     "Вопросы.md",
+    "Вопросы с ютуба.md",
     "задачи.md",
     "задачи по деревьям.md",
+    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
+    "Редактор сайтов.md",
+    "React.md",
+    "Welcome.md",
+    "Untitled 1.md",
+    "Без названия.md",
+    "Без названия 1.md",
+    "Без названия 2.md",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
@@ -215,15 +223,7 @@
     "темы для изучения/Всплытие и погружение.md",
     "темы для изучения/Виды input-элементов.md",
     "темы для изучения/Using HTTP cookies.md",
-    "темы для изучения/shouldComponentUpdate.md",
-    "темы для изучения/Promise.md",
-    "темы для изучения/position.md",
-    "темы для изучения/Intersection Observer API (IOA).md",
-    "темы для изучения/Cross-Origin Resource Sharing (CORS).md",
-    "темы для изучения/BOM.md",
     "темы для изучения",
-    "algorithms/75/Stack/232. Implement Queue using Stacks.md",
-    "algorithms/75/Stack/20. Valid Parentheses.md",
     "algorithms/75/Stack",
     "algorithms/75/Array",
     "algorithms/150 LeetCode/Two Pointers",
