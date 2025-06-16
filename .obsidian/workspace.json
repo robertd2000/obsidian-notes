@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "Вопросы"
             }
           },
           {
@@ -184,9 +184,10 @@
   },
   "active": "67d82404bc366ea1",
   "lastOpenFiles": [
+    "задачи.md",
+    "README.md",
     "Вопросы.md",
     "Вопросы с ютуба.md",
-    "задачи.md",
     "задачи по деревьям.md",
     "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
     "Редактор сайтов.md",
@@ -222,7 +223,6 @@
     "темы для изучения/Критические этапы рендеринга.md",
     "темы для изучения/Всплытие и погружение.md",
     "темы для изучения/Виды input-элементов.md",
-    "темы для изучения/Using HTTP cookies.md",
     "темы для изучения",
     "algorithms/75/Stack",
     "algorithms/75/Array",
