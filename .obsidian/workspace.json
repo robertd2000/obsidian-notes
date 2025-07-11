@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "423d5a1fdd423466",
+        "id": "531c112c3957bf1a",
         "type": "tabs",
         "children": [
           {
-            "id": "67d82404bc366ea1",
+            "id": "5af9f65c96ab5c2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы.md",
+                "file": "собес/hard/задачи платформа.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
-            }
-          },
-          {
-            "id": "707eb2ec7020a672",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Вопросы с ютуба.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Вопросы с ютуба"
-            }
-          },
-          {
-            "id": "7f75979c8c34210a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "задачи.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "задачи"
+              "title": "задачи платформа"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 232.5
   },
   "right": {
     "id": "3f73fb5aadaed71d",
@@ -197,22 +168,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f75979c8c34210a",
+  "active": "5af9f65c96ab5c2e",
   "lastOpenFiles": [
-    "Вопросы с ютуба.md",
     "задачи.md",
-    "задачи по деревьям.md",
+    "собес/hard/задачи платформа.md",
+    "собес/soft/Рассказ о себе.md",
+    "собес/soft/проекты.md",
+    "собес/soft/Самая сложная задача.md",
+    "собес/soft/Что ищешь.md",
+    "собес/soft/Софт скиллы.md",
+    "собес/soft/С хотелось либо не хотелось  работать.md",
+    "собес/soft/Постановка задач.md",
+    "собес/soft/как оцениваешь свою продуктивность.md",
+    "собес/soft/Как обучаешься.md",
+    "bagua-bubble.svg",
     "Редактор сайтов.md",
+    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
+    "задачи по деревьям.md",
+    "Вопросы.md",
+    "Без названия 1.md",
+    "Без названия.md",
     "React.md",
+    "собес/soft",
+    "собес/hard",
+    "собес",
+    "Вопросы с ютуба.md",
+    "algorithms/136. Single Number.md",
     "README.md",
     "Untitled 1.md",
     "Welcome.md",
-    "Вопросы.md",
-    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
-    "Без названия.md",
-    "Без названия 1.md",
     "Без названия 2.md",
-    "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
     "rabbit-animal-object.svg",
@@ -224,26 +209,12 @@
     "proto-animal-rabbit-chain.svg",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.3 Разработка алгоритмов.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.2 Анализ алгоритмов.md",
-    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.1 Сортировка вставкой.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
-    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/ГЛАВА 1 Роль алгоритмов в вычислениях.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
     "Книги",
-    "темы для изучения/Темы для изучения.md",
-    "темы для изучения/Семантическая вёрстка.md",
-    "темы для изучения/Селекторы атрибутов.md",
-    "темы для изучения/Псевдоэлементы.md",
-    "темы для изучения/Псевдоклассы.md",
-    "темы для изучения/Обход графа.md",
-    "темы для изучения/Критические этапы рендеринга.md",
-    "темы для изучения/Всплытие и погружение.md",
-    "темы для изучения/Виды input-элементов.md",
     "темы для изучения",
     "algorithms/75/Stack",
     "algorithms/75/Array",
-    "algorithms/150 LeetCode/Two Pointers",
-    "algorithms/150 LeetCode/Array and String",
-    "algorithms/75",
-    "algorithms/150 LeetCode"
+    "algorithms/150 LeetCode/Two Pointers"
   ]
 }
