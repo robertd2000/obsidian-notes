@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "531c112c3957bf1a",
+        "id": "d00527427ce69783",
         "type": "tabs",
         "children": [
           {
-            "id": "5af9f65c96ab5c2e",
+            "id": "c42f3ca83e67f74e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "собес/hard/задачи алгоритмы.md",
+                "file": "backend/sql/CAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи алгоритмы"
-            }
-          },
-          {
-            "id": "5956d325a8f5d2ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "задачи.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "задачи"
-            }
-          },
-          {
-            "id": "492c503660934e3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "собес/hard/задачи платформа.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "задачи платформа"
+              "title": "CAP"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,37 +168,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "263decf4c0b98da3",
+  "active": "c42f3ca83e67f74e",
   "lastOpenFiles": [
+    "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
+    "backend/sql/CAP.md",
+    "backend/sql/ACID.md",
+    "Вопросы.md",
+    "backend/sql",
+    "backend",
+    "собес/soft/Бывали ли у тебя конфликты в команде Если да, то расскажи про них. Из-за чего они возникли и как ты их решал.md",
+    "собес/soft/С хотелось либо не хотелось  работать.md",
+    "собес/soft/Сквозное тестирование.md",
+    "собес/soft/Методологии тестирования фронтенда.md",
+    "собес/soft/Рассказ о себе.md",
+    "собес/soft/Расскажи про свое последнее место работы.md",
+    "собес/soft/Есть ли процесс код-ревью.md",
+    "собес/soft/Какие технологии вы используете.md",
+    "собес/soft/Есть ли регулярные встречи Если да, то какие.md",
+    "собес/soft/Как у вас устроен процесс разработки в команде.md",
+    "собес/soft/Постановка задач.md",
     "собес/hard/задачи платформа.md",
     "задачи.md",
     "собес/hard/задачи алгоритмы.md",
-    "собес/soft/Рассказ о себе.md",
     "собес/soft/проекты.md",
     "собес/soft/Самая сложная задача.md",
     "собес/soft/Что ищешь.md",
     "собес/soft/Софт скиллы.md",
-    "собес/soft/С хотелось либо не хотелось  работать.md",
-    "собес/soft/Постановка задач.md",
     "собес/soft/как оцениваешь свою продуктивность.md",
     "собес/soft/Как обучаешься.md",
     "bagua-bubble.svg",
     "Редактор сайтов.md",
     "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
-    "задачи по деревьям.md",
-    "Вопросы.md",
-    "Без названия 1.md",
-    "Без названия.md",
-    "React.md",
     "собес/soft",
     "собес/hard",
     "собес",
-    "Вопросы с ютуба.md",
-    "algorithms/136. Single Number.md",
-    "README.md",
-    "Untitled 1.md",
-    "Welcome.md",
-    "Без названия 2.md",
     "eventflow.svg",
     "event-order-bubbling.svg",
     "rabbit-animal-object.svg",
@@ -237,13 +211,10 @@
     "proto-animal-rabbit-walk-3.svg",
     "proto-animal-rabbit-walk-2.svg",
     "proto-animal-rabbit-chain.svg",
-    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2/2.3 Разработка алгоритмов.md",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
     "Книги",
     "темы для изучения",
-    "algorithms/75/Stack",
-    "algorithms/75/Array",
-    "algorithms/150 LeetCode/Two Pointers"
+    "algorithms/75/Stack"
   ]
 }
