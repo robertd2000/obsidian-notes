@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/CAP.md",
+                "file": "backend/oop/OOP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAP"
+              "title": "OOP"
             }
           }
         ]
@@ -170,8 +170,10 @@
   },
   "active": "c42f3ca83e67f74e",
   "lastOpenFiles": [
-    "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
     "backend/sql/CAP.md",
+    "backend/oop/OOP.md",
+    "backend/oop",
+    "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
     "backend/sql/ACID.md",
     "Вопросы.md",
     "backend/sql",
@@ -198,7 +200,6 @@
     "собес/soft/Как обучаешься.md",
     "bagua-bubble.svg",
     "Редактор сайтов.md",
-    "Когда использовать `getServerSideProps` и `getStaticProps` в Next.js.md",
     "собес/soft",
     "собес/hard",
     "собес",
@@ -214,7 +215,6 @@
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
     "Книги",
-    "темы для изучения",
-    "algorithms/75/Stack"
+    "темы для изучения"
   ]
 }
