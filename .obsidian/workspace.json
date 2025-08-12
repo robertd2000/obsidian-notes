@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/oop/OOP.md",
+                "file": "go/core/Go maps in action.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOP"
+              "title": "Go maps in action"
             }
           }
         ]
@@ -170,8 +170,10 @@
   },
   "active": "c42f3ca83e67f74e",
   "lastOpenFiles": [
-    "backend/sql/CAP.md",
     "backend/oop/OOP.md",
+    "go/core/Go maps in action.md",
+    "go/core",
+    "backend/sql/CAP.md",
     "backend/oop",
     "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
     "backend/sql/ACID.md",
@@ -199,7 +201,6 @@
     "собес/soft/как оцениваешь свою продуктивность.md",
     "собес/soft/Как обучаешься.md",
     "bagua-bubble.svg",
-    "Редактор сайтов.md",
     "собес/soft",
     "собес/hard",
     "собес",
@@ -214,7 +215,6 @@
     "proto-animal-rabbit-chain.svg",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
     "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
-    "Книги",
-    "темы для изучения"
+    "Книги"
   ]
 }
