@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Composition in Golang.md",
+                "file": "go/core/pointers/There is no pass-by-reference in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Composition in Golang"
+              "title": "There is no pass-by-reference in Go"
             }
           }
         ]
@@ -170,8 +170,11 @@
   },
   "active": "c42f3ca83e67f74e",
   "lastOpenFiles": [
-    "go/core/Go maps in action.md",
+    "go/core/maps/Go maps in action.md",
+    "go/core/pointers/There is no pass-by-reference in Go.md",
+    "go/core/pointers",
     "go/core/Composition in Golang.md",
+    "go/core/maps",
     "backend/oop/OOP.md",
     "go/core",
     "backend/sql/CAP.md",
@@ -199,7 +202,6 @@
     "собес/soft/Самая сложная задача.md",
     "собес/soft/Что ищешь.md",
     "собес/soft/Софт скиллы.md",
-    "собес/soft/как оцениваешь свою продуктивность.md",
     "bagua-bubble.svg",
     "собес/soft",
     "собес/hard",
@@ -213,8 +215,6 @@
     "proto-animal-rabbit-walk-3.svg",
     "proto-animal-rabbit-walk-2.svg",
     "proto-animal-rabbit-chain.svg",
-    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2",
-    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен",
-    "Книги"
+    "Книги/АЛГОРИТМЫ ПОСТРОЕНИЕ И АНАЛИЗ Кормен/Глава 2"
   ]
 }
