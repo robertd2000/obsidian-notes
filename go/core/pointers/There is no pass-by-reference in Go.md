@@ -8,6 +8,8 @@ To be clear, Go does not have reference variables, so Go does not have pass-by-
 
 In languages like C++ you can declare an _alias_, or an _alternate name_ to an existing variable. This is called a _reference variable_.
 
+```cpp
+
 #include <stdio.h>
 
 int main() {
@@ -19,12 +21,16 @@ int main() {
         return 0;
 }
 
+```
+
+
 You can see that `a`, `b`, and `c` all refer to the same memory location. A write to `a` will alter the contents of `b` and `c`. This is useful when you want to declare reference variables in different scopes–namely function calls.
 
 # Go does not have reference variables
 
 Unlike C++, each variable defined in a Go program occupies a unique memory location.
 
+```go
 package main
 
 import "fmt"
@@ -34,7 +40,12 @@ func main() {
         fmt.Println(&a, &b, &c) // 0x1040a124 0x1040a128 0x1040a12c
 }
 
+```
+
+
 It is not possible to create a Go program where two variables share the same storage location in memory. It is possible to create two variables whose contents _point_ to the same storage location, but that is not the same thing as two variables who share the same storage location.
+
+```go
 
 package main
 
@@ -47,11 +58,15 @@ func main() {
         fmt.Println(&b, &c) // 0x1040c108 0x1040c110
 }
 
+```
+
 In this example, `b` and c hold the same value–the address of `a`–however, `b` and `c` themselves are stored in unique locations. Updating the contents of `b` would have no effect on `c`.
 
 # But maps and channels are references, right?
 
 Wrong. Maps and channels are not references. If they were this program would print `false`.
+
+```go
 
 package main
 
@@ -66,6 +81,8 @@ func main() {
         fn(m)
         fmt.Println(m == nil)
 }
+
+```
 
 If the map `m` was a C++ style reference variable, the `m` declared in `main` and the `m` declared in `fn` would occupy the same storage location in memory. But, because the assignment to `m` inside `fn` has no effect on the value of `m` in main, we can see that maps are not reference variables.
 
