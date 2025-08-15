@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/pointers/If a map isn’t a reference variable, what is it.md",
+                "file": "go/core/maps/Maps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "If a map isn’t a reference variable, what is it"
+              "title": "Maps"
             }
           }
         ]
@@ -170,9 +170,10 @@
   },
   "active": "c42f3ca83e67f74e",
   "lastOpenFiles": [
-    "go/core/pointers/Pointers in Go.md",
-    "go/core/pointers/If a map isn’t a reference variable, what is it.md",
     "go/core/pointers/Understand Go pointers.md",
+    "go/core/maps/Maps.md",
+    "go/core/pointers/If a map isn’t a reference variable, what is it.md",
+    "go/core/pointers/Pointers in Go.md",
     "go/core/pointers/There is no pass-by-reference in Go.md",
     "go/core/maps/Go maps in action.md",
     "go/core/pointers",
@@ -201,7 +202,6 @@
     "собес/hard/задачи платформа.md",
     "задачи.md",
     "собес/hard/задачи алгоритмы.md",
-    "собес/soft/проекты.md",
     "bagua-bubble.svg",
     "собес/soft",
     "собес/hard",
