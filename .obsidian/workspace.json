@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frontend/react/fiber/What is “React Fiber”.md",
+                "file": "frontend/react/fiber/A deep dive into React Fiber.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "What is “React Fiber”"
+              "title": "A deep dive into React Fiber"
             }
           }
         ],
@@ -186,8 +186,9 @@
   },
   "active": "c75b3382246be0ce",
   "lastOpenFiles": [
-    "frontend/react/fiber/React Fiber и процесс обновления Virtual DOM.md",
     "frontend/react/fiber/What is “React Fiber”.md",
+    "frontend/react/fiber/A deep dive into React Fiber.md",
+    "frontend/react/fiber/React Fiber и процесс обновления Virtual DOM.md",
     "frontend/react/fiber/fiber.md",
     "темы для изучения/Фронтенд.md",
     "frontend/react/fiber",
@@ -220,7 +221,6 @@
     "backend/sql/CAP.md",
     "backend/oop",
     "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
-    "backend/sql/ACID.md",
     "backend/sql",
     "bagua-bubble.svg",
     "eventflow.svg",
