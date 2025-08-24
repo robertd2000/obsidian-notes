@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frontend/react/fiber/React Fiber Architecture.md",
+                "file": "frontend/react/fiber/Fiber изнутри - Погружение в новый алгоритм согласования React.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React Fiber Architecture"
+              "title": "Fiber изнутри - Погружение в новый алгоритм согласования React"
             }
           }
         ],
@@ -186,8 +186,9 @@
   },
   "active": "c75b3382246be0ce",
   "lastOpenFiles": [
-    "frontend/react/fiber/A deep dive into React Fiber.md",
     "frontend/react/fiber/React Fiber Architecture.md",
+    "frontend/react/fiber/Fiber изнутри - Погружение в новый алгоритм согласования React.md",
+    "frontend/react/fiber/A deep dive into React Fiber.md",
     "frontend/react/fiber/What is “React Fiber”.md",
     "frontend/react/fiber/React Fiber и процесс обновления Virtual DOM.md",
     "frontend/react/fiber/fiber.md",
@@ -219,7 +220,6 @@
     "go/core/maps",
     "backend/oop/OOP.md",
     "go/core",
-    "backend/sql/CAP.md",
     "backend/oop",
     "backend/sql",
     "bagua-bubble.svg",
