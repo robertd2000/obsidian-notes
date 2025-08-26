@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frontend/react/reconciliation/Согласование.md",
+                "file": "frontend/browser/Логирование активности с использованием Web Beacon API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Согласование"
+              "title": "Логирование активности с использованием Web Beacon API"
             }
           }
         ]
@@ -172,8 +172,10 @@
   "active": "a60dcda56f55ca99",
   "lastOpenFiles": [
     "темы для изучения/Фронтенд.md",
-    "frontend/react/reconciliation/React Reconciliation.md",
+    "frontend/browser/Логирование активности с использованием Web Beacon API.md",
+    "frontend/browser",
     "frontend/react/reconciliation/Согласование.md",
+    "frontend/react/reconciliation/React Reconciliation.md",
     "frontend/react/reconciliation",
     "Вопросы.md",
     "frontend/react/fiber/Fiber изнутри - Обновления состояния и пропсов в React.md",
@@ -202,11 +204,9 @@
     "go/core/pointers/Understand Go pointers.md",
     "go/core/pointers/If a map isn’t a reference variable, what is it.md",
     "go/core/pointers/Pointers in Go.md",
-    "go/core/pointers/There is no pass-by-reference in Go.md",
     "go/core/pointers",
     "go/core/maps",
     "go/core",
-    "backend/oop",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
