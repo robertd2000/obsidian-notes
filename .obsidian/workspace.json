@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/allocation/Allocation with make.md",
+                "file": "go/core/allocation/Allocation with new.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Allocation with make"
+              "title": "Allocation with new"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "a60dcda56f55ca99",
   "lastOpenFiles": [
-    "frontend/browser/Логирование активности с использованием Web Beacon API.md",
     "go/core/allocation/Allocation with make.md",
+    "go/core/allocation/Allocation with new.md",
+    "frontend/browser/Логирование активности с использованием Web Beacon API.md",
     "go/core/allocation",
     "темы для изучения/Фронтенд.md",
     "frontend/browser",
@@ -204,7 +205,6 @@
     "go/core/maps/Maps.md",
     "go/core/interface",
     "go/core/pointers/Understand Go pointers.md",
-    "go/core/pointers/If a map isn’t a reference variable, what is it.md",
     "go/core/pointers",
     "go/core/maps",
     "bagua-bubble.svg",
