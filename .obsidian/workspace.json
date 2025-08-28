@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/allocation/Allocation with new.md",
+                "file": "go/projects/Book service.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Allocation with new"
+              "title": "Book service"
             }
           }
         ]
@@ -171,8 +171,18 @@
   },
   "active": "a60dcda56f55ca99",
   "lastOpenFiles": [
-    "go/core/allocation/Allocation with make.md",
+    "Pasted image 20250828233009.png",
+    "algorithms/1. Two Sum.md",
+    "go/projects/Book service.md",
+    "go/projects",
+    "go/задачи/Задачи 1.md",
+    "Pasted image 20250828115337.png",
+    "Pasted image 20250828115958.png",
+    "Pasted image 20250828115910.png",
+    "Pasted image 20250828115744.png",
     "go/core/allocation/Allocation with new.md",
+    "go/задачи",
+    "go/core/allocation/Allocation with make.md",
     "frontend/browser/Логирование активности с использованием Web Beacon API.md",
     "go/core/allocation",
     "темы для изучения/Фронтенд.md",
@@ -200,22 +210,12 @@
     "собес/hard/задачи платформа.md",
     "go/core/Defer, Panic, and Recover.md",
     "go/core/Embedding.md",
-    "go/core/interface/Interfaces and other types.md",
-    "go/core/interface/Погружение в интерфейсы Go.md",
-    "go/core/maps/Maps.md",
     "go/core/interface",
-    "go/core/pointers/Understand Go pointers.md",
-    "go/core/pointers",
-    "go/core/maps",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg",
     "rabbit-animal-object.svg",
     "proto-user-admin.svg",
-    "proto-animal-rabbit.svg",
-    "proto-animal-rabbit-walk.svg",
-    "proto-animal-rabbit-walk-3.svg",
-    "proto-animal-rabbit-walk-2.svg",
-    "proto-animal-rabbit-chain.svg"
+    "proto-animal-rabbit.svg"
   ]
 }
