@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/variables/Short variable declarations.md",
+                "file": "go/core/variables/Zero Values in Golang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Short variable declarations"
+              "title": "Zero Values in Golang"
             }
           },
           {
@@ -185,8 +185,9 @@
   },
   "active": "a60dcda56f55ca99",
   "lastOpenFiles": [
-    "go/core/variables/Zero Values.md",
     "go/core/variables/Short variable declarations.md",
+    "go/core/variables/Zero Values in Golang.md",
+    "go/core/variables/Zero Values.md",
     "go/задачи/Задачи Авито платформа.md",
     "go/core/variables",
     "go/задачи/Задачи 1.md",
@@ -224,7 +225,6 @@
     "frontend/react/fiber/fiber.md",
     "frontend/react/fiber",
     "frontend/react",
-    "go/core/types/Deconstructing Type Parameters.md",
     "go/core/types",
     "bagua-bubble.svg",
     "eventflow.svg",
