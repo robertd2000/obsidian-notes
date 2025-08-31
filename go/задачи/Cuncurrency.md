@@ -427,3 +427,77 @@ func main() {
 
 ```
 
+## Data Race
+![[Pasted image 20250831182111.png]]
+
+## Race condition
+
+![[Pasted image 20250831182140.png]]
+## 7
+
+
+```go
+
+package main
+
+import (
+    "fmt"
+    "sync"
+)
+
+func main() {
+    text := ""
+    wg := sync.WaitGroup{}
+    wg.Add(2)
+
+    go func() {
+        defer wg.Done()
+        text = "hello world" // data race, но если добавить mutex, но останется race condition
+    }()
+
+    go func() {
+        defer wg.Done()
+        fmt.Println(text) // data race
+    }()
+
+    wg.Wait()
+}
+// чтобы починить можно просто убрать всю конкурентность
+```
+
+```go
+
+package main
+
+import (
+    "fmt"
+    "sync"
+)
+
+func main() {
+    text := ""
+    var mutex sync.Mutex
+    
+    wg := sync.WaitGroup{}
+    wg.Add(1)
+
+    go func() {
+        defer wg.Done()
+        mutex.Lock()
+        text = "hello world" // data race, но если добавить mutex, но останется race condition
+        mutex.Unlock()
+    }()
+    
+    wg.Add(1)
+
+    go func() {
+        defer wg.Done()
+        mutex.Lock()
+        fmt.Println(text) // data race
+        mutex.Unlock()
+    }()
+
+    wg.Wait()
+}
+
+```

@@ -171,9 +171,13 @@
   },
   "active": "a60dcda56f55ca99",
   "lastOpenFiles": [
+    "go/core/concurrency/data race and race condition.md",
+    "go/задачи/Cuncurrency.md",
+    "go/core/concurrency",
+    "Pasted image 20250831182140.png",
+    "Pasted image 20250831182111.png",
     "go/вопросы/Вопросы Авито платформа.md",
     "go/задачи/Задачи Авито платформа.md",
-    "go/задачи/Cuncurrency.md",
     "go/GO изучить.md",
     "backend/oop/5 паттернов проектирования в Go на примере котиков.md",
     "backend/oop/OOP.md",
@@ -208,14 +212,10 @@
     "Вопросы.md",
     "frontend/react/fiber/Fiber изнутри - Обновления состояния и пропсов в React.md",
     "frontend/react/fiber/Fiber изнутри - Погружение в новый алгоритм согласования React.md",
-    "frontend/react/fiber/React Fiber Architecture.md",
     "frontend/react/fiber",
     "frontend/react",
-    "go/core/types",
     "bagua-bubble.svg",
     "eventflow.svg",
-    "event-order-bubbling.svg",
-    "rabbit-animal-object.svg",
-    "proto-user-admin.svg"
+    "event-order-bubbling.svg"
   ]
 }
