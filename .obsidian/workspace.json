@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/задачи/Задачи Авито платформа.md",
+                "file": "backend/oop/5 паттернов проектирования в Go на примере котиков.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задачи Авито платформа"
+              "title": "5 паттернов проектирования в Go на примере котиков"
             }
           },
           {
@@ -200,8 +200,10 @@
   },
   "active": "a9b931edb853dcf3",
   "lastOpenFiles": [
-    "go/вопросы/Вопросы Авито платформа.md",
+    "backend/oop/OOP.md",
+    "backend/oop/5 паттернов проектирования в Go на примере котиков.md",
     "go/задачи/Задачи Авито платформа.md",
+    "go/вопросы/Вопросы Авито платформа.md",
     "go/core/variables/Zero Values in Golang.md",
     "go/core/variables/Short variable declarations.md",
     "go/core/variables/Zero Values.md",
@@ -236,8 +238,6 @@
     "frontend/react/fiber/Fiber изнутри - Погружение в новый алгоритм согласования React.md",
     "frontend/react/fiber/React Fiber Architecture.md",
     "frontend/react/fiber/A deep dive into React Fiber.md",
-    "frontend/react/fiber/What is “React Fiber”.md",
-    "frontend/react/fiber/React Fiber и процесс обновления Virtual DOM.md",
     "frontend/react/fiber",
     "frontend/react",
     "go/core/types",
