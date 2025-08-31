@@ -1,6 +1,9 @@
 
 https://www.youtube.com/watch?v=3oGmaIGPv54&t=1943s
 
+## 1 - отрефакторить
+
+условие
 ```go
 
 package main
@@ -74,7 +77,7 @@ func main() {
 }
     
 ```
-
+решение
 ```go
 
 package main
@@ -140,6 +143,124 @@ func main() {
     }
 
     wg.Wait()
+}
+
+```
+
+
+## 2.
+
+```go
+
+package main
+
+import "sync"
+
+type Buffer struct {
+    mtx  sync.Mutex
+    data []int
+}
+
+func NewBuffer() *Buffer {
+    return &Buffer{}
+}
+
+func (b *Buffer) Add(value int) {
+    b.mtx.Lock()
+    defer b.mtx.Unlock()
+    b.data = append(b.data, value)
+}
+
+func (b *Buffer) Data() []int {
+    b.mtx.Lock()
+    defer b.mtx.Unlock()
+    return b.data 
+}
+
+```
+
+решение
+
+```go
+
+package main
+
+import "sync"
+
+type Buffer struct {
+    mtx  sync.Mutex
+    data []int
+}
+
+func NewBuffer() *Buffer {
+    return &Buffer{}
+}
+
+func (b *Buffer) Add(value int) {
+    b.mtx.Lock()
+    defer b.mtx.Unlock()
+    b.data = append(b.data, value)
+}
+
+func (b *Buffer) Data() []int {
+    b.mtx.Lock()
+    defer b.mtx.Unlock()
+    return b.data // срез отдается пользователю
+    // можно вернуть копию
+    // или можно сделать цикл и так данные отдавать
+}
+
+```
+
+## 3
+
+```go
+
+package main
+
+import (
+    "sync"
+)
+
+type Cache struct {
+    mutex sync.Mutex
+    data  map[string]string
+}
+
+func NewCache() *Cache {
+    return &Cache{
+        data: make(map[string]string),
+    }
+}
+
+func (c *Cache) Set(key, value string) {
+    c.mutex.Lock()
+    defer c.mutex.Unlock()
+    c.data[key] = value
+}
+
+func (c *Cache) Get(key string) string {
+    c.mutex.Lock()
+    defer c.mutex.Unlock() 
+    if c.Size() > 0 { // при вызове c.Size() опять вызовется мьютекс и может повиснуть все из-за рекурсивной блокировки
+    // нужно использовать sizeLocked - вот так
+    // if c.sizeLocked() > 0
+        return c.data[key]
+    }
+    return ""
+}
+
+func (c *Cache) Size() int {
+    c.mutex.Lock()
+    defer c.mutex.Unlock()
+    
+    return c.sizeLocked()
+}
+
+// можно так
+
+func (c *Cache) sizeLocked() int {
+    return len(c.data)
 }
 
 ```
