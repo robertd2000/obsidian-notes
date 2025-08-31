@@ -293,3 +293,107 @@ func main() {
 }
 
 ```
+
+## 5
+
+```go
+
+package main
+
+import (
+    "fmt"
+    "sync"
+)
+
+func WaitToClose(lhs, rhs chan struct{}) {
+    lhsClosed, rhsClosed := false, false
+    for !lhsClosed || !rhsClosed {
+        select {
+        case _, ok := <-lhs:
+            fmt.Println("lhs", ok)
+            if !ok {
+                lhsClosed = true
+            }
+        case _, ok := <-rhs:
+            fmt.Println("rhs", ok)
+            if !ok {
+                rhsClosed = true
+            }
+        }
+    }
+}
+
+func main() {
+    lhs := make(chan struct{}, 1)
+    rhs := make(chan struct{}, 1)
+
+    wg := sync.WaitGroup{}
+    wg.Add(1)
+
+    go func() {
+        defer wg.Done()
+        WaitToClose(lhs, rhs)
+    }()
+
+    lhs <- struct{}{}
+    rhs <- struct{}{}
+    
+    close(lhs)
+    close(rhs)
+    
+    wg.Wait()
+}
+
+```
+
+```go
+
+package main
+
+import (
+    "fmt"
+    "sync"
+)
+
+func WaitToClose(lhs, rhs chan struct{}) {
+    lhsClosed, rhsClosed := false, false
+    for !lhsClosed || !rhsClosed {
+        select {
+        case _, ok := <-lhs:
+            fmt.Println("lhs", ok)
+            if !ok {
+                lhsClosed = true
+                lhs = nil // нужно сделать так чтобы при чтении из nil канала была блокировка + мы зануляем только копию канала
+            }
+        case _, ok := <-rhs:
+            fmt.Println("rhs", ok)
+            if !ok {
+                rhsClosed = true
+                rhs = nil
+            }
+        }
+    }
+}
+
+func main() {
+    lhs := make(chan struct{}, 1)
+    rhs := make(chan struct{}, 1)
+
+    wg := sync.WaitGroup{}
+    wg.Add(1)
+
+    go func() {
+        defer wg.Done()
+        WaitToClose(lhs, rhs)
+    }()
+
+    lhs <- struct{}{}
+    rhs <- struct{}{}
+    
+    close(lhs) // из-за того что селект выбирает случайно, какую ветку выполнить, а в закрытом канале все еще есть значения, вывод будет неправильный и рандомный
+    close(rhs)
+    
+    wg.Wait()
+}
+
+```
