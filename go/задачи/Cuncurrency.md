@@ -264,3 +264,32 @@ func (c *Cache) sizeLocked() int {
 }
 
 ```
+
+
+## 4
+
+```go
+
+package main
+
+import "sync"
+
+type Data struct {
+	sync.Mutex // из-за встраивания структуры мьютекса пользвоатель получает доступ к его методам
+	// m sync.Mutex
+	values []int
+}
+
+func (d *Data) Add(value int) {
+	d.Lock() // d.m.Lock()
+	defer d.Unlock() // d.m.Unlock()
+	
+	d.values = append(d.values, value)
+}
+
+func main() {
+	data := Data{}
+	data.Add(100)
+}
+
+```
