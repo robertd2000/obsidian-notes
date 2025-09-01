@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "13db6d172c324507",
+        "id": "ddf1c26b77a292c7",
         "type": "tabs",
         "children": [
           {
-            "id": "7ce4ccd174b9c223",
+            "id": "2e6fb71dbff2f66e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "go/patterns/Стратегия (Strategy)/Стратегия (Strategy).md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Стратегия (Strategy)"
+              "title": "New tab"
             }
           }
         ]
@@ -169,15 +165,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "263decf4c0b98da3",
+  "active": "2e6fb71dbff2f66e",
   "lastOpenFiles": [
-    "go/patterns/Стратегия (Strategy)/Стратегия.md",
+    "go/patterns/Фасад (Facade)/Фасад (Facade).md",
+    "go/patterns/Фасад (Facade)/Фасад.md",
+    "go/patterns/Фасад (Facade)",
     "go/patterns/Стратегия (Strategy)/Стратегия (Strategy).md",
+    "go/patterns/Стратегия (Strategy)/Стратегия.md",
     "go/patterns/Стратегия (Strategy)",
     "go/задачи/Задачи Озон.md",
     "go/задачи/Задачи Альфа.md",
-    "go/patterns/Фасад (Facade).md",
-    "go/patterns/Фасад.md",
     "go/core/variables/Iota.md",
     "go/patterns",
     "go/core/variables/Constants.md",
@@ -209,11 +206,9 @@
     "Pasted image 20250828115958.png",
     "Pasted image 20250828115910.png",
     "Pasted image 20250828115744.png",
-    "go/core/allocation/Allocation with new.md",
     "go/задачи",
     "go/core/allocation",
     "frontend/browser",
-    "frontend/react/reconciliation",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg"
