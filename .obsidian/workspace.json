@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/variables/scope.md",
+                "file": "go/core/data types/integers/Integers in Golang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "scope"
+              "title": "Integers in Golang"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "2e6fb71dbff2f66e",
   "lastOpenFiles": [
-    "go/задачи/Задача сложная ютуб.md",
+    "go/core/data types/Untitled.md",
+    "go/core/data types/integers/Integers in Golang.md",
+    "go/core/data types/integers",
     "go/core/variables/scope.md",
+    "go/core/data types",
+    "go/задачи/Задача сложная ютуб.md",
     "go/patterns/Фасад (Facade)/Фасад (Facade).md",
     "go/patterns/Фасад (Facade)/Фасад.md",
     "go/patterns/Фасад (Facade)",
@@ -202,8 +206,6 @@
     "go/задачи/Задачи Middle в Go Самокат.md",
     "backend/sql/DDL/Drop a Table.md",
     "backend/sql/DDL/Create table.md",
-    "go/вопросы/Вопросы Middle Go Самокат.md",
-    "go/projects/Book service.md",
     "go/вопросы",
     "Pasted image 20250828233009.png",
     "go/projects",
@@ -212,8 +214,6 @@
     "Pasted image 20250828115910.png",
     "Pasted image 20250828115744.png",
     "go/задачи",
-    "go/core/allocation",
-    "frontend/browser",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg"
