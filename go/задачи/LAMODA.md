@@ -74,3 +74,183 @@ Capacity: k - i or 4 - 2 = 2
 можно изменить foo, чтобы возвращал слайс
 
 3 можно копию сделать
+
+# 2
+
+```go
+
+package main
+
+import (
+	"context"
+	"fmt"
+	"net/http"
+	"time"
+)
+
+func main() {
+	urls := []string{
+		"https://www.lamoda.ru",
+		"https://www.yandex.ru",
+		"https://www.mail.ru",
+		"https://www.google.com",
+	}
+	
+	for _, url := range urls {
+		go func(url string) {
+			fmt.Printf("Fetching %s...\n", url)
+			err := fetchUrl(context.Background(), url)
+			if err != nil {
+				fmt.Printf("Error fetching %s: %v\n", url, err)
+				return
+			}
+			fmt.Printf("Fetched %s\n", url)
+		}(url)
+	}
+
+	fmt.Println("All requests launched!")
+	time.Sleep(400 * time.Millisecond) // проблема - лучше WaitGroup{}
+	fmt.Println("Program finished.")
+}
+
+func fetchUrl(ctx context.Context, url string) error {
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return err
+	}
+	_, err = http.DefaultClient.Do(req)
+	return err
+}
+
+```
+
+```go
+
+package main
+
+import (
+	"context"
+	"fmt"
+	"net/http"
+	"time"
+	"sync"
+	"context"
+)
+
+func main() {
+	urls := []string{
+		"https://www.lamoda.ru",
+		"https://www.yandex.ru",
+		"https://www.mail.ru",
+		"https://www.google.com",
+	}
+	
+	var wg &sync.WaitGroup{}
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+	
+	for _, url := range urls {
+		wg.Add(1)
+		go func(url string) {
+			defer wg.Done()
+			fmt.Printf("Fetching %s...\n", url)
+			
+			err := fetchUrl(ctx, url)
+			if err != nil {
+				cancel()
+				fmt.Printf("Error fetching %s: %v\n", url, err)
+				return
+			}
+			fmt.Printf("Fetched %s\n", url)
+		}(url)
+	}
+
+	fmt.Println("All requests launched!")
+	wg.Wait()
+	fmt.Println("Program finished.")
+}
+
+func fetchUrl(ctx context.Context, url string) error {
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return err
+	}
+	_, err = http.DefaultClient.Do(req)
+	return err
+}
+
+```
+
+```go
+
+package main
+
+import (
+	"context"
+	"fmt"
+	"net/http"
+	"sync"
+	"time"
+)
+
+func main() {
+	urls := []string{
+		"https://www.lamoda.ru",
+		"https://www.yandex.ru",
+		"https://www.mail.ru",
+		"https://www.google.com",
+	}
+
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	var wg sync.WaitGroup
+	results := make(chan string, len(urls))
+	errCh := make(chan error, len(urls))
+
+	for _, url := range urls {
+		wg.Add(1)
+		go func(url string) {
+			defer wg.Done()
+			
+			fmt.Printf("Fetching %s...\n", url)
+			err := fetchUrl(ctx, url)
+			if err != nil {
+				errCh <- fmt.Errorf("error fetching %s: %v", url, err)
+				return
+			}
+			results <- fmt.Sprintf("Fetched %s", url)
+		}(url)
+	}
+
+	go func() {
+		wg.Wait()
+		close(results)
+		close(errCh)
+	}()
+
+	fmt.Println("All requests launched!")
+
+	// Обработка результатов
+	for result := range results {
+		fmt.Println(result)
+	}
+
+	// Обработка ошибок
+	for err := range errCh {
+		fmt.Println(err)
+	}
+
+	fmt.Println("Program finished.")
+}
+
+func fetchUrl(ctx context.Context, url string) error {
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return err
+	}
+	_, err = http.DefaultClient.Do(req)
+	return err
+}
+
+```
