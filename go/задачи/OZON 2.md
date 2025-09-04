@@ -59,3 +59,17 @@ order by order_count desc;
 
 ```
 
+# 3
+
+```go
+
+n := map[string]int{"a": 1, "b": 2, "c": 3}
+
+for a, b := range n {
+	fmt.Println(a, b)
+}
+
+// a 1 b 2 c 3 в случайном порядке
+
+fmt.Println(n) // в отсортированном по ключам
+```

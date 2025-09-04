@@ -35,8 +35,7 @@
               "title": "OZON 2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,10 +183,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1cca55aecd99edd1",
+  "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/вопросы/Вопросы OZON 2.md",
     "go/задачи/OZON 2.md",
+    "go/вопросы/Вопросы OZON 2.md",
     "go/задачи/LAMODA.md",
     "go/вопросы/Вопросы Авито платформа.md",
     "go/вопросы/Вопросы Middle Go Самокат.md",
