@@ -121,12 +121,15 @@ func main() {
 ## 3
 
 ```go
+
 package main
 
 import (
 	"fmt"
 	"net/http"
 	"sync"
+	"context"
+	"time"
 )
 
 // Необходимо поочередно выполнить HTTP-запросы по предложенному списку ссылок:
@@ -137,9 +140,90 @@ import (
 // 2. Модифицируйте программу таким образом, чтобы использовать каналы для коммуникаций основного потока с горутинами. Пример:
 // Запросы по списку выполняются в горутинах.
 // Печать результатов на экран происходит в основном потоке
-     //  3 Урлы приходят из внешнего источника, длина неизвестна
+//  3 Урлы приходят из внешнего источника, длина неизвестна
+
+const parrallelCount = 10
+
 func main() {
-	var urls = []string{
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	
+	urlsChan := generateUrls(ctx)
+	res := make(chan string)
+	wg := &sync.WaitGroup{}
+
+
+	for i := 0; i < parrallelCount; i++ {
+		wg.Add(1)
+		go worker(ctx, urlsChan, res, wg)
+	}
+
+	go func() {
+		wg.Wait()
+		close(res)
+	}()
+
+	for v := range res {
+		fmt.Println(v)
+	}
+}
+
+func worker(ctx context.Context, out <- chan string, in chan <- string, wg *sync.WaitGroup) {
+	defer wg.Done()
+
+	select {
+		case <-ctx.Done():
+			return
+		case url, ok := <- out:
+			if !ok {
+				return
+			}
+			processURL(ctx, url, in)
+	}
+}
+
+func processURL(ctx context.Context, url string, results chan<- string) {
+    req, err := http.NewRequestWithContext(ctx, "GET", url, nil)
+    if err != nil {
+        select {
+        case <-ctx.Done():
+            return
+        default:
+            results <- fmt.Sprintf("адрес %s - not ok (ошибка создания запроса)", url)
+        }
+        return
+    }
+    
+    client := &http.Client{
+        Timeout: 5 * time.Second,
+    }
+    
+    resp, err := client.Do(req)
+    if err != nil {
+        select {
+        case <-ctx.Done():
+            return 
+        default:
+            results <- fmt.Sprintf("адрес %s - not ok (%v)", url, err)
+        }
+        return
+    }
+    defer resp.Body.Close()
+    
+    select {
+    case <-ctx.Done():
+        return 
+    default:
+        if resp.StatusCode == http.StatusOK {
+            results <- fmt.Sprintf("адрес %s - ok", url)
+        } else {
+            results <- fmt.Sprintf("адрес %s - not ok (status: %d)", url, resp.StatusCode)
+        }
+    }
+}
+
+func generateUrls(ctx context.Context) <-chan string {
+	urls := []string{
 		"http://ozon.ru",
 		"https://ozon.ru",
 		"http://google.com",
@@ -149,57 +233,23 @@ func main() {
 		"http://ya.ru",
 		"http://eee",
 	}
-	urlsChan := make(chan string)
-	parrallelCount := 5
-
+	
+	urlChan := make(chan string)
 	
 	go func() {
-		for _, url := range urls {
-			urlsChan <- url
-		}
+		defer close(urlChan)
 		
-		close(urlsChan)
-	}()
-	ch := make(chan string)
-	wg := &sync.WaitGroup{}
-
-	wg.Add(n)
-
-	for i := 0; i < parrallelCount; i++ {
-		wg.Add(1)
-		go func() {
-			defer wg.Done()
-			for _, url := range urlsChan {
-				proccessUrl(url, ch)
+		for _, url := range urls {
+			select {
+			case <-ctx.Done():
+				return
+			case urlChan <- url:
 			}
-		}()
-	}
-
-
-	go func() {
-		wg.Wait()
-		close(ch)
+			
+		}
 	}()
-
-	for v := range ch {
-		fmt.Println(v)
-	}
-}
-
-func proccessUrl(url string, ch chan <- string) {
-	resp, err := http.Get(url)
-
-	if err != nil {
-		ch <- fmt.Sprintf("адрес %s - not ok", url )
-		return
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != http.StatusOK {
-		ch <- fmt.Sprintf("адрес %s - not ok", url)
-	} else {
-		ch <- fmt.Sprintf("адрес %s - ok", url)
-	}
+	
+	return urlChan
 }
 
 ```
