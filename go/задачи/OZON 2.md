@@ -73,3 +73,25 @@ for a, b := range n {
 
 fmt.Println(n) // в отсортированном по ключам
 ```
+
+# 4
+
+```go
+
+func main() {
+    nums := []int{1, 2, 3}
+    addNum(nums[0:2])
+    fmt.Println(nums) // ? [1 2 4] // так как cap не переполнился, значит перезапишется
+    addNums(nums[0:2]) 
+    fmt.Println(nums) // ? [1 2 4] - тут присвоится новый массив, поэтому nums не изменится, тк в функцию передается по значению
+}
+
+func addNum(nums []int) {
+    nums = append(nums, 4)
+}
+
+func addNums(nums []int) {
+    nums = append(nums, 5, 6)
+}
+ 
+```
