@@ -5,8 +5,8 @@ https://www.youtube.com/watch?v=-8JlOr3Z0eA
 
 ## 1 Зачем закрывать тело запроса
 ## 2 Когда использовать буферизированный канал
-## 3 
-## 4 
+## 3 awasp top 10
+## 4 sql injections
 ## 5 
 ## 6 
 ## 7 
