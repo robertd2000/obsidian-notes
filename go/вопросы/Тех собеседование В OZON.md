@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=-8JlOr3Z0eA
 ## 2 Когда использовать буферизированный канал
 ## 3 awasp top 10
 ## 4 sql injections
-## 5 
+## 5 loot box / tranactional loot box
 ## 6 
 ## 7 
 ## 8 
