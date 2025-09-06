@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/задачи/Задачи Тех собеседование В OZON.md",
+                "file": "go/core/data types/runes/Understanding Runes in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задачи Тех собеседование В OZON"
+              "title": "Understanding Runes in Go"
             }
           },
           {
@@ -185,8 +185,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/вопросы/Тех собеседование В OZON.md",
     "go/задачи/Задачи Тех собеседование В OZON.md",
+    "go/core/data types/runes/Understanding Runes in Go.md",
+    "go/core/data types/runes",
+    "go/вопросы/Тех собеседование В OZON.md",
     "go/задачи/OZON 2.md",
     "go/вопросы/Вопросы OZON 2.md",
     "go/задачи/LAMODA.md",
@@ -218,7 +220,6 @@
     "go/задачи/Задачи Авито платформа.md",
     "go/GO изучить.md",
     "backend/oop/5 паттернов проектирования в Go на примере котиков.md",
-    "backend/oop/OOP.md",
     "go/core/variables",
     "go/вопросы",
     "Pasted image 20250828233009.png",
@@ -227,7 +228,6 @@
     "Pasted image 20250828115958.png",
     "Pasted image 20250828115910.png",
     "Pasted image 20250828115744.png",
-    "go/задачи",
     "bagua-bubble.svg",
     "eventflow.svg",
     "event-order-bubbling.svg"
