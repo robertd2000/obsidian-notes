@@ -1311,3 +1311,13 @@ CREATE TABLE user_chats (
 4. ✅ Пользователь в нескольких чатах (через user_chats)
 5. ✅ Сообщение принадлежит ровно одному чату (chat_id NOT NULL)
 6. ✅ Сообщение не может быть в нескольких чатах (один chat_id на сообщение)
+
+```sql
+
+select c.chat_id as chat_id, c.title as chat_name 
+from users u
+join chat_users cu on cu.user_id=u.id
+join chat c on cu.chat_id=c.id
+where u.name="Vasya";
+
+```

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/runes/Understanding Runes in Go.md",
+                "file": "go/задачи/Задачи Тех собеседование В OZON.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Understanding Runes in Go"
+              "title": "Задачи Тех собеседование В OZON"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "Тех собеседование В OZON"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -183,13 +184,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8348fa9bbf82b0e",
+  "active": "1cca55aecd99edd1",
   "lastOpenFiles": [
     "go/задачи/Задачи Тех собеседование В OZON.md",
-    "go/core/data types/runes/Understanding Runes in Go.md",
-    "go/core/data types/runes",
-    "go/вопросы/Тех собеседование В OZON.md",
+    "go/задачи/Задачи Озон.md",
     "go/задачи/OZON 2.md",
+    "go/core/data types/runes/Understanding Runes in Go.md",
+    "go/вопросы/Тех собеседование В OZON.md",
+    "go/core/data types/runes",
     "go/вопросы/Вопросы OZON 2.md",
     "go/задачи/LAMODA.md",
     "go/вопросы/Вопросы Авито платформа.md",
@@ -207,7 +209,6 @@
     "go/patterns/Стратегия (Strategy)/Стратегия (Strategy).md",
     "go/patterns/Стратегия (Strategy)/Стратегия.md",
     "go/patterns/Стратегия (Strategy)",
-    "go/задачи/Задачи Озон.md",
     "go/задачи/Задачи Альфа.md",
     "go/core/variables/Iota.md",
     "go/patterns",
