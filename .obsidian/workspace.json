@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Type conversions/Type conversions.md",
+                "file": "go/core/Type conversions/Type inference.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Type conversions"
+              "title": "Type inference"
             }
           }
         ],
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "go/core/Type conversions/Type conversions.md",
+                "file": "go/core/Type conversions/Type inference.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Type conversions"
+              "title": "Backlinks for Type inference"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/core/Type conversions/Type conversions.md",
+                "file": "go/core/Type conversions/Type inference.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Type conversions"
+              "title": "Outline of Type inference"
             }
           }
         ],
@@ -200,8 +200,9 @@
   },
   "active": "a5ba9699fb8bd7d1",
   "lastOpenFiles": [
-    "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/Type conversions/Type conversions.md",
+    "go/core/Type conversions/Type inference.md",
+    "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/Type conversions",
     "go/core/data types/strings/Demystifying Runes - A Complete Guide to Using Runes in Go.md",
     "go/core/data types/strings/Raw string literals.md",
@@ -232,7 +233,6 @@
     "go/patterns/Фасад (Facade)/Фасад.md",
     "go/patterns/Фасад (Facade)",
     "go/patterns/Стратегия (Strategy)/Стратегия (Strategy).md",
-    "go/patterns/Стратегия (Strategy)/Стратегия.md",
     "go/patterns/Стратегия (Strategy)",
     "go/patterns",
     "go/core/concurrency",
