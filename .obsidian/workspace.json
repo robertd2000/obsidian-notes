@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frontend/вопросы на собес/JS/JS.md",
+                "file": "frontend/вопросы на собес/React/React.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JS"
+              "title": "React"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "Type Casting and Conversions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "frontend/вопросы на собес/JS/JS.md",
+                "file": "Вопросы.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JS"
+              "title": "Outline of Вопросы"
             }
           }
         ],
@@ -213,10 +212,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8a14ef1d04e930d",
+  "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "frontend/вопросы на собес/React/React.md",
     "Вопросы.md",
+    "frontend/вопросы на собес/TS/TS.md",
+    "frontend/вопросы на собес/React",
     "frontend/вопросы на собес/JS/JS.md",
+    "frontend/вопросы на собес/TS",
     "frontend/вопросы на собес/Browser/Browser.md",
     "frontend/вопросы на собес/JS",
     "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
@@ -247,11 +250,7 @@
     "go/вопросы/Вопросы Авито платформа.md",
     "go/вопросы/Вопросы Middle Go Самокат.md",
     "go/задачи/МТС задачи.md",
-    "go/core/data types/integers/Integers in Golang.md",
-    "go/core/data types/Untitled.md",
     "go/core/data types/integers",
-    "go/core/data types",
-    "go/patterns/Фасад (Facade)",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
