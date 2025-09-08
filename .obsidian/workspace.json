@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
+                "file": "Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTML + CSS"
+              "title": "Вопросы"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Вопросы.md",
+                "file": "frontend/вопросы на собес/Browser/Browser.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы"
+              "title": "Browser"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "Type Casting and Conversions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,10 +212,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8a14ef1d04e930d",
+  "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
+    "frontend/вопросы на собес/Browser/Browser.md",
     "Вопросы.md",
+    "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
+    "frontend/вопросы на собес/Browser",
     "go/core/Type conversions/Type Casting and Conversions.md",
     "go/вопросы/Тех собеседование В WB.md",
     "frontend/вопросы на собес/HTML + CSS",
@@ -248,10 +249,8 @@
     "go/core/data types/integers",
     "go/core/variables/scope.md",
     "go/core/data types",
-    "go/задачи/Задача сложная ютуб.md",
     "go/patterns/Фасад (Facade)",
     "go/patterns/Стратегия (Strategy)",
-    "go/patterns",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
