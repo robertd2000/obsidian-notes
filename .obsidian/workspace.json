@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
+                "file": "go/core/data types/slices/Golang make function.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The new() vs make() Functions in Go – When to Use Each One"
+              "title": "Golang make function"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
+                "file": "go/core/data types/slices/Golang make function.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The new() vs make() Functions in Go – When to Use Each One"
+              "title": "Outline of Golang make function"
             }
           }
         ],
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/slices/Creating a slice with make.md",
     "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
+    "go/core/data types/slices/Golang make function.md",
+    "go/core/data types/slices/Creating a slice with make.md",
     "go/core/data types/slices/Slices.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
     "задачи.md",
@@ -250,7 +251,6 @@
     "go/core/data types/strings/String types.md",
     "go/core/data types/strings",
     "Pasted image 20250907174807.png",
-    "go/вопросы/Тех собеседование В OZON.md",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
