@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/slices/Creating a slice with make.md",
+                "file": "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Creating a slice with make"
+              "title": "The new() vs make() Functions in Go – When to Use Each One"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/core/data types/slices/Creating a slice with make.md",
+                "file": "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Creating a slice with make"
+              "title": "Outline of The new() vs make() Functions in Go – When to Use Each One"
             }
           }
         ],
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/slices/Slices.md",
     "go/core/data types/slices/Creating a slice with make.md",
+    "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
+    "go/core/data types/slices/Slices.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
     "задачи.md",
     "go/core/data types/arrays/Array in Go.md",
@@ -250,7 +251,6 @@
     "go/core/data types/strings",
     "Pasted image 20250907174807.png",
     "go/вопросы/Тех собеседование В OZON.md",
-    "go/задачи/Задачи Озон.md",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
