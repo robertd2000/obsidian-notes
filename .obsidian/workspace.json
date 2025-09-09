@@ -55,15 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Type conversions/Type Casting and Conversions.md",
+                "file": "go/core/data types/slices/Go Slices - usage and internals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Type Casting and Conversions"
+              "title": "Go Slices - usage and internals"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -184,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/core/data types/arrays/Array in Go.md",
+                "file": "go/core/data types/slices/Go Slices - usage and internals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Array in Go"
+              "title": "Outline of Go Slices - usage and internals"
             }
           }
         ],
@@ -212,24 +213,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8348fa9bbf82b0e",
+  "active": "a5ba9699fb8bd7d1",
   "lastOpenFiles": [
-    "go/core/data types/arrays/Arrays.md",
+    "задачи.md",
+    "go/core/data types/slices/Go Slices - usage and internals.md",
+    "go/core/data types/slices",
+    "frontend/вопросы на собес/JS/JS.md",
+    "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
+    "frontend/вопросы на собес/Browser/Browser.md",
+    "go/core/Type conversions/Type Casting and Conversions.md",
     "go/core/data types/arrays/Array in Go.md",
+    "go/core/data types/arrays/Arrays.md",
     "Вопросы.md",
     "go/core/data types/arrays",
     "go/задачи/Тех собеседование В WB.md",
     "go/вопросы/Тех собеседование В WB.md",
     "go/задачи/Задачи Тех собеседование В OZON.md",
     "frontend/вопросы на собес/React/React.md",
-    "go/core/Type conversions/Type Casting and Conversions.md",
     "frontend/вопросы на собес/TS/TS.md",
     "frontend/вопросы на собес/React",
-    "frontend/вопросы на собес/JS/JS.md",
     "frontend/вопросы на собес/TS",
-    "frontend/вопросы на собес/Browser/Browser.md",
     "frontend/вопросы на собес/JS",
-    "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
     "frontend/вопросы на собес/Browser",
     "frontend/вопросы на собес/HTML + CSS",
     "frontend/вопросы на собес",
@@ -247,10 +251,7 @@
     "go/задачи/Задачи Озон.md",
     "go/задачи/OZON 2.md",
     "go/core/data types/runes/Understanding Runes in Go.md",
-    "go/core/data types/runes",
     "go/вопросы/Вопросы OZON 2.md",
-    "go/задачи/LAMODA.md",
-    "go/вопросы/Вопросы Авито платформа.md",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
