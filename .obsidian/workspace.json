@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/slices/Slices.md",
+                "file": "go/core/data types/slices/Creating a slice with make.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Slices"
+              "title": "Creating a slice with make"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "go/core/data types/slices/Slices.md",
+                "file": "go/core/data types/slices/Creating a slice with make.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Slices"
+              "title": "Outline of Creating a slice with make"
             }
           }
         ],
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/Slices.md",
+    "go/core/data types/slices/Creating a slice with make.md",
+    "go/core/data types/slices/How to slice arrays correctly.md",
     "задачи.md",
     "go/core/data types/arrays/Array in Go.md",
     "go/core/data types/slices/Go Slices - usage and internals.md",
@@ -250,7 +251,6 @@
     "Pasted image 20250907174807.png",
     "go/вопросы/Тех собеседование В OZON.md",
     "go/задачи/Задачи Озон.md",
-    "go/задачи/OZON 2.md",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
