@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "задачи.md",
+                "file": "go/core/data types/slices/How to slice arrays correctly.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "задачи"
+              "title": "How to slice arrays correctly"
             }
           },
           {
@@ -184,13 +184,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "задачи.md",
+                "file": "go/core/data types/slices/How to slice arrays correctly.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of задачи"
+              "title": "Outline of How to slice arrays correctly"
             }
           }
         ],
@@ -214,9 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "задачи.md",
+    "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/arrays/Array in Go.md",
     "go/core/data types/slices/Go Slices - usage and internals.md",
-    "задачи.md",
     "go/core/data types/slices",
     "frontend/вопросы на собес/JS/JS.md",
     "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
@@ -250,7 +251,6 @@
     "go/задачи/Задачи Озон.md",
     "go/задачи/OZON 2.md",
     "go/core/data types/runes/Understanding Runes in Go.md",
-    "go/вопросы/Вопросы OZON 2.md",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
     "Pasted image 20250828233009.png",
