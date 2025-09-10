@@ -16,13 +16,19 @@ It’s important to state right up front that a string holds _arbitrary_ bytes
 
 Here is a string literal (more about those soon) that uses the `\xNN` notation to define a string constant holding some peculiar byte values. (Of course, bytes range from hexadecimal values 00 through FF, inclusive.)
 
-    const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
+```go
+const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98"
+```
+    
 
 ## Printing strings[¶](https://go.dev/blog/strings#printing-strings)
 
 Because some of the bytes in our sample string are not valid ASCII, not even valid UTF-8, printing the string directly will produce ugly output. The simple print statement
 
-    fmt.Println(sample)
+```go
+fmt.Println(sample)
+```
+    
 
 produces this mess (whose exact appearance varies with the environment):
 
@@ -32,9 +38,14 @@ produces this mess (whose exact appearance varies with the environment):
 
 To find out what that string really holds, we need to take it apart and examine the pieces. There are several ways to do this. The most obvious is to loop over its contents and pull out the bytes individually, as in this `for` loop:
 
-    for i := 0; i < len(sample); i++ {
-        fmt.Printf("%x ", sample[i])
-    }
+```go
+
+for i := 0; i < len(sample); i++ {
+	fmt.Printf("%x ", sample[i])
+}
+
+```
+
 
 As implied up front, indexing a string accesses individual bytes, not characters. We’ll return to that topic in detail below. For now, let’s stick with just the bytes. This is the output from the byte-by-byte loop:
 
@@ -46,7 +57,10 @@ Notice how the individual bytes match the hexadecimal escapes that defined the s
 
 A shorter way to generate presentable output for a messy string is to use the `%x` (hexadecimal) format verb of `fmt.Printf`. It just dumps out the sequential bytes of the string as hexadecimal digits, two per byte.
 
-    fmt.Printf("%x\n", sample)
+```go
+fmt.Printf("%x\n", sample)
+```
+    
 
 Compare its output to that above:
 
@@ -56,7 +70,10 @@ bdb23dbc20e28c98
 
 A nice trick is to use the “space” flag in that format, putting a space between the `%` and the `x`. Compare the format string used here to the one above,
 
-    fmt.Printf("% x\n", sample)
+```go
+fmt.Printf("% x\n", sample)
+```
+    
 
 and notice how the bytes come out with spaces between, making the result a little less imposing:
 
@@ -66,7 +83,10 @@ bd b2 3d bc 20 e2 8c 98
 
 There’s more. The `%q` (quoted) verb will escape any non-printable byte sequences in a string so the output is unambiguous.
 
-    fmt.Printf("%q\n", sample)
+```go
+fmt.Printf("%q\n", sample)
+```
+    
 
 This technique is handy when much of the string is intelligible as text but there are peculiarities to root out; it produces:
 
@@ -78,7 +98,10 @@ If we squint at that, we can see that buried in the noise is one ASCII equals si
 
 If we are unfamiliar or confused by strange values in the string, we can use the “plus” flag to the `%q` verb. This flag causes the output to escape not only non-printable sequences, but also any non-ASCII bytes, all while interpreting UTF-8. The result is that it exposes the Unicode values of properly formatted UTF-8 that represents non-ASCII data in the string:
 
-    fmt.Printf("%+q\n", sample)
+```go
+fmt.Printf("%+q\n", sample)
+```
+    
 
 With that format, the Unicode value of the Swedish symbol shows up as a `\u` escape:
 
@@ -154,8 +177,8 @@ func main() {
     }
     fmt.Printf("\n")
 }
+```
 
-Run
 
 The output is:
 
@@ -164,6 +187,7 @@ plain string: ⌘
 quoted string: "\u2318"
 hex bytes: e2 8c 98
 ```
+
 
 which reminds us that the Unicode character value U+2318, the “Place of Interest” symbol ⌘, is represented by the bytes `e2` `8c` `98`, and that those bytes are the UTF-8 encoding of the hexadecimal value 2318.
 
@@ -217,10 +241,15 @@ Besides the axiomatic detail that Go source code is UTF-8, there’s really only
 
 We’ve seen what happens with a regular `for` loop. A `for` `range` loop, by contrast, decodes one UTF-8-encoded rune on each iteration. Each time around the loop, the index of the loop is the starting position of the current rune, measured in bytes, and the code point is its value. Here’s an example using yet another handy `Printf` format, `%#U`, which shows the code point’s Unicode value and its printed representation:
 
-    const nihongo = "日本語"
-    for index, runeValue := range nihongo {
-        fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
-    }
+```go
+
+const nihongo = "日本語"
+for index, runeValue := range nihongo {
+	fmt.Printf("%#U starts at byte position %d\n", runeValue, index)
+}
+    
+```
+
 
 Run
 
@@ -240,12 +269,15 @@ Go’s standard library provides strong support for interpreting UTF-8 text. If 
 
 The most important such package is [`unicode/utf8`](https://go.dev/pkg/unicode/utf8/), which contains helper routines to validate, disassemble, and reassemble UTF-8 strings. Here is a program equivalent to the `for` `range` example above, but using the `DecodeRuneInString` function from that package to do the work. The return values from the function are the rune and its width in UTF-8-encoded bytes.
 
-    const nihongo = "日本語"
-    for i, w := 0, 0; i < len(nihongo); i += w {
-        runeValue, width := utf8.DecodeRuneInString(nihongo[i:])
-        fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
-        w = width
-    }
+```go
+const nihongo = "日本語"
+for i, w := 0, 0; i < len(nihongo); i += w {
+	runeValue, width := utf8.DecodeRuneInString(nihongo[i:])
+	fmt.Printf("%#U starts at byte position %d\n", runeValue, i)
+	w = width
+}
+```
+
 
 Run
 
