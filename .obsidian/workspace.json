@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
+                "file": "go/core/data types/maps/Go maps in action.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Strings, bytes, runes and characters in Go"
+              "title": "Go maps in action"
             }
           },
           {
@@ -214,6 +214,11 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "go/core/data types/strings/String types.md",
+    "go/core/data types/maps/Go maps in action.md",
+    "go/core/data types/maps",
+    "go/core/data types/strings/Untitled.md",
+    "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/data types/slices/Array to Slice Conversion.md",
     "go/core/data types/Untitled",
     "go/core/data types/slices/Slice to Array Conversion.md",
@@ -245,10 +250,6 @@
     "frontend/вопросы на собес/HTML + CSS",
     "frontend/вопросы на собес",
     "go/core/Type conversions/Type inference.md",
-    "go/core/Type conversions/Type conversions.md",
-    "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
-    "go/core/Type conversions",
-    "go/core/data types/strings/Demystifying Runes - A Complete Guide to Using Runes in Go.md",
     "Pasted image 20250907174807.png",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
