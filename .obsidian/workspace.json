@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Conditionals/Switch.md",
+                "file": "go/core/Conditionals/Golang if keyword.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Switch"
+              "title": "Golang if keyword"
             }
           },
           {
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/Conditionals/How to handle conditional logic in Go.md",
     "go/core/Conditionals/Switch.md",
+    "go/core/Conditionals/Golang if keyword.md",
+    "go/core/Conditionals/How to handle conditional logic in Go.md",
     "go/core/How the Comma Ok Idiom and Package System Work in Go.md",
     "go/core/Conditionals",
     "go/core/maps/Comma OK in GO.md",
@@ -243,7 +244,6 @@
     "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
     "frontend/вопросы на собес/Browser/Browser.md",
     "go/core/Type conversions/Type Casting and Conversions.md",
-    "go/core/data types/arrays/Arrays.md",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
     "frontend/вопросы на собес/TS",
