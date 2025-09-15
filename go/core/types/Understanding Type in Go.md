@@ -102,12 +102,14 @@ A pointer in Go is of type uintptr. Again, based on the OS architecture this wil
   
 Struct types are just combinations of know types that also eventually resolve to a numeric type.  
   
-
+```go
 type Example struct{  
     BoolValue bool  
     IntValue  int16  
     FloatValue float32  
 }
+```
+
 
   
 This structure represents a complex type. It represents 7 bytes with three different numeric representations. The bool is one byte, the int16 is 2 bytes and the float32 adds 4 more bytes. However, 8 bytes are actually allocated in memory for this struct.  
@@ -120,7 +122,7 @@ If you want to learn more about structure member alignment and padding check out
   
 This program shows the padding that Go inserted into the memory footprint for the Example type struct:  
   
-
+```go
 package main  
   
 import (  
@@ -175,16 +177,20 @@ func main() {
     fmt.Printf("Next = Size: %d Offset: %d Addr: %v\n",  
         sizeBoolNext, offsetBoolNext, &exampleNext.BoolValue)  
 }
+```
+
 
   
 Here is the output:  
   
-
+```
 Alignment Boundary: 8  
 BoolValue  = Size: 1  Offset: 0  Addr: 0x21015b018  
 IntValue   = Size: 2  Offset: 2  Addr: 0x21015b01a  
 FloatValue = Size: 4  Offset: 4  Addr: 0x21015b01c  
 Next       = Size: 1  Offset: 0  Addr: 0x21015b020
+```
+
 
   
 The alignment boundary for the type struct is 8 bytes as expected.  
@@ -199,7 +205,7 @@ We can see that Go is padding 1 byte between the BoolValue and IntValue fields. 
   
 Let's prove the 8 byte alignment rule by only keeping the 1 byte bool field in the struct:  
   
-
+```go
 package main  
   
 import (  
@@ -236,14 +242,18 @@ func main() {
     fmt.Printf("Next = Size: %d Offset: %d Addr: %v\n",  
         sizeBoolNext, offsetBoolNext, &exampleNext.BoolValue)  
 }
+```
+
 
   
 And the output:  
   
-
+```
 Alignment Boundary: 8  
 BoolValue = Size: 1 Offset: 0 Addr: 0x21015b018  
 Next      = Size: 1 Offset: 0 Addr: 0x21015b020
+```
+
 
   
 Subtract the two addresses and you will see there is an 8 byte difference between the two type struct allocations. Also, the next allocation of memory is starting at the same address from the first example. Go is padding 7 bytes to the struct to maintain the alignment boundary.  
@@ -258,7 +268,7 @@ Go is a type safe language. This means that the compiler will always enforce lik
   
 Imagine if we could do the following. If you try to compile this code you will get an error.  
   
-
+```go
 type Example struct{  
     BoolValue bool  
     IntValue  int16  
@@ -274,6 +284,8 @@ example := &Example{
 var pointer *int32  
 pointer = *int32(&example.IntValue)  
 *pointer = 20
+```
+
 
   
 What I am trying to do is get the memory address of the 2 byte IntValue field and store it in a pointer of type int32. Then I am trying to use the pointer to write a 4 byte integer into that memory address.  If I was able to use that pointer, I would be violating the type rules for the IntValue field and corrupting memory along the way.  
@@ -298,7 +310,7 @@ The Go compiler will always make sure assigning memory and casting is safe.
   
 In this casting example the compiler is going to complain:  
   
-
+```go
 package main  
   
 import (  
@@ -322,6 +334,8 @@ func main() {
   
     fmt.Printf("%d\n", jack)  
 }
+```
+
 
   
 First we create a new type in the system called int32Ext and tell the compiler this new type represents a single int32. Next we create a new variable called jill and assign the value of 10. The compiler allows the value to be assigned because the numeric type is on the right side of the assignment operator. The compiler knows the assignment is safe.  

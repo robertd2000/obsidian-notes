@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/struct/Object Oriented Programming in Go.md",
+                "file": "go/core/types/Understanding Type in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Object Oriented Programming in Go"
+              "title": "Understanding Type in Go"
             }
           },
           {
@@ -214,8 +214,8 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/types/Understanding Type in Go.md",
     "go/core/data types/struct/Object Oriented Programming in Go.md",
+    "go/core/types/Understanding Type in Go.md",
     "go/core/data types/struct/Выравнивание.md",
     "go/core/data types/struct/Типы Struct.md",
     "go/core/data types/maps/Comma OK in GO.md",
