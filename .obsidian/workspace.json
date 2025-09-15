@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/strings/Understanding Strings in Golang.md",
+                "file": "go/core/concurrency/Building High-Performance File Processing Pipelines in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Understanding Strings in Golang"
+              "title": "Building High-Performance File Processing Pipelines in Go"
             }
           },
           {
@@ -214,6 +214,8 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "go/core/data types/strings/Understanding Strings in Golang.md",
+    "go/core/concurrency/Building High-Performance File Processing Pipelines in Go.md",
     "go/core/Conditionals/Select & For Range Channel in Go.md",
     "go/core/Conditionals/Switch Statement.md",
     "go/core/Conditionals/Golang if keyword.md",
@@ -228,7 +230,6 @@
     "go/core/data types/maps/Go maps in action.md",
     "go/core/data types/strings/String types.md",
     "go/core/data types/maps",
-    "go/core/data types/strings/Understanding Strings in Golang.md",
     "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/data types/slices/Array to Slice Conversion.md",
     "go/core/data types/Untitled",
@@ -243,7 +244,6 @@
     "go/core/data types/slices/Go Slices - usage and internals.md",
     "go/core/data types/slices",
     "frontend/вопросы на собес/JS/JS.md",
-    "frontend/вопросы на собес/HTML + CSS/HTML + CSS.md",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
     "frontend/вопросы на собес/TS",
