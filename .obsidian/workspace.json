@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/struct/Padding is hard.md",
+                "file": "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Padding is hard"
+              "title": "Structure Member Alignment, Padding and Data Packing"
             }
           },
           {
@@ -214,10 +214,11 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "go/core/data types/struct/Padding is hard.md",
+    "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "go/core/types/Understanding Type in Go.md",
-    "go/core/data types/struct/Padding is hard.md",
     "go/core/data types/struct/Object Oriented Programming in Go.md",
     "go/core/data types/struct/Выравнивание.md",
     "go/core/data types/struct/Типы Struct.md",
@@ -258,7 +259,6 @@
     "Pasted image 20250828115337.png",
     "Pasted image 20250828115958.png",
     "Pasted image 20250828115910.png",
-    "Pasted image 20250828115744.png",
-    "bagua-bubble.svg"
+    "Pasted image 20250828115744.png"
   ]
 }
