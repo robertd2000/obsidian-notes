@@ -190,7 +190,6 @@ struct name {
 }__attribute__((packed));
 ```
 
-
 ### Example of Structure Packing
 
 ```c
