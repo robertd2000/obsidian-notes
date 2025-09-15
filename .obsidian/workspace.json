@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Building High-Performance File Processing Pipelines in Go.md",
+                "file": "go/core/file io/Mastering File IO in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Building High-Performance File Processing Pipelines in Go"
+              "title": "Mastering File IO in Go"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
+    "go/core/file io/Building High-Performance File Processing Pipelines in Go.md",
+    "go/core/file io/Mastering File IO in Go.md",
+    "go/core/file io",
     "go/core/data types/strings/Understanding Strings in Golang.md",
-    "go/core/concurrency/Building High-Performance File Processing Pipelines in Go.md",
     "go/core/Conditionals/Select & For Range Channel in Go.md",
     "go/core/Conditionals/Switch Statement.md",
     "go/core/Conditionals/Golang if keyword.md",
@@ -243,13 +245,11 @@
     "go/core/data types/arrays/Array in Go.md",
     "go/core/data types/slices/Go Slices - usage and internals.md",
     "go/core/data types/slices",
-    "frontend/вопросы на собес/JS/JS.md",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
     "frontend/вопросы на собес/TS",
     "frontend/вопросы на собес/JS",
     "frontend/вопросы на собес/Browser",
-    "frontend/вопросы на собес/HTML + CSS",
     "Pasted image 20250907174807.png",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
