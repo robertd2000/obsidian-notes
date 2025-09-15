@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/struct/Типы Struct.md",
+                "file": "go/core/data types/struct/Object Oriented Programming in Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Типы Struct"
+              "title": "Object Oriented Programming in Go"
             }
           },
           {
@@ -214,8 +214,11 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/maps/Comma OK in GO.md",
+    "go/core/types/Understanding Type in Go.md",
+    "go/core/data types/struct/Object Oriented Programming in Go.md",
+    "go/core/data types/struct/Выравнивание.md",
     "go/core/data types/struct/Типы Struct.md",
+    "go/core/data types/maps/Comma OK in GO.md",
     "go/core/data types/struct",
     "go/core/types/Deconstructing Type Parameters.md",
     "go/core/data types/maps/Comma-Ok Idiom.md",
@@ -241,9 +244,6 @@
     "go/core/data types/slices/Slice to Array Conversion.md",
     "go/core/data types/slices/Golang make function.md",
     "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
-    "go/core/data types/slices/Creating a slice with make.md",
-    "go/core/data types/slices/Slices.md",
-    "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
