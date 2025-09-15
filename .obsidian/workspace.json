@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/file io/Mastering File IO in Go.md",
+                "file": "go/core/data types/struct/Типы Struct.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mastering File IO in Go"
+              "title": "Типы Struct"
             }
           },
           {
@@ -214,8 +214,14 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/file io/Building High-Performance File Processing Pipelines in Go.md",
+    "go/core/data types/maps/Comma OK in GO.md",
+    "go/core/data types/struct/Типы Struct.md",
+    "go/core/data types/struct",
+    "go/core/types/Deconstructing Type Parameters.md",
+    "go/core/data types/maps/Comma-Ok Idiom.md",
     "go/core/file io/Mastering File IO in Go.md",
+    "go/core/data types/Untitled.md",
+    "go/core/file io/Building High-Performance File Processing Pipelines in Go.md",
     "go/core/file io",
     "go/core/data types/strings/Understanding Strings in Golang.md",
     "go/core/Conditionals/Select & For Range Channel in Go.md",
@@ -225,25 +231,19 @@
     "go/core/Conditionals/How to handle conditional logic in Go.md",
     "go/core/How the Comma Ok Idiom and Package System Work in Go.md",
     "go/core/Conditionals",
-    "go/core/maps/Comma OK in GO.md",
-    "go/core/maps/Comma-Ok Idiom.md",
-    "go/core/maps/Go maps in action.md",
-    "go/core/maps/Maps.md",
+    "go/core/data types/maps/Go maps in action 1.md",
+    "go/core/data types/maps/Maps.md",
     "go/core/data types/maps/Go maps in action.md",
     "go/core/data types/strings/String types.md",
     "go/core/data types/maps",
     "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/data types/slices/Array to Slice Conversion.md",
-    "go/core/data types/Untitled",
     "go/core/data types/slices/Slice to Array Conversion.md",
     "go/core/data types/slices/Golang make function.md",
     "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
     "go/core/data types/slices/Creating a slice with make.md",
     "go/core/data types/slices/Slices.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
-    "задачи.md",
-    "go/core/data types/arrays/Array in Go.md",
-    "go/core/data types/slices/Go Slices - usage and internals.md",
     "go/core/data types/slices",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
