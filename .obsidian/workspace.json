@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
+                "file": "go/core/data types/struct/The empty struct.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Structure Member Alignment, Padding and Data Packing"
+              "title": "The empty struct"
             }
           },
           {
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/struct/Padding is hard.md",
     "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
+    "go/core/data types/struct/The empty struct.md",
+    "go/core/data types/struct/Padding is hard.md",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "go/core/types/Understanding Type in Go.md",
@@ -245,7 +246,6 @@
     "go/core/data types/maps",
     "go/core/data types/strings/Strings, bytes, runes and characters in Go.md",
     "go/core/data types/slices/Array to Slice Conversion.md",
-    "go/core/data types/slices/Slice to Array Conversion.md",
     "go/core/data types/slices",
     "go/core/data types/arrays",
     "frontend/вопросы на собес/React",
