@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/struct/Size and alignment guarantees.md",
+                "file": "go/core/data types/struct/Interfaces and Embedding in Golang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Size and alignment guarantees"
+              "title": "Interfaces and Embedding in Golang"
             }
           },
           {
@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 232.5,
+    "collapsed": true
   },
   "right": {
     "id": "3f73fb5aadaed71d",
@@ -214,8 +215,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/types/A brief history of “type”.md",
     "go/core/data types/struct/Size and alignment guarantees.md",
+    "go/core/data types/struct/Interfaces and Embedding in Golang.md",
+    "go/core/types/A brief history of “type”.md",
     "go/core/data types/struct/alignment.md",
     "go/core/data types/struct/The empty struct.md",
     "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
@@ -244,7 +246,6 @@
     "go/core/Conditionals",
     "go/core/data types/maps/Go maps in action 1.md",
     "go/core/data types/maps/Maps.md",
-    "go/core/data types/maps/Go maps in action.md",
     "go/core/data types/maps",
     "go/core/data types/slices",
     "go/core/data types/arrays",
