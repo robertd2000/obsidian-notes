@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/slices/Срезы(slices) в Go.md",
+                "file": "go/core/Go's Declaration Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Срезы(slices) в Go"
+              "title": "Go's Declaration Syntax"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/slices/Slices.md",
+    "go/core/data types/struct/Untitled.md",
+    "go/core/Go's Declaration Syntax.md",
     "go/core/data types/slices/Срезы(slices) в Go.md",
+    "go/core/data types/slices/Slices.md",
     "go/core/interface/Generic интерфейсы в Go просто, но сложно.md",
     "go/core/data types/struct/Interfaces and Embedding in Golang.md",
     "go/core/data types/struct/Size and alignment guarantees.md",
@@ -242,8 +244,6 @@
     "go/core/Conditionals/Select & For Range Channel in Go.md",
     "go/core/Conditionals/Switch Statement.md",
     "go/core/Conditionals/Golang if keyword.md",
-    "go/core/Conditionals/Switch.md",
-    "go/core/Conditionals/How to handle conditional logic in Go.md",
     "go/core/Conditionals",
     "go/core/data types/maps",
     "go/core/data types/slices",
