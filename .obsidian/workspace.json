@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Go's Declaration Syntax.md",
+                "file": "go/core/functions/Go Variadic Functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Go's Declaration Syntax"
+              "title": "Go Variadic Functions"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/data types/struct/Untitled.md",
     "go/core/Go's Declaration Syntax.md",
+    "go/core/functions/Go Variadic Functions.md",
+    "go/core/functions",
+    "go/core/data types/struct/Untitled.md",
     "go/core/data types/slices/Срезы(slices) в Go.md",
     "go/core/data types/slices/Slices.md",
     "go/core/interface/Generic интерфейсы в Go просто, но сложно.md",
@@ -243,7 +245,6 @@
     "go/core/data types/strings/Understanding Strings in Golang.md",
     "go/core/Conditionals/Select & For Range Channel in Go.md",
     "go/core/Conditionals/Switch Statement.md",
-    "go/core/Conditionals/Golang if keyword.md",
     "go/core/Conditionals",
     "go/core/data types/maps",
     "go/core/data types/slices",
@@ -251,7 +252,6 @@
     "frontend/вопросы на собес/React",
     "frontend/вопросы на собес/TS",
     "frontend/вопросы на собес/JS",
-    "frontend/вопросы на собес/Browser",
     "Pasted image 20250907174807.png",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
