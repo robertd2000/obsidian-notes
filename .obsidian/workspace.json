@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/pointers/Understanding Pointers and Memory Allocation.md",
+                "file": "go/core/allocation/Compiler And Runtime Optimizations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Understanding Pointers and Memory Allocation"
+              "title": "Compiler And Runtime Optimizations"
             }
           },
           {
@@ -214,8 +214,12 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/pointers/Using Pointers In Go.md",
+    "go/core/allocation/Go Escape Analysis Flaws.md",
+    "go/core/allocation/Compiler And Runtime Optimizations.md",
+    "go/core/allocation/stack/Contiguous stacks.md",
     "go/core/pointers/Understanding Pointers and Memory Allocation.md",
+    "go/core/allocation/stack",
+    "go/core/pointers/Using Pointers In Go.md",
     "go/core/pointers/Language Mechanics On Stacks And Pointers.md",
     "go/core/pointers/Pointers.md",
     "go/core/pointers/Указатели.md",
@@ -243,15 +247,11 @@
     "go/core/data types/slices/Slices.md",
     "go/core/interface/Generic интерфейсы в Go просто, но сложно.md",
     "go/core/data types/struct/Interfaces and Embedding in Golang.md",
-    "go/core/data types/struct/Size and alignment guarantees.md",
-    "go/core/types/A brief history of “type”.md",
-    "go/core/data types/struct/alignment.md",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "go/core/data types/struct",
     "go/core/file io",
     "go/core/Conditionals",
-    "go/core/data types/maps",
     "Pasted image 20250907174807.png",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
