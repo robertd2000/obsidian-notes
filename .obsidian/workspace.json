@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/functions/Go function multiple returns.md",
+                "file": "go/core/functions/Anonymous Functions in Golang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Go function multiple returns"
+              "title": "Anonymous Functions in Golang"
             }
           },
           {
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/functions/Go Variadic Functions.md",
     "go/core/functions/Go function multiple returns.md",
+    "go/core/functions/Anonymous Functions in Golang.md",
+    "go/core/functions/Go Variadic Functions.md",
     "go/core/Go's Declaration Syntax.md",
     "go/core/functions",
     "go/core/data types/struct/Untitled.md",
@@ -244,7 +245,6 @@
     "go/core/file io/Building High-Performance File Processing Pipelines in Go.md",
     "go/core/file io",
     "go/core/data types/strings/Understanding Strings in Golang.md",
-    "go/core/Conditionals/Select & For Range Channel in Go.md",
     "go/core/Conditionals",
     "go/core/data types/maps",
     "go/core/data types/slices",
