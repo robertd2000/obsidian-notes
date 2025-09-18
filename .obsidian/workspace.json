@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/pointers/Указатели.md",
+                "file": "go/core/pointers/Language Mechanics On Stacks And Pointers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Указатели"
+              "title": "Language Mechanics On Stacks And Pointers"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/build/Compile and install the application.md",
+    "go/core/pointers/Pointers.md",
+    "go/core/pointers/Language Mechanics On Stacks And Pointers.md",
     "go/core/pointers/Указатели.md",
+    "go/core/build/Compile and install the application.md",
     "go/core/build/build.md",
     "go/core/functions/Call by Value/Call by Value.md",
     "go/core/build",
@@ -244,10 +246,8 @@
     "go/core/data types/struct/alignment.md",
     "go/core/data types/struct/The empty struct.md",
     "go/core/data types/struct/Structure Member Alignment, Padding and Data Packing.md",
-    "go/core/data types/struct/Padding is hard.md",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
-    "go/core/types/Understanding Type in Go.md",
     "go/core/data types/struct",
     "go/core/file io",
     "go/core/Conditionals",
