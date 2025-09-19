@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/allocation/stack/Стек (Stack) в Go.md",
+                "file": "backend/sql/index/Индексы в SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Стек (Stack) в Go"
+              "title": "Индексы в SQL"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
+    "backend/sql/index/Индексы в SQL.md",
+    "backend/sql/index",
+    "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
     "go/core/pointers/Escape Analysis и Inlining в Go.md",
     "go/core/pointers/Что такое указатели в Go.md",
     "go/core/garbage collector/GC Pacer Redesign.md",
@@ -246,12 +248,10 @@
     "go/core/functions/Understanding Anonymous Functions in Go.md",
     "go/core/functions/Closures",
     "go/core/functions/Anonymous Functions in Golang.md",
-    "go/core/functions/Go function multiple returns.md",
     "go/core/functions",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "go/core/data types/struct",
-    "go/core/file io",
     "Pasted image 20250907174807.png",
     "Pasted image 20250831182140.png",
     "Pasted image 20250831182111.png",
