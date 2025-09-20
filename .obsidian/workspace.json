@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/methods/Pointer receivers.md",
+                "file": "go/core/methods/How to define methods with pointer receivers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pointer receivers"
+              "title": "How to define methods with pointer receivers"
             }
           },
           {
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/methods/Methods vs Functions.md",
     "go/core/methods/Pointer receivers.md",
+    "go/core/methods/How to define methods with pointer receivers.md",
+    "go/core/methods/Methods vs Functions.md",
     "backend/sql/index/Индексы в SQL.md",
     "go/core/methods",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
@@ -246,7 +247,6 @@
     "go/core/functions/Named Return Values/Named Return Values.md",
     "go/core/functions/Closures/Closures in Golang.md",
     "go/core/functions/Named Return Values",
-    "go/core/functions/Closures/Closures.md",
     "go/core/functions/Closures/Untitled",
     "go/core/functions/Closures",
     "go/core/functions",
