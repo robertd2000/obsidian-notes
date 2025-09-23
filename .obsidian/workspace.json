@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/interface/Интерфейсы.md",
+                "file": "go/core/Constants/Constants.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Интерфейсы"
+              "title": "Constants"
             }
           },
           {
@@ -214,8 +214,15 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/interface/Type assertions/Type assertions.md",
+    "go/задачи/авито задача алгорритм.md",
+    "go/core/Constants/Constants.md",
+    "go/core/Constants",
+    "go/вопросы/софты в озон.md",
+    "темы для изучения/Untitled.md",
+    "go/core/interface/Interfaces.md",
+    "go/core/interface/Interfaces Data Structures.md",
     "go/core/interface/Интерфейсы.md",
+    "go/core/interface/Type assertions/Type assertions.md",
     "go/core/interface/Type switches/Type switches.md",
     "go/core/interface/Type switches",
     "go/core/interface/Embedding Interfaces/Embedding Interfaces deepseek.md",
@@ -226,7 +233,6 @@
     "go/core/interface/Embedding Interfaces",
     "go/core/interface/empty interface/The empty interface.md",
     "go/core/interface/empty interface",
-    "go/core/interface/Interfaces.md",
     "go/core/interface/Implementing Interfaces in Go.md",
     "go/core/interface/Understanding Interfaces in Go.md",
     "go/core/methods/How to define methods with pointer receivers.md",
@@ -241,15 +247,9 @@
     "go/core/pointers/Что такое указатели в Go.md",
     "go/core/garbage collector/GC Pacer Redesign.md",
     "go/core/garbage collector/Go GC - Prioritizing low latency and simplicity.md",
-    "go/core/garbage collector/Garbage Collection In Go  Part I - Semantics.md",
-    "go/core/allocation/Compiler And Runtime Optimizations.md",
     "go/core/garbage collector",
-    "go/core/allocation/Go Escape Analysis Flaws.md",
-    "go/core/allocation/stack/Contiguous stacks.md",
-    "go/core/pointers/Understanding Pointers and Memory Allocation.md",
     "go/core/allocation/stack",
     "go/core/build",
-    "go/core/functions/Call by Value",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
