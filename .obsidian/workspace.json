@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/functions/Функции.md",
+                "file": "backend/sql/SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Функции"
+              "title": "SQL"
             }
           },
           {
@@ -214,9 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/Constants/Constants.md",
-    "go/core/functions/Функции.md",
     "go/задачи/авито задача алгорритм.md",
+    "backend/sql/SQL.md",
+    "go/core/functions/Функции.md",
+    "go/core/Constants/Constants.md",
     "go/core/Constants",
     "go/вопросы/софты в озон.md",
     "темы для изучения/Untitled.md",
@@ -246,7 +247,6 @@
     "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
     "go/core/pointers/Escape Analysis и Inlining в Go.md",
     "go/core/pointers/Что такое указатели в Go.md",
-    "go/core/garbage collector/GC Pacer Redesign.md",
     "go/core/garbage collector",
     "go/core/allocation/stack",
     "go/core/build",
