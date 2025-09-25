@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/SQL.md",
+                "file": "go/core/Generics/May 9, 2022 ⋅ 7 min read Understanding generics in Go 1.18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL"
+              "title": "May 9, 2022 ⋅ 7 min read Understanding generics in Go 1.18"
             }
           },
           {
@@ -214,8 +214,12 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/задачи/авито задача алгорритм.md",
+    "go/core/Generics/Generics.md",
+    "go/core/Generics/May 9, 2022 ⋅ 7 min read Understanding generics in Go 1.18.md",
+    "go/задачи/Тех собеседование В WB.md",
     "backend/sql/SQL.md",
+    "go/core/Generics",
+    "go/задачи/авито задача алгорритм.md",
     "go/core/functions/Функции.md",
     "go/core/Constants/Constants.md",
     "go/core/Constants",
@@ -244,12 +248,8 @@
     "go/core/methods",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
     "backend/sql/index",
-    "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
-    "go/core/pointers/Escape Analysis и Inlining в Go.md",
-    "go/core/pointers/Что такое указатели в Go.md",
     "go/core/garbage collector",
     "go/core/allocation/stack",
-    "go/core/build",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
