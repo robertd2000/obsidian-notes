@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/slice/SliceTricks.md",
+                "file": "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SliceTricks"
+              "title": "Arrays, slices (and strings) The mechanics of append"
             }
           },
           {
@@ -214,8 +214,9 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/slice/Срезы.md",
     "go/core/slice/SliceTricks.md",
+    "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
+    "go/core/slice/Срезы.md",
     "go/core/array/Массивы.md",
     "go/core/slice",
     "go/core/Generics/Everything You Always Wanted to Know About Type Inference - And a Little Bit More.md",
@@ -247,7 +248,6 @@
     "go/core/interface/Embedding Interfaces",
     "go/core/interface/empty interface/The empty interface.md",
     "go/core/interface/empty interface",
-    "go/core/interface/Implementing Interfaces in Go.md",
     "go/core/methods",
     "backend/sql/index",
     "Pasted image 20250915105937.png",
