@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/array/Массивы.md",
+                "file": "go/core/slice/Срезы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Массивы"
+              "title": "Срезы"
             }
           },
           {
@@ -214,8 +214,10 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/Generics/Everything You Always Wanted to Know About Type Inference - And a Little Bit More.md",
     "go/core/array/Массивы.md",
+    "go/core/slice/Срезы.md",
+    "go/core/slice",
+    "go/core/Generics/Everything You Always Wanted to Know About Type Inference - And a Little Bit More.md",
     "go/core/array",
     "go/core/interface/Interfaces in Golang.md",
     "go/core/Generics/A walkthrough of type constraints in Go.md",
@@ -246,10 +248,8 @@
     "go/core/interface/empty interface",
     "go/core/interface/Implementing Interfaces in Go.md",
     "go/core/interface/Understanding Interfaces in Go.md",
-    "go/core/methods/How to define methods with pointer receivers.md",
     "go/core/methods",
     "backend/sql/index",
-    "go/core/garbage collector",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
