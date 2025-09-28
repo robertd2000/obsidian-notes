@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/Modules/go mod.md",
+                "file": "go/core/Modules/Packages/Publishing a module.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "go mod"
+              "title": "Publishing a module"
             }
           },
           {
@@ -214,8 +214,16 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/Modules/Create a Go module.md",
+    "go/core/Modules/Packages/Import and Use a Third-Party Package in Golang.md",
+    "go/core/Modules/Packages/Publishing a module.md",
+    "go/core/Modules/Packages/A Comprehensive Guide to Importing and Using Packages in Go.md",
+    "go/core/Modules/Packages/os package.md",
+    "go/core/Modules/Packages/Packages.md",
+    "go/core/Modules/go mod vendor.md",
+    "go/core/Modules/Packages",
+    "go/core/Modules/What does go mod tidy do in Go.md",
     "go/core/Modules/go mod.md",
+    "go/core/Modules/Create a Go module.md",
     "go/core/error/Reading Go Stack Traces.md",
     "go/core/Modules",
     "go/core/error/Diagnostics.md",
@@ -237,19 +245,11 @@
     "go/core/Generics/May 9, 2022 ⋅ 7 min read Understanding generics in Go 1.18.md",
     "go/core/Generics/Generics.md",
     "go/задачи/Тех собеседование В WB.md",
-    "backend/sql/SQL.md",
     "go/core/Generics",
-    "go/задачи/авито задача алгорритм.md",
-    "go/core/functions/Функции.md",
-    "go/core/Constants/Constants.md",
     "go/core/Constants",
-    "go/вопросы/софты в озон.md",
-    "темы для изучения/Untitled.md",
-    "go/core/interface/Interfaces.md",
     "go/core/interface/Type switches",
     "go/core/interface/Type assertions",
     "go/core/interface/Embedding Interfaces",
-    "go/core/interface/empty interface",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
