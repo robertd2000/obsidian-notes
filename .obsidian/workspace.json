@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/map/Карты.md",
+                "file": "go/core/map/How the Go runtime implements maps efficiently.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Карты"
+              "title": "How the Go runtime implements maps efficiently"
             }
           },
           {
@@ -214,8 +214,11 @@
   },
   "active": "a8348fa9bbf82b0e",
   "lastOpenFiles": [
-    "go/core/Modules/Packages/Publishing a module.md",
+    "go/core/map/Go maps in action.md",
+    "go/core/map/How the Go runtime implements maps efficiently.md",
+    "go/core/map/Macro View of Map Internals In Go.md",
     "go/core/map/Карты.md",
+    "go/core/Modules/Packages/Publishing a module.md",
     "go/core/map",
     "go/core/Modules/Packages/Import and Use a Third-Party Package in Golang.md",
     "go/core/Modules/Packages/A Comprehensive Guide to Importing and Using Packages in Go.md",
@@ -243,9 +246,6 @@
     "go/core/Generics/Everything You Always Wanted to Know About Type Inference - And a Little Bit More.md",
     "go/core/array",
     "go/core/interface/Interfaces in Golang.md",
-    "go/core/Generics/A walkthrough of type constraints in Go.md",
-    "go/core/Generics/May 9, 2022 ⋅ 7 min read Understanding generics in Go 1.18.md",
-    "go/core/Generics/Generics.md",
     "go/core/Generics",
     "go/core/Constants",
     "go/core/interface/Type switches",
