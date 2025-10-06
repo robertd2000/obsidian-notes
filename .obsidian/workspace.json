@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/methods/Escape-Analysis Flaws.md",
+                "file": "go/core/interface/Hyrum's Law.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Escape-Analysis Flaws"
+              "title": "Hyrum's Law"
             }
           },
           {
@@ -257,8 +257,15 @@
   },
   "active": "4f32096b4e3436ba",
   "lastOpenFiles": [
-    "go/core/methods/Methods.md",
+    "go/core/interface/Interface Values Are Valueless.md",
+    "go/core/interface/Hyrum's Law.md",
+    "go/core/interface/Abstraction Considered Harmful.md",
+    "go/core/interface/Interface pollution in Go.md",
+    "go/core/interface/The Laws of Reflection.md",
+    "go/core/interface/Интерфейсы.md",
+    "go/core/interface/Интерфейсы DS.md",
     "go/core/methods/Escape-Analysis Flaws.md",
+    "go/core/methods/Methods.md",
     "go/core/methods/Methods, Interfaces and Embedded Types in Go.md",
     "go/core/concurrency/Context/Pipelines and cancellation.md",
     "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
@@ -282,14 +289,7 @@
     "go/core/concurrency/Goroutines/Goroutines.md",
     "go/core/concurrency/Goroutines",
     "go/core/map/How the Go runtime implements maps efficiently.md",
-    "go/core/map/Go maps in action.md",
-    "go/core/map/Macro View of Map Internals In Go.md",
-    "go/core/map/Карты.md",
-    "go/core/Modules/Packages/Publishing a module.md",
     "go/core/map",
-    "go/core/Modules/Packages/Import and Use a Third-Party Package in Golang.md",
-    "go/core/Modules/Packages/A Comprehensive Guide to Importing and Using Packages in Go.md",
-    "go/core/Modules/Packages/os package.md",
     "go/core/Modules/Packages",
     "go/core/Modules",
     "go/core/error",
