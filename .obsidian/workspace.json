@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
+                "file": "go/core/concurrency/Context/Pipelines and cancellation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to use the context.Done() method in Go to signal goroutine completion"
+              "title": "Pipelines and cancellation"
             }
           },
           {
@@ -243,8 +243,9 @@
   },
   "active": "3d1bbff9506ed8a3",
   "lastOpenFiles": [
-    "go/core/concurrency/Context/Understanding Golang Context.md",
     "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
+    "go/core/concurrency/Context/Pipelines and cancellation.md",
+    "go/core/concurrency/Context/Understanding Golang Context.md",
     "go/core/concurrency/Context/Canceling in-progress operations.md",
     "go/core/concurrency/Context/Context.md",
     "go/core/concurrency/sync/WaitGroup.md",
@@ -276,7 +277,6 @@
     "go/core/Modules/go mod vendor.md",
     "go/core/Modules/Packages",
     "go/core/Modules/What does go mod tidy do in Go.md",
-    "go/core/Modules/go mod.md",
     "go/core/Modules",
     "go/core/error",
     "Pasted image 20250915105937.png",
