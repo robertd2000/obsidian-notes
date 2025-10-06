@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Context/Context.md",
+                "file": "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context"
+              "title": "How to use the context.Done() method in Go to signal goroutine completion"
             }
           },
           {
@@ -243,8 +243,11 @@
   },
   "active": "3d1bbff9506ed8a3",
   "lastOpenFiles": [
-    "go/core/concurrency/sync/WaitGroup.md",
+    "go/core/concurrency/Context/Understanding Golang Context.md",
+    "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
+    "go/core/concurrency/Context/Canceling in-progress operations.md",
     "go/core/concurrency/Context/Context.md",
+    "go/core/concurrency/sync/WaitGroup.md",
     "go/core/concurrency/Context",
     "go/core/concurrency/sync/What is Mutex.md",
     "go/core/concurrency/sync/RWMutex.md",
@@ -274,10 +277,7 @@
     "go/core/Modules/Packages",
     "go/core/Modules/What does go mod tidy do in Go.md",
     "go/core/Modules/go mod.md",
-    "go/core/Modules/Create a Go module.md",
-    "go/core/error/Reading Go Stack Traces.md",
     "go/core/Modules",
-    "go/core/error/Diagnostics.md",
     "go/core/error",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
