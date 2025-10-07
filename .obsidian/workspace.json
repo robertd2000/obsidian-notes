@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/Вопросы Авито платформа.md",
+                "file": "go/вопросы/Вопросы Middle Go Самокат.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы Авито платформа"
+              "title": "Вопросы Middle Go Самокат"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Goroutines/Внутренности планировщика Go.md",
+                "file": "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Внутренности планировщика Go"
+              "title": "Что такое горутины и каков их размер"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,11 +184,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb762300b57a9f4b",
+  "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "go/core/concurrency/Goroutines/Горутины.md",
-    "go/core/concurrency/Goroutines/Внутренности планировщика Go.md",
     "go/вопросы/Вопросы Авито платформа.md",
+    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "go/core/concurrency/scheduler/Scheduling In Go Part I - OS Scheduler.md",
+    "go/core/concurrency/scheduler/Go's work-stealing scheduler.md",
+    "go/core/concurrency/Goroutines/Why is a Goroutine’s stack infinite.md",
+    "go/core/concurrency/scheduler",
+    "go/core/concurrency/Goroutines/Горутины.md",
     "go/core/interface/Интерфейсы DS.md",
     "go/core/interface/Интерфейсы.md",
     "go/core/interface/Interfaces.md",
@@ -210,19 +214,14 @@
     "go/core/concurrency/sync/WaitGroup.md",
     "go/core/concurrency/Context",
     "go/core/concurrency/sync/What is Mutex.md",
-    "go/core/concurrency/sync/RWMutex.md",
-    "go/core/concurrency/worker pool/How to Write a Worker Pool.md",
     "go/core/concurrency/sync",
-    "go/core/concurrency/Select/Select.md",
     "go/core/concurrency/worker pool",
-    "go/core/concurrency/Select/Select Statement in Go (Golang).md",
     "go/core/concurrency/Select",
     "go/core/concurrency/channels",
     "go/core/concurrency/Goroutines",
     "go/core/map",
     "go/core/Modules/Packages",
     "go/core/Modules",
-    "go/core/error",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
