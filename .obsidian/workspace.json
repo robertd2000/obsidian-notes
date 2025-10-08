@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+                "file": "go/вопросы/Вопросы Авито платформа.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Что такое горутины и каков их размер"
+              "title": "Вопросы Авито платформа"
             }
           }
         ]
@@ -187,13 +187,16 @@
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
     "go/вопросы/Вопросы Авито платформа.md",
-    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/вопросы/Вопросы Middle Go Самокат.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/core/concurrency/Goroutines/Goroutines.md",
+    "go/core/concurrency/Goroutines/Горутины.md",
+    "go/core/error/Error handling and Go.md",
     "go/core/concurrency/scheduler/Scheduling In Go Part I - OS Scheduler.md",
     "go/core/concurrency/scheduler/Go's work-stealing scheduler.md",
     "go/core/concurrency/Goroutines/Why is a Goroutine’s stack infinite.md",
     "go/core/concurrency/scheduler",
-    "go/core/concurrency/Goroutines/Горутины.md",
     "go/core/interface/Интерфейсы DS.md",
     "go/core/interface/Интерфейсы.md",
     "go/core/interface/Interfaces.md",
@@ -210,10 +213,7 @@
     "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
     "go/core/concurrency/Context/Understanding Golang Context.md",
     "go/core/concurrency/Context/Canceling in-progress operations.md",
-    "go/core/concurrency/Context/Context.md",
-    "go/core/concurrency/sync/WaitGroup.md",
     "go/core/concurrency/Context",
-    "go/core/concurrency/sync/What is Mutex.md",
     "go/core/concurrency/sync",
     "go/core/concurrency/worker pool",
     "go/core/concurrency/Select",
