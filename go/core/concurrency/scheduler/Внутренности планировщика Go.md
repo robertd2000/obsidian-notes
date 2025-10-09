@@ -8,38 +8,22 @@ https://habr.com/ru/articles/858490/
 
 ```go
   
-
 func main() {
-
     runtime.GOMAXPROCS(1)
 
-  
-
     var wg sync.WaitGroup
-
-  
 
     wg.Add(5)
 
     for i := 0; i < 5; i++ {
-
         go func() {
-
             fmt.Println(i)
-
             wg.Done()
-
         }()
-
     }
 
-  
-
     wg.Wait()
-
 }
-
-  
 
 // 4 0 1 2 3
 ```
