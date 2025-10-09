@@ -188,6 +188,8 @@
   "lastOpenFiles": [
     "go/вопросы/Вопросы Авито платформа.md",
     "go/вопросы/Вопросы Middle Go Самокат.md",
+    "go/core/concurrency/data race and race condition.md",
+    "go/core/concurrency/Context/Canceling in-progress operations.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
     "go/core/concurrency/Goroutines/Goroutines.md",
@@ -211,8 +213,6 @@
     "go/core/methods/Methods, Interfaces and Embedded Types in Go.md",
     "go/core/concurrency/Context/Pipelines and cancellation.md",
     "go/core/concurrency/Context/How to use the context.Done() method in Go to signal goroutine completion.md",
-    "go/core/concurrency/Context/Understanding Golang Context.md",
-    "go/core/concurrency/Context/Canceling in-progress operations.md",
     "go/core/concurrency/Context",
     "go/core/concurrency/sync",
     "go/core/concurrency/worker pool",
