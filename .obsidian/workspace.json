@@ -49,8 +49,7 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,11 +198,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45d69b1b423ec3ec",
+  "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "go/core/interface/Интерфейсы.md",
     "go/вопросы/Вопросы Авито платформа.md",
     "go/core/interface/Погружение в интерфейсы Go.md",
-    "go/core/interface/Интерфейсы.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.1. Сортировка пузырьком.md",
     "go/вопросы/Вопросы Middle Go Самокат.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
