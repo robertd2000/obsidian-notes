@@ -3,18 +3,18 @@ https://www.youtube.com/watch?v=-8JlOr3Z0eA
 
 
 
-## 1 Зачем закрывать тело запроса
-## 2 Когда использовать буферизированный канал
-## 3 awasp top 10
-## 4 sql injections
-## 5 loot box / tranactional loot box
-## 6 join sql
-## 7 left/right/inner join sql
-## 8 sql index
-## 9 виды индексов
-## 10 авто индексы
-## 11 sql explain
-## 12 партиционыирование sql
+# 1 Зачем закрывать тело запроса
+# 2 Когда использовать буферизированный канал
+# 3 awasp top 10
+# 4 sql injections
+# 5 loot box / tranactional loot box
+# 6 join sql
+# 7 left/right/inner join sql
+# 8 sql index
+# 9 виды индексов
+# 10 авто индексы
+# 11 sql explain
+# 12 партиционыирование sql
 ## 13
 
 [  
