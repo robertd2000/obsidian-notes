@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.4. Сортировка кучей.md",
+                "file": "go/вопросы/Вопросы OZON 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.4. Сортировка кучей"
+              "title": "Вопросы OZON 2"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/interface/Интерфейсы.md",
+                "file": "go/core/concurrency/Context/Context.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Интерфейсы"
+              "title": "Context"
             }
           },
           {
@@ -200,24 +200,29 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.3. Сортировка вставками.md",
+    "go/core/concurrency/Context/Context.md",
+    "go/core/interface/Интерфейсы.md",
+    "go/вопросы/Вопросы OZON 2.md",
+    "go/core/data types/struct/The empty struct.md",
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/Сортировки.md",
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.6. Цифровая сортировка.md",
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.5. Сортировка подсчетом.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.4. Сортировка кучей.md",
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.1. Сортировка пузырьком.md",
+    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1.1. Асимптотический анализ.md",
+    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1.2. Мастер-теорема.md",
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.3. Сортировка вставками.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.2. Сортировка выбором.md",
     "go/вопросы/Вопросы Авито платформа.md",
-    "go/core/interface/Интерфейсы.md",
     "go/core/interface/Погружение в интерфейсы Go.md",
-    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.1. Сортировка пузырьком.md",
     "go/вопросы/Вопросы Middle Go Самокат.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/core/concurrency/data race and race condition.md",
     "go/core/concurrency/scheduler/Scalable Go Scheduler Design Doc.md",
     "go/core/concurrency/scheduler/Work-stealing планировщик в Go.md",
-    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/Сортировки.md",
-    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1.2. Мастер-теорема.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
     "Pasted image 20251009111203.png",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/Вычислительная сложность.md",
-    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1.1. Асимптотический анализ.md",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность",
     "Алгоритмика/1. Анализ алгоритмов",
@@ -227,12 +232,7 @@
     "go/core/concurrency/Goroutines/Goroutines.md",
     "go/core/concurrency/Goroutines/Горутины.md",
     "go/core/error/Error handling and Go.md",
-    "go/core/concurrency/scheduler/Scheduling In Go Part I - OS Scheduler.md",
-    "go/core/concurrency/scheduler/Go's work-stealing scheduler.md",
-    "go/core/concurrency/Goroutines/Why is a Goroutine’s stack infinite.md",
     "go/core/concurrency/scheduler",
-    "go/core/interface/Интерфейсы DS.md",
-    "go/core/interface/Interfaces.md",
     "go/core/concurrency/Context",
     "go/core/concurrency/sync",
     "go/core/concurrency/worker pool",
