@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Context/Context.md",
+                "file": "go/задачи/авито задача алгорритм.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context"
+              "title": "авито задача алгорритм"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,14 +199,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7dca43435214a1db",
+  "active": "45d69b1b423ec3ec",
   "lastOpenFiles": [
+    "go/core/concurrency/Context/Context.md",
+    "go/вопросы/Тех собеседование В OZON.md",
     "go/вопросы/Вопросы OZON 2.md",
     "go/вопросы/софты в озон.md",
     "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
     "go/вопросы/Тех собеседование В WB.md",
-    "go/вопросы/Тех собеседование В OZON.md",
-    "go/core/concurrency/Context/Context.md",
     "go/core/interface/Интерфейсы.md",
     "go/core/data types/struct/The empty struct.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/Сортировки.md",
