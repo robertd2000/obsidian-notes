@@ -1150,6 +1150,454 @@ safety check
 Никогда не доверяйте пользовательскому вводу и всегда используйте параметризованные запросы!
 # 5. loot box / tranactional loot box
 # 6. join sql
+
+## 🎯 Что такое JOIN
+
+**JOIN** — операция SQL, которая объединяет строки из двух или более таблиц на основе связанного столбца между ними.
+
+## 📊 Типы JOIN
+
+### **Базовые типы JOIN**
+```sql
+-- INNER JOIN - только совпадающие строки
+SELECT * FROM table1 
+INNER JOIN table2 ON table1.id = table2.table1_id;
+
+-- LEFT JOIN - все строки из левой таблицы + совпадающие из правой
+SELECT * FROM table1 
+LEFT JOIN table2 ON table1.id = table2.table1_id;
+
+-- RIGHT JOIN - все строки из правой таблицы + совпадающие из левой  
+SELECT * FROM table1 
+RIGHT JOIN table2 ON table1.id = table2.table1_id;
+
+-- FULL OUTER JOIN - все строки из обеих таблиц
+SELECT * FROM table1 
+FULL OUTER JOIN table2 ON table1.id = table2.table1_id;
+
+-- CROSS JOIN - декартово произведение (все комбинации)
+SELECT * FROM table1 
+CROSS JOIN table2;
+```
+
+## 🗄️ Пример базы данных
+
+```sql
+-- Таблица пользователей
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Таблица заказов
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    amount DECIMAL(10,2),
+    status VARCHAR(20),
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Таблица товаров
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(10,2)
+);
+
+-- Таблица связи заказов и товаров
+CREATE TABLE order_items (
+    order_id INTEGER REFERENCES orders(id),
+    product_id INTEGER REFERENCES products(id),
+    quantity INTEGER DEFAULT 1,
+    PRIMARY KEY (order_id, product_id)
+);
+```
+
+## 🔍 INNER JOIN
+
+### **Базовый INNER JOIN**
+```sql
+-- Пользователи с их заказами
+SELECT 
+    u.name,
+    u.email,
+    o.amount,
+    o.status
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id;
+```
+
+### **INNER JOIN с несколькими таблицами**
+```sql
+-- Детали заказов с информацией о пользователях и товарах
+SELECT 
+    u.name AS customer_name,
+    o.id AS order_id,
+    p.name AS product_name,
+    oi.quantity,
+    (p.price * oi.quantity) AS total_price
+FROM orders o
+INNER JOIN users u ON o.user_id = u.id
+INNER JOIN order_items oi ON o.id = oi.order_id
+INNER JOIN products p ON oi.product_id = p.id;
+```
+
+### **INNER JOIN с фильтрацией**
+```sql
+-- Только завершенные заказы
+SELECT 
+    u.name,
+    o.amount,
+    o.created_at
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id
+WHERE o.status = 'completed'
+ORDER BY o.amount DESC;
+```
+
+## 🔍 LEFT JOIN
+
+### **Базовый LEFT JOIN**
+```sql
+-- Все пользователи и их заказы (если есть)
+SELECT 
+    u.name,
+    u.email,
+    COALESCE(o.amount, 0) AS order_amount,
+    COALESCE(o.status, 'no orders') AS order_status
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id;
+```
+
+### **LEFT JOIN для поиска отсутствующих данных**
+```sql
+-- Пользователи без заказов
+SELECT 
+    u.id,
+    u.name,
+    u.email
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id
+WHERE o.id IS NULL;
+```
+
+### **LEFT JOIN с агрегацией**
+```sql
+-- Количество заказов у каждого пользователя
+SELECT 
+    u.name,
+    COUNT(o.id) AS order_count,
+    COALESCE(SUM(o.amount), 0) AS total_spent
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id
+GROUP BY u.id, u.name
+ORDER BY total_spent DESC;
+```
+
+## 🔍 MULTIPLE JOIN
+
+### **Сложные связи между таблицами**
+```sql
+-- Полная информация о заказах
+SELECT 
+    u.name AS customer,
+    o.id AS order_id,
+    o.created_at AS order_date,
+    p.name AS product,
+    oi.quantity,
+    c.name AS category
+FROM orders o
+INNER JOIN users u ON o.user_id = u.id
+INNER JOIN order_items oi ON o.id = oi.order_id
+INNER JOIN products p ON oi.product_id = p.id
+LEFT JOIN categories c ON p.category_id = c.id
+WHERE o.status = 'completed'
+ORDER BY o.created_at DESC;
+```
+
+## 🔍 SELF JOIN
+
+### **Иерархические данные**
+```sql
+-- Таблица сотрудников с менеджерами
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    manager_id INTEGER REFERENCES employees(id)
+);
+
+-- Сотрудники и их менеджеры
+SELECT 
+    e.name AS employee_name,
+    m.name AS manager_name
+FROM employees e
+LEFT JOIN employees m ON e.manager_id = m.id;
+```
+
+### **Поиск пар**
+```sql
+-- Найти пользователей с одинаковыми именами
+SELECT 
+    u1.name,
+    u1.email AS email1,
+    u2.email AS email2
+FROM users u1
+INNER JOIN users u2 ON u1.name = u2.name AND u1.id < u2.id;
+```
+
+## 🔍 CROSS JOIN
+
+### **Декартово произведение**
+```sql
+-- Все комбинации размеров и цветов
+SELECT 
+    s.size_name,
+    c.color_name
+FROM sizes s
+CROSS JOIN colors c;
+```
+
+### **Генерация данных**
+```sql
+-- Генерация дат на неделю вперед
+WITH dates AS (
+    SELECT CURRENT_DATE + i AS date
+    FROM generate_series(0, 6) AS i
+)
+SELECT 
+    d.date,
+    u.name
+FROM dates d
+CROSS JOIN users u
+ORDER BY d.date, u.name;
+```
+
+## 🔍 JOIN с агрегатными функциями
+
+### **Статистика по пользователям**
+```sql
+SELECT 
+    u.id,
+    u.name,
+    COUNT(o.id) AS total_orders,
+    SUM(o.amount) AS total_amount,
+    AVG(o.amount) AS avg_order_amount,
+    MAX(o.created_at) AS last_order_date
+FROM users u
+LEFT JOIN orders o ON u.id = o.user_id
+GROUP BY u.id, u.name
+HAVING COUNT(o.id) > 0  -- Только пользователи с заказами
+ORDER BY total_amount DESC;
+```
+
+### **Топ товаров по продажам**
+```sql
+SELECT 
+    p.name AS product_name,
+    SUM(oi.quantity) AS total_sold,
+    SUM(oi.quantity * p.price) AS total_revenue,
+    COUNT(DISTINCT o.id) AS order_count
+FROM products p
+INNER JOIN order_items oi ON p.id = oi.product_id
+INNER JOIN orders o ON oi.order_id = o.id
+WHERE o.status = 'completed'
+GROUP BY p.id, p.name
+ORDER BY total_revenue DESC
+LIMIT 10;
+```
+
+## 🔍 JOIN с подзапросами
+
+### **JOIN с производными таблицами**
+```sql
+-- Пользователи с их последним заказом
+SELECT 
+    u.name,
+    u.email,
+    latest_order.amount,
+    latest_order.created_at
+FROM users u
+INNER JOIN (
+    SELECT 
+        user_id,
+        amount,
+        created_at,
+        ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC) as rn
+    FROM orders
+) latest_order ON u.id = latest_order.user_id AND latest_order.rn = 1;
+```
+
+### **JOIN с CTE (Common Table Expressions)**
+```sql
+WITH user_stats AS (
+    SELECT 
+        user_id,
+        COUNT(*) AS order_count,
+        SUM(amount) AS total_spent
+    FROM orders
+    WHERE status = 'completed'
+    GROUP BY user_id
+),
+top_users AS (
+    SELECT 
+        user_id,
+        total_spent
+    FROM user_stats
+    WHERE total_spent > 1000
+)
+SELECT 
+    u.name,
+    us.order_count,
+    us.total_spent
+FROM users u
+INNER JOIN user_stats us ON u.id = us.user_id
+INNER JOIN top_users tu ON u.id = tu.user_id
+ORDER BY us.total_spent DESC;
+```
+
+## ⚡ Оптимизация JOIN
+
+### **Индексы для JOIN**
+```sql
+-- Обязательные индексы для эффективных JOIN
+CREATE INDEX idx_orders_user_id ON orders(user_id);
+CREATE INDEX idx_order_items_order_id ON order_items(order_id);
+CREATE INDEX idx_order_items_product_id ON order_items(product_id);
+CREATE INDEX idx_products_category_id ON products(category_id);
+```
+
+### **EXPLAIN для анализа JOIN**
+```sql
+-- Анализ производительности запроса
+EXPLAIN ANALYZE
+SELECT 
+    u.name,
+    o.amount
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id
+WHERE u.created_at > '2024-01-01';
+```
+
+## 🚨 Распространенные ошибки
+
+### **1. Cartesian Product (случайный CROSS JOIN)**
+```sql
+-- НЕПРАВИЛЬНО - забыли условие JOIN
+SELECT * FROM users, orders;  -- Декартово произведение!
+
+-- ПРАВИЛЬНО
+SELECT * FROM users 
+INNER JOIN orders ON users.id = orders.user_id;
+```
+
+### **2. Неоднозначные имена столбцов**
+```sql
+-- НЕПРАВИЛЬНО - какой id?
+SELECT id, name FROM users 
+INNER JOIN orders ON users.id = orders.user_id;
+
+-- ПРАВИЛЬНО - указываем таблицу
+SELECT users.id, users.name, orders.amount 
+FROM users 
+INNER JOIN orders ON users.id = orders.user_id;
+```
+
+### **3. Неправильное условие JOIN**
+```sql
+-- НЕПРАВИЛЬНО - неправильная логика
+SELECT * FROM users 
+INNER JOIN orders ON users.id = orders.amount;  -- Бессмыслица
+
+-- ПРАВИЛЬНО - связываем по внешнему ключу
+SELECT * FROM users 
+INNER JOIN orders ON users.id = orders.user_id;
+```
+
+## 🎯 Best Practices
+
+### **1. Используйте псевдонимы таблиц**
+```sql
+-- ХОРОШО
+SELECT 
+    u.name,
+    o.amount,
+    p.name AS product_name
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id
+INNER JOIN order_items oi ON o.id = oi.order_id
+INNER JOIN products p ON oi.product_id = p.id;
+
+-- ПЛОХО
+SELECT 
+    users.name,
+    orders.amount,
+    products.name
+FROM users
+INNER JOIN orders ON users.id = orders.user_id
+INNER JOIN order_items ON orders.id = order_items.order_id
+INNER JOIN products ON order_items.product_id = products.id;
+```
+
+### **2. Выбирайте только нужные столбцы**
+```sql
+-- ХОРОШО - только нужные данные
+SELECT 
+    u.name,
+    o.amount,
+    o.status
+FROM users u
+INNER JOIN orders o ON u.id = o.user_id;
+
+-- ПЛОХО - все столбцы
+SELECT * FROM users u
+INNER JOIN orders o ON u.id = o.user_id;
+```
+
+### **3. Правильно выбирайте тип JOIN**
+```sql
+-- Нужны все пользователи, даже без заказов?
+SELECT * FROM users u
+LEFT JOIN orders o ON u.id = o.user_id;  -- Да, LEFT JOIN
+
+-- Только пользователи с заказами?
+SELECT * FROM users u
+INNER JOIN orders o ON u.id = o.user_id;  -- Да, INNER JOIN
+```
+
+## 💡 Продвинутые техники
+
+### **LATERAL JOIN (PostgreSQL)**
+```sql
+-- Для каждого пользователя получить 3 последних заказа
+SELECT 
+    u.name,
+    recent_orders.amount,
+    recent_orders.created_at
+FROM users u
+CROSS JOIN LATERAL (
+    SELECT amount, created_at
+    FROM orders 
+    WHERE user_id = u.id 
+    ORDER BY created_at DESC 
+    LIMIT 3
+) recent_orders;
+```
+
+### **NATURAL JOIN (осторожно!)**
+```sql
+-- Автоматически JOIN по одинаковым именам столбцов
+SELECT * FROM users 
+NATURAL JOIN orders;
+
+-- Эквивалентно:
+SELECT * FROM users 
+INNER JOIN orders USING (id);  -- Опасно если совпадение неверное!
+```
+
+**JOIN** — мощный инструмент для объединения данных из разных таблиц. Правильное использование JOIN позволяет создавать сложные запросы и получать именно те данные, которые нужны.
 # 7. left/right/inner join sql
 # 8. sql index
 # 9. виды индексов

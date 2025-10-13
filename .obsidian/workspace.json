@@ -49,8 +49,7 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,10 +198,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45d69b1b423ec3ec",
+  "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "backend/security/OWASP/top 10/A09 2021 – Security Logging and Monitoring Failures.md",
     "backend/security/OWASP/top 10/A10 2021 – Server-Side Request Forgery (SSRF).md",
+    "backend/security/OWASP/top 10/A09 2021 – Security Logging and Monitoring Failures.md",
     "backend/security/OWASP/top 10/A08 2021 – Software and Data Integrity Failures.md",
     "backend/security/OWASP/top 10/A07 2021 – Identification and Authentication Failures.md",
     "backend/security/OWASP/top 10/A06 2021 – Vulnerable and Outdated Components.md",
