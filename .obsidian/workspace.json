@@ -49,7 +49,8 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,10 +199,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7dca43435214a1db",
+  "active": "45d69b1b423ec3ec",
   "lastOpenFiles": [
-    "go/задачи/Задачи 1.md",
     "go/вопросы/Тех собеседование В OZON.md",
+    "go/задачи/Задачи 1.md",
     "go/задачи/Задача сложная ютуб.md",
     "go/задачи/авито задача алгорритм.md",
     "backend/security/OWASP/top 10/A10 2021 – Server-Side Request Forgery (SSRF).md",
