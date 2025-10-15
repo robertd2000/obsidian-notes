@@ -49,8 +49,7 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,12 +198,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45d69b1b423ec3ec",
+  "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "go/задачи/Задачи 1.md",
+    "go/вопросы/Тех собеседование В OZON.md",
     "go/задачи/Задача сложная ютуб.md",
     "go/задачи/авито задача алгорритм.md",
     "backend/security/OWASP/top 10/A10 2021 – Server-Side Request Forgery (SSRF).md",
-    "go/вопросы/Тех собеседование В OZON.md",
     "backend/security/OWASP/top 10/A09 2021 – Security Logging and Monitoring Failures.md",
     "backend/security/OWASP/top 10/A08 2021 – Software and Data Integrity Failures.md",
     "backend/security/OWASP/top 10/A07 2021 – Identification and Authentication Failures.md",
@@ -229,7 +229,6 @@
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/Сортировки.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.6. Цифровая сортировка.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.5. Сортировка подсчетом.md",
-    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки/2.4. Сортировка кучей.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
     "Pasted image 20251009111203.png",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
