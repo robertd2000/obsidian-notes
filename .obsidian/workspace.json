@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/scheduler/Планировщик Go.md",
+                "file": "Untitled/DNS сервер.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Планировщик Go"
+              "title": "DNS сервер"
             }
           },
           {
@@ -201,8 +201,11 @@
   },
   "active": "45d69b1b423ec3ec",
   "lastOpenFiles": [
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "Без названия 2.md",
+    "Untitled/DNS сервер.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
+    "Untitled",
+    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/задачи/Задачи Авито платформа.md",
     "go/задачи/Задачи 1.md",
     "go/вопросы/Тех собеседование В OZON.md",
@@ -228,8 +231,6 @@
     "go/вопросы/софты в озон.md",
     "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
     "go/вопросы/Тех собеседование В WB.md",
-    "go/core/interface/Интерфейсы.md",
-    "go/core/data types/struct/The empty struct.md",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
     "Pasted image 20251009111203.png",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
@@ -237,7 +238,6 @@
     "Алгоритмика/1. Анализ алгоритмов",
     "Алгоритмика",
     "go/core/concurrency/scheduler",
-    "go/core/concurrency/Context",
     "Pasted image 20250915105937.png",
     "Pasted image 20250915105912.png",
     "Pasted image 20250907174807.png",
