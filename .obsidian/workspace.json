@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/Тех собеседование В OZON.md",
+                "file": "go/вопросы/Тех собеседование В WB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Тех собеседование В OZON"
+              "title": "Тех собеседование В WB"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "Погружение в интерфейсы Go"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,16 +198,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45d69b1b423ec3ec",
+  "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "Без названия 2.md",
+    "go/вопросы/Тех собеседование В OZON.md",
     "Untitled/DNS сервер.md",
+    "Без названия 2.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
     "Untitled",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/задачи/Задачи Авито платформа.md",
     "go/задачи/Задачи 1.md",
-    "go/вопросы/Тех собеседование В OZON.md",
     "go/задачи/Задача сложная ютуб.md",
     "go/задачи/авито задача алгорритм.md",
     "backend/security/OWASP/top 10/A10 2021 – Server-Side Request Forgery (SSRF).md",
