@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/Вопросы OZON 2.md",
+                "file": "go/core/data types/slices/удаление.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Вопросы OZON 2"
+              "title": "удаление"
             }
           },
           {
@@ -200,6 +200,22 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "Pasted image 20251022141759.png",
+    "go/core/data types/slices/range.md",
+    "go/core/data types/slices/удаление.md",
+    "Pasted image 20251021174022.png",
+    "Pasted image 20251021174004.png",
+    "go/core/data types/strings/Строка из слайса без копирования.md",
+    "Pasted image 20251021173620.png",
+    "Pasted image 20251021173546.png",
+    "go/core/data types/strings/Изменяемая строка.md",
+    "Pasted image 20251021173421.png",
+    "go/core/data types/slices/Слайс без инициализации значений.md",
+    "Pasted image 20251021173316.png",
+    "go/core/data types/slices/Grow factor.md",
+    "Pasted image 20251021172342.png",
+    "go/core/variables/Constants.md",
+    "go/вопросы/Вопросы OZON 2.md",
     "go/вопросы/Тех собеседование В OZON.md",
     "go/core/concurrency/Concurrency Patterns/fan in.md",
     "go/core/The Go Memory Model.md",
@@ -218,16 +234,7 @@
     "go/core/concurrency/Concurrency Patterns",
     "go/вопросы/Тех собеседование В WB.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
-    "Untitled/DNS сервер.md",
-    "Без названия 2.md",
     "Untitled",
-    "go/задачи/Задачи Авито платформа.md",
-    "go/задачи/Задачи 1.md",
-    "go/задачи/Задача сложная ютуб.md",
-    "go/задачи/авито задача алгорритм.md",
-    "backend/security/OWASP/top 10/A10 2021 – Server-Side Request Forgery (SSRF).md",
-    "backend/security/OWASP/top 10/A09 2021 – Security Logging and Monitoring Failures.md",
-    "backend/security/OWASP/top 10/A08 2021 – Software and Data Integrity Failures.md",
     "backend/security/OWASP/top 10",
     "backend/security/OWASP",
     "backend/security",
@@ -238,13 +245,6 @@
     "Алгоритмика/1. Анализ алгоритмов",
     "Алгоритмика",
     "Pasted image 20250915105937.png",
-    "Pasted image 20250915105912.png",
-    "Pasted image 20250907174807.png",
-    "Pasted image 20250831182140.png",
-    "Pasted image 20250831182111.png",
-    "Pasted image 20250828233009.png",
-    "Pasted image 20250828115337.png",
-    "Pasted image 20250828115958.png",
-    "Pasted image 20250828115910.png"
+    "Pasted image 20250915105912.png"
   ]
 }
