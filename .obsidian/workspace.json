@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/задачи/Задачи Альфа.md",
+                "file": "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задачи Альфа"
+              "title": "Senior Golang разработчика НА ИЗИ"
             }
           },
           {
@@ -200,6 +200,15 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "go/core/concurrency/Goroutines/Goroutines.md",
+    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/core/concurrency/Goroutines/Горутины.md",
+    "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
+    "go/core/map/How the Go runtime implements maps efficiently.md",
+    "go/core/map/Go maps in action.md",
+    "go/core/map/Карты.md",
+    "go/core/map/Macro View of Map Internals In Go.md",
+    "go/задачи/Задачи Альфа.md",
     "go/core/data types/slices/удаление.md",
     "Pasted image 20251022144416.png",
     "Pasted image 20251022141759.png",
@@ -226,15 +235,7 @@
     "go/core/concurrency/Concurrency Patterns/Fan In and Fan Out.md",
     "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
     "go/core/concurrency/The Laws of Reflection.md",
-    "go/core/concurrency/Race Detection.md",
-    "go/core/concurrency/Concurrency Patterns/Mastering Concurrency in Go.md",
-    "go/core/concurrency/Concurrency Patterns/Context.md",
-    "go/core/concurrency/Context/Context.md",
-    "go/core/concurrency/Concurrency Patterns/Go Concurrency Patterns Pipelines and cancellation.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/core/concurrency/Concurrency Patterns",
-    "go/вопросы/Тех собеседование В WB.md",
-    "go/core/concurrency/scheduler/Планировщик Go.md",
     "Untitled",
     "backend/security/OWASP/top 10",
     "backend/security/OWASP",

@@ -53,7 +53,9 @@ The second property is _good distribution_. Given two near identical keys, the
 ## The hashmap data structure
 
 The second part of a hashmap is the way data is stored.  
-![](https://dave.cheney.net/wp-content/uploads/2018/05/Gocon-2018-Maps.021-300x169.png)The classical hashmap is an array of _buckets_ each of which contains a pointer to an array of key/value entries. In this case our hashmap has eight buckets (as this is the value that the Go implementation uses) and each bucket can hold up to eight entries each (again drawn from the Go implementation). Using powers of two allows the use of cheap bit masks and shifts rather than expensive division.
+![](https://dave.cheney.net/wp-content/uploads/2018/05/Gocon-2018-Maps.021-300x169.png)
+
+The classical hashmap is an array of _buckets_ each of which contains a pointer to an array of key/value entries. In this case our hashmap has eight buckets (as this is the value that the Go implementation uses) and each bucket can hold up to eight entries each (again drawn from the Go implementation). Using powers of two allows the use of cheap bit masks and shifts rather than expensive division.
 
 As entries are added to a map, assuming a good hash function distribution, then the buckets will fill at roughly the same rate. Once the number of entries across each bucket passes some percentage of their total size, known as the _load factor,_ then the map will grow by doubling the number of buckets and redistributing the entries across them.
 
@@ -71,10 +73,10 @@ Now, lets use the same diagram to look up a value in our map. The process is sim
 
 That was a very high level explanation of the classical hashmap. We’ve seen there are four properties you need to implement a hashmap;
 
-- 1. You need a hash function for the key.
-    2. You need an equality function to compare keys.
-    3. You need to know the size of the key and,
-    4. You need to know the size of the value because these affect the size of the bucket structure, which the compiler needs to know, as you walk or insert into that structure, how far to advance in memory.
+- You need a hash function for the key.
+- You need an equality function to compare keys.
+- You need to know the size of the key and,
+- You need to know the size of the value because these affect the size of the bucket structure, which the compiler needs to know, as you walk or insert into that structure, how far to advance in memory.
 
 # Hashmaps in other languages
 
