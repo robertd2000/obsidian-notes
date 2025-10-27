@@ -1814,11 +1814,2013 @@ func (d *Data) ProcessOptimized() {
 
 Правильно оптимизированные CPU Bound приложения в Go могут эффективно использовать многоядерные процессоры и достигать высокой производительности вычислений.
 # 10 - стек горутины
+
+## Что такое стек горутины?
+
+**Стек горутины** — это область памяти, выделенная для хранения локальных переменных, параметров функций и информации о вызовах для конкретной горутины. В отличие от потоков операционной системы, горутины используют динамические стеки, которые могут расти и сокращаться по мере необходимости.
+
+## Особенности стека горутины
+
+### Начальный размер
+- **2 КБ** — начальный размер стека каждой горутины
+- Значительно меньше, чем у потоков ОС (обычно 1-8 МБ)
+
+### Динамическое изменение
+- Стек может автоматически расти при необходимости
+- Может сокращаться при освобождении памяти
+- Вся работа по управлению памятью стека прозрачна для программиста
+
+## Внутреннее устройство
+
+### Структура стека в памяти
+
+```
+Стек горутины:
++-------------------+  ← high addresses
+|    аргументы      |
+|   функции main    |
++-------------------+
+|  возвращаемые     |
+|     адреса        |
++-------------------+
+|  сохраненные      |
+|   регистры        |
++-------------------+
+|  локальные        |
+|   переменные      |
++-------------------+
+|   кадры вызовов   |
+|   других функций  |
++-------------------+  ← low addresses
+|   guard page      |
++-------------------+
+```
+
+### Управление стеком в рантайме Go
+
+Каждая горутина содержит информацию о своем стеке:
+
+```go
+type g struct {
+    stack       stack   // [lo, hi) - границы стека
+    stackguard0 uintptr // защитная страница для проверки переполнения
+    stackguard1 uintptr // защитная страница для C-кода
+    // ... другие поля
+}
+
+type stack struct {
+    lo uintptr // нижняя граница
+    hi uintptr // верхняя граница
+}
+```
+
+## Механизм роста стека
+
+### Когда стек растет
+
+Стек автоматически увеличивается при:
+1. **Нехватке места** для новых вызовов функций
+2. **Выделении больших объектов** в стеке
+3. **Глубокой рекурсии**
+
+### Процесс роста стека
+
+```go
+// Псевдокод процесса роста стека
+func growstack(gp *g) {
+    // 1. Вычислить новый размер (обычно в 2 раза больше)
+    oldsize := gp.stack.hi - gp.stack.lo
+    newsize := oldsize * 2
+    
+    // 2. Проверить максимальный размер
+    if newsize > maxstacksize {
+        throw("stack overflow")
+    }
+    
+    // 3. Выделить новый стек
+    newstack := stackalloc(newsize)
+    
+    // 4. Скопировать данные из старого стека в новый
+    copystack(gp, newstack)
+    
+    // 5. Освободить старый стек
+    stackfree(gp.stack)
+    
+    // 6. Обновить указатели стека
+    gp.stack = newstack
+    gp.stackguard0 = newstack.lo + stackGuard
+}
+```
+
+### Пример, демонстрирующий рост стека
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "unsafe"
+)
+
+func printStackInfo() {
+    var buf [1024]byte
+    n := runtime.Stack(buf[:], false)
+    fmt.Printf("Stack size: %d bytes\n", n)
+}
+
+func recursiveFunction(depth int) {
+    var localArray [256]byte // Выделяем память в стеке
+    
+    if depth%100 == 0 {
+        var m runtime.MemStats
+        runtime.ReadMemStats(&m)
+        fmt.Printf("Depth: %d, Stack alloc: %v\n", 
+            depth, unsafe.Sizeof(localArray))
+    }
+    
+    if depth > 0 {
+        recursiveFunction(depth - 1)
+    }
+}
+
+func main() {
+    fmt.Printf("Initial goroutine count: %d\n", runtime.NumGoroutine())
+    printStackInfo()
+    
+    // Вызываем рекурсивную функцию для демонстрации роста стека
+    recursiveFunction(500)
+    
+    printStackInfo()
+}
+```
+
+## Защита от переполнения стека
+
+### Stack Guard
+
+Go использует механизм "stack guard" для обнаружения переполнения стека:
+
+- **StackGuard0** — защитная страница для Go-кода
+- **StackGuard1** — защитная страница для C-кода (cgo)
+
+При попытке доступа к защитной странице возникает паника с сообщением "stack overflow".
+
+### Пример переполнения стека
+
+```go
+func causeStackOverflow() {
+    var huge [1024 * 1024]byte // 1MB в стеке - может вызвать переполнение
+    _ = huge
+    causeStackOverflow() // Бесконечная рекурсия
+}
+
+func main() {
+    defer func() {
+        if r := recover(); r != nil {
+            fmt.Println("Recovered from:", r)
+        }
+    }()
+    
+    causeStackOverflow()
+}
+```
+
+## Сравнение с традиционными потоками
+
+### Потоки ОС
+```go
+// Традиционные потоки:
+// - Фиксированный размер стека (1-8 МБ)
+// - Большие накладные расходы на создание
+// - Ограниченное количество (тысячи)
+// - Переключение контекста дорогое
+```
+
+### Горутины Go
+```go
+// Горутины Go:
+// - Динамический стек (2 КБ → ...)
+// - Маленькие накладные расходы
+// - Миллионы горутин возможны
+// - Дешевое переключение
+```
+
+## Практические аспекты
+
+### Мониторинг использования стека
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "time"
+)
+
+func monitorStackUsage() {
+    for {
+        var m runtime.MemStats
+        runtime.ReadMemStats(&m)
+        
+        fmt.Printf("Goroutines: %d, Stack in use: %d KB\n",
+            runtime.NumGoroutine(),
+            m.StackInuse/1024)
+        
+        time.Sleep(2 * time.Second)
+    }
+}
+
+func createManyGoroutines() {
+    for i := 0; i < 1000; i++ {
+        go func(id int) {
+            // Каждая горутина использует свой стек
+            var localData [512]byte
+            _ = localData
+            time.Sleep(time.Minute)
+        }(i)
+    }
+}
+
+func main() {
+    go monitorStackUsage()
+    createManyGoroutines()
+    
+    select {} // Бесконечное ожидание
+}
+```
+
+### Эффективное использование стека
+
+```go
+// Плохо: большие массивы в стеке
+func inefficient() {
+    var largeArray [100000]byte // 100KB в стеке
+    process(largeArray[:])
+}
+
+// Лучше: использование указателей или срезов
+func efficient() {
+    data := make([]byte, 100000) // В куче
+    process(data)
+}
+
+// Или для маленьких данных в стеке
+func optimized() {
+    var smallArray [1024]byte // 1KB в стеке - нормально
+    process(smallArray[:])
+}
+```
+
+## Оптимизации компилятора
+
+### Escape Analysis
+
+Компилятор Go определяет, должны ли переменные размещаться в стеке или куче:
+
+```go
+func example() {
+    x := 42 // Размещается в стеке (не убегает)
+    y := make([]byte, 1024) // Может размещаться в стеке или куче
+    
+    // Если ссылка на y передается наружу, она "убегает" в кучу
+    return y // y убегает в кучу
+}
+
+func noEscape() *int {
+    x := 42
+    return &x // x убегает в кучу - НЕ оптимизируется
+}
+
+func staysOnStack() int {
+    x := 42
+    return x // x остается в стеке
+}
+```
+
+### Inlining и стек
+
+```go
+// Маленькие функции могут быть встроены (inlined)
+func smallFunction(a, b int) int {
+    return a + b
+}
+
+func caller() {
+    result := smallFunction(10, 20)
+    // После inlining эквивалентно:
+    // result := 10 + 20
+    // Экономятся вызовы и использование стека
+}
+```
+
+## Производительность
+
+### Бенчмарк создания горутин
+
+```go
+func BenchmarkGoroutineCreation(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        go func() {
+            // Легковесная горутина
+        }()
+    }
+}
+
+func BenchmarkStackIntensive(b *testing.B) {
+    for i := 0; i < b.N; i++ {
+        stackHeavyOperation()
+    }
+}
+
+func stackHeavyOperation() {
+    var data [1024]int
+    for i := range data {
+        data[i] = i * i
+    }
+}
+```
+
+## Лучшие практики
+
+1. **Избегайте глубокой рекурсии** — используйте итеративные алгоритмы
+2. **Не создавайте гигантские массивы в стеке** — используйте кучу для больших данных
+3. **Мониторьте использование стека** — особенно в долгоживущих приложениях
+4. **Используйте буферизованные каналы** — для контроля над параллелизмом
+5. **Профилируйте приложения** — используйте pprof для анализа использования стека
+
+## Ограничения
+
+- **Максимальный размер стека**: 1GB на 64-битных системах
+- **Минимальный размер стека**: 2KB
+- **Защитные страницы**: добавляют небольшие накладные расходы
+
+Стек горутины — это ключевой компонент, который делает горутины легковесными и эффективными. Понимание его работы помогает писать более производительные и надежные Go-приложения.
 # 11 - потоки
+
+## Что такое потоки?
+
+**Потоки** (threads) — это наименьшая единица выполнения в операционной системе. В контексте Go потоки — это потоки операционной системы, на которых планировщик Go выполняет горутины.
+
+## Архитектура потоков в Go
+
+### Модель M:P:G
+
+Go использует гибридную модель планирования:
+
+- **G (Goroutine)** — горутина, легковесный поток выполнения
+- **M (Machine)** — поток операционной системы
+- **P (Processor)** — контекст выполнения (логический процессор)
+
+```
+Runtime Go:
++---+---+---+
+| P | P | P |  ← Processors (количество = GOMAXPROCS)
++---+---+---+
+  |   |   |
+  M   M   M   ← Threads (OS Threads)
+  |   |   |
+  G   G   G   ← Goroutines
+  G   G   G
+  .   .   .
+```
+
+### Структура потока (M) в Go
+
+```go
+// runtime/runtime2.go (упрощенно)
+type m struct {
+    g0      *g     // горутина для выполнения системных вызовов
+    curg    *g     // текущая выполняемая горутина
+    p       puintptr // привязанный P
+    nextp   puintptr // следующий P
+    oldp    puintptr // старый P (при syscall)
+    
+    // Связь с OS thread
+    thread  uintptr // handle OS thread
+    lockedg *g     // горутина, заблокировавшая этот thread
+    
+    // Системные вызовы
+    syscall libcall // для системных вызовов
+    
+    // Локальный кэш
+    mcache *mcache
+}
+```
+
+## Управление потоками в Go
+
+### Создание потоков
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "sync"
+    "time"
+)
+
+func monitorThreads() {
+    for {
+        var m runtime.MemStats
+        runtime.ReadMemStats(&m)
+        
+        // Количество горутин
+        goroutines := runtime.NumGoroutine()
+        
+        // В Go нет прямой функции для получения количества потоков,
+        // но можно оценить через профилирование или внешние инструменты
+        
+        fmt.Printf("Goroutines: %d\n", goroutines)
+        time.Sleep(2 * time.Second)
+    }
+}
+
+func main() {
+    go monitorThreads()
+    
+    // Создаем множество горутин
+    var wg sync.WaitGroup
+    for i := 0; i < 1000; i++ {
+        wg.Add(1)
+        go func(id int) {
+            defer wg.Done()
+            time.Sleep(10 * time.Second)
+        }(i)
+    }
+    
+    wg.Wait()
+}
+```
+
+### GOMAXPROCS - управление параллелизмом
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "time"
+)
+
+func demonstrateGOMAXPROCS() {
+    // Получаем текущее значение
+    current := runtime.GOMAXPROCS(0)
+    fmt.Printf("Current GOMAXPROCS: %d\n", current)
+    fmt.Printf("Number of CPU cores: %d\n", runtime.NumCPU())
+    
+    // Устанавливаем новое значение
+    runtime.GOMAXPROCS(4)
+    
+    // Демонстрируем работу
+    start := time.Now()
+    
+    var wg sync.WaitGroup
+    for i := 0; i < 8; i++ {
+        wg.Add(1)
+        go func(id int) {
+            defer wg.Done()
+            // CPU-intensive работа
+            sum := 0
+            for j := 0; j < 100000000; j++ {
+                sum += j
+            }
+            fmt.Printf("Goroutine %d completed\n", id)
+        }(i)
+    }
+    
+    wg.Wait()
+    fmt.Printf("Work completed in %v\n", time.Since(start))
+}
+```
+
+## Взаимодействие горутин и потоков
+
+### Планирование горутин на потоках
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "sync/atomic"
+    "time"
+)
+
+func demonstrateScheduling() {
+    var counter int32
+    var wg sync.WaitGroup
+    
+    // Создаем горутины, которые будут показывать, на каком потоке выполняются
+    for i := 0; i < 10; i++ {
+        wg.Add(1)
+        go func(id int) {
+            defer wg.Done()
+            
+            // Симулируем работу
+            time.Sleep(100 * time.Millisecond)
+            
+            // Атомарно увеличиваем счетчик
+            atomic.AddInt32(&counter, 1)
+            
+            fmt.Printf("Goroutine %d completed (total: %d)\n", id, atomic.LoadInt32(&counter))
+        }(i)
+    }
+    
+    wg.Wait()
+    fmt.Printf("All goroutines completed. Total: %d\n", counter)
+}
+```
+
+### Системные вызовы и потоки
+
+```go
+package main
+
+import (
+    "fmt"
+    "net/http"
+    "sync"
+    "time"
+)
+
+func demonstrateSyscalls() {
+    var wg sync.WaitGroup
+    urls := []string{
+        "https://httpbin.org/delay/1",
+        "https://httpbin.org/delay/2",
+        "https://httpbin.org/delay/1",
+        "https://httpbin.org/delay/3",
+    }
+    
+    client := &http.Client{
+        Timeout: 10 * time.Second,
+    }
+    
+    for i, url := range urls {
+        wg.Add(1)
+        go func(id int, u string) {
+            defer wg.Done()
+            
+            start := time.Now()
+            fmt.Printf("Goroutine %d starting HTTP request to %s\n", id, u)
+            
+            resp, err := client.Get(u)
+            if err != nil {
+                fmt.Printf("Goroutine %d error: %v\n", id, err)
+                return
+            }
+            resp.Body.Close()
+            
+            duration := time.Since(start)
+            fmt.Printf("Goroutine %d completed in %v (status: %d)\n", 
+                id, duration, resp.StatusCode)
+        }(i, url)
+    }
+    
+    wg.Wait()
+    fmt.Println("All HTTP requests completed")
+}
+```
+
+## Специальные типы потоков в Go
+
+### 1. Системный поток (g0)
+
+Каждый поток M имеет специальную горутину g0, которая используется для:
+- Запуска новых горутин
+- Сбора мусора
+- Управления стеком
+
+### 2. Signal Handling Thread
+
+Go создает специальный поток для обработки сигналов:
+```go
+// Этот поток обрабатывает:
+// - SIGPROF (профилирование)
+// - SIGURG (уведомления от сборщика мусора)
+// - Другие POSIX-сигналы
+```
+
+## Блокирующие операции и потоки
+
+### I/O операции и сетевой поллинг
+
+```go
+package main
+
+import (
+    "fmt"
+    "net"
+    "sync"
+    "time"
+)
+
+func demonstrateNetworkIO() {
+    var wg sync.WaitGroup
+    
+    // Создаем TCP сервер
+    listener, err := net.Listen("tcp", "localhost:0")
+    if err != nil {
+        panic(err)
+    }
+    defer listener.Close()
+    
+    // Запускаем сервер
+    go func() {
+        for {
+            conn, err := listener.Accept()
+            if err != nil {
+                return
+            }
+            go handleConnection(conn)
+        }
+    }()
+    
+    // Создаем клиентов
+    address := listener.Addr().String()
+    for i := 0; i < 5; i++ {
+        wg.Add(1)
+        go func(clientID int) {
+            defer wg.Done()
+            
+            conn, err := net.Dial("tcp", address)
+            if err != nil {
+                fmt.Printf("Client %d: connection error: %v\n", clientID, err)
+                return
+            }
+            defer conn.Close()
+            
+            message := fmt.Sprintf("Hello from client %d", clientID)
+            conn.Write([]byte(message))
+            
+            buffer := make([]byte, 1024)
+            n, _ := conn.Read(buffer)
+            fmt.Printf("Client %d received: %s\n", clientID, string(buffer[:n]))
+        }(i)
+    }
+    
+    wg.Wait()
+    time.Sleep(100 * time.Millisecond)
+}
+
+func handleConnection(conn net.Conn) {
+    defer conn.Close()
+    
+    buffer := make([]byte, 1024)
+    n, err := conn.Read(buffer)
+    if err != nil {
+        return
+    }
+    
+    response := fmt.Sprintf("Echo: %s", string(buffer[:n]))
+    conn.Write([]byte(response))
+}
+```
+
+### Системные вызовы и блокирующие операции
+
+```go
+package main
+
+import (
+    "fmt"
+    "os"
+    "sync"
+    "time"
+)
+
+func demonstrateBlockingSyscalls() {
+    var wg sync.WaitGroup
+    
+    // Создаем временные файлы
+    filenames := make([]string, 5)
+    for i := range filenames {
+        file, err := os.CreateTemp("", "example")
+        if err != nil {
+            panic(err)
+        }
+        file.WriteString("Hello, World!")
+        file.Close()
+        filenames[i] = file.Name()
+        defer os.Remove(file.Name())
+    }
+    
+    // Читаем файлы параллельно (блокирующие системные вызовы)
+    for i, filename := range filenames {
+        wg.Add(1)
+        go func(id int, fn string) {
+            defer wg.Done()
+            
+            start := time.Now()
+            
+            // Блокирующий системный вызов
+            data, err := os.ReadFile(fn)
+            if err != nil {
+                fmt.Printf("Goroutine %d error: %v\n", id, err)
+                return
+            }
+            
+            duration := time.Since(start)
+            fmt.Printf("Goroutine %d read %d bytes in %v\n", 
+                id, len(data), duration)
+        }(i, filename)
+    }
+    
+    wg.Wait()
+}
+```
+
+## Управление потоком выполнения
+
+### Runtime LockOSThread
+
+```go
+package main
+
+import (
+    "fmt"
+    "runtime"
+    "sync"
+    "time"
+)
+
+func demonstrateLockOSThread() {
+    var wg sync.WaitGroup
+    
+    for i := 0; i < 3; i++ {
+        wg.Add(1)
+        go func(threadID int) {
+            // Привязываем горутину к текущему потоку ОС
+            runtime.LockOSThread()
+            defer runtime.UnlockOSThread()
+            defer wg.Done()
+            
+            fmt.Printf("Goroutine %d locked to OS thread\n", threadID)
+            
+            // Долгая работа, которая должна выполняться на одном потоке
+            for j := 0; j < 3; j++ {
+                time.Sleep(500 * time.Millisecond)
+                fmt.Printf("Goroutine %d working... (iteration %d)\n", threadID, j)
+            }
+            
+            fmt.Printf("Goroutine %d completed\n", threadID)
+        }(i)
+    }
+    
+    wg.Wait()
+    fmt.Println("All locked goroutines completed")
+}
+```
+
+## Мониторинг и отладка
+
+### Профилирование потоков
+
+```go
+package main
+
+import (
+    "fmt"
+    "log"
+    "os"
+    "runtime"
+    "runtime/pprof"
+    "time"
+)
+
+func profileThreads() {
+    // Создаем файл для профилирования
+    f, err := os.Create("thread_profile.prof")
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer f.Close()
+    
+    // Запускаем CPU профилирование
+    if err := pprof.StartCPUProfile(f); err != nil {
+        log.Fatal(err)
+    }
+    defer pprof.StopCPUProfile()
+    
+    // Выполняем работу
+    performWork()
+    
+    // Создаем профиль горутин
+    g, err := os.Create("goroutine_profile.pprof")
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer g.Close()
+    
+    if err := pprof.Lookup("goroutine").WriteTo(g, 1); err != nil {
+        log.Fatal(err)
+    }
+}
+
+func performWork() {
+    var wg sync.WaitGroup
+    
+    for i := 0; i < 50; i++ {
+        wg.Add(1)
+        go func(id int) {
+            defer wg.Done()
+            
+            // Смешанная нагрузка: CPU + I/O
+            sum := 0
+            for j := 0; j < 1000000; j++ {
+                sum += j
+            }
+            
+            time.Sleep(100 * time.Millisecond)
+            
+            _ = sum
+        }(i)
+    }
+    
+    wg.Wait()
+}
+
+func main() {
+    fmt.Printf("GOMAXPROCS: %d\n", runtime.GOMAXPROCS(0))
+    fmt.Printf("NumCPU: %d\n", runtime.NumCPU())
+    
+    profileThreads()
+}
+```
+
+## Лучшие практики работы с потоками в Go
+
+### 1. Настройка GOMAXPROCS
+
+```go
+func main() {
+    // Автоматическая настройка
+    runtime.GOMAXPROCS(runtime.NumCPU())
+    
+    // Или ручная настройка
+    if os.Getenv("GOMAXPROCS") == "" {
+        runtime.GOMAXPROCS(4)
+    }
+}
+```
+
+### 2. Избегание избыточного создания потоков
+
+```go
+func efficientWork() {
+    // Используем worker pool вместо создания горутин для каждой задачи
+    workers := runtime.NumCPU()
+    jobs := make(chan Job, workers*2)
+    results := make(chan Result, workers*2)
+    
+    // Запускаем фиксированное количество воркеров
+    for i := 0; i < workers; i++ {
+        go worker(i, jobs, results)
+    }
+}
+```
+
+### 3. Обработка блокирующих вызовов
+
+```go
+func handleBlockingCalls() {
+    // Для блокирующих C вызовов используем отдельные горутины
+    go func() {
+        // Блокирующий вызов
+        result := blockingCcall()
+        // Обработка результата
+    }()
+}
+```
+
+## Проблемы и решения
+
+### 1. Проблема: Чрезмерное создание потоков
+
+**Решение**: Ограничение параллелизма и использование пулов
+
+```go
+func controlledConcurrency() {
+    sem := make(chan struct{}, runtime.NumCPU()*2) // Семафор
+    
+    for i := 0; i < 100; i++ {
+        sem <- struct{}{} // Захватываем слот
+        go func(id int) {
+            defer func() { <-sem }() // Освобождаем слот
+            
+            // Работа
+            processItem(id)
+        }(i)
+    }
+}
+```
+
+### 2. Проблема: False Sharing
+
+**Решение**: Выравнивание данных
+
+```go
+type PaddedCounter struct {
+    counter int64
+    _       [56]byte // Заполнение до размера кэш-линии
+}
+```
+
+## Заключение
+
+Понимание работы потоков в Go критически важно для создания высокопроизводительных приложений. Ключевые моменты:
+
+- Go использует гибридную модель M:P:G для планирования
+- Количество потоков ОС обычно немного больше, чем GOMAXPROCS
+- Планировщик Go эффективно управляет потоками автоматически
+- Для особых случаев можно использовать `runtime.LockOSThread()`
+- Мониторинг и профилирование помогают оптимизировать использование потоков
+
+Правильное понимание и использование потоков позволяет создавать эффективные и масштабируемые приложения на Go.
 # 12 - мьютексы
+
+## Что такое мьютекс?
+
+**Мьютекс** (mutual exclusion - взаимное исключение) — это примитив синхронизации, который обеспечивает эксклюзивный доступ к общим ресурсам в многопоточной среде. Только одна горутина может захватить мьютекс в любой момент времени.
+
+## Основные концепции
+
+### Состояния мьютекса
+- **Заблокирован (Locked)** — мьютекс захвачен горутиной
+- **Свободен (Unlocked)** — мьютекс доступен для захвата
+
+### Базовые операции
+- **Lock()** — захватить мьютекс (блокируется если уже занят)
+- **Unlock()** — освободить мьютекс
+
+## Типы мьютексов в Go
+
+### 1. sync.Mutex - стандартный мьютекс
+
+```go
+var mu sync.Mutex
+var counter int
+
+func increment() {
+    mu.Lock()        // Захватываем мьютекс
+    counter++        // Критическая секция
+    mu.Unlock()      // Освобождаем мьютекс
+}
+```
+
+### 2. sync.RWMutex - читающе-писающий мьютекс
+
+Позволяет множественное чтение или эксклюзивную запись:
+
+```go
+var rwMu sync.RWMutex
+var data map[string]string
+
+func readData(key string) string {
+    rwMu.RLock()          // Захватываем для чтения
+    defer rwMu.RUnlock()  // Гарантированно освобождаем
+    return data[key]
+}
+
+func writeData(key, value string) {
+    rwMu.Lock()           // Захватываем для записи
+    defer rwMu.Unlock()   // Гарантированно освобождаем
+    data[key] = value
+}
+```
+
+## Принципы работы
+
+### Как работает мьютекс
+
+Когда горутина вызывает `Lock()`:
+1. Если мьютекс свободен — захватывает его и продолжает выполнение
+2. Если мьютекс занят — блокируется до его освобождения
+3. При освобождении (`Unlock()`) одна из ожидающих горутин получает доступ
+
+### Внутренняя реализация
+
+Мьютекс в Go использует:
+- **Атомарные операции** для быстрого пути (fast path)
+- **Очередь ожидания** для заблокированных горутин
+- **Алгоритм самоспиннинга** перед блокировкой
+
+## Проблемы, которые решают мьютексы
+
+### 1. Состояние гонки (Race Condition)
+Когда несколько горутин одновременно обращаются к общим данным без синхронизации.
+
+### 2. Атомарность операций
+Обеспечивает, что сложные операции выполняются как единое целое.
+
+### 3. Согласованность данных
+Гарантирует, что другие горутины видят актуальное состояние данных.
+
+## Лучшие практики
+
+### 1. Всегда используйте defer для Unlock()
+
+```go
+func safeOperation() {
+    mu.Lock()
+    defer mu.Unlock() // Гарантированное освобождение
+    // операции с общими данными
+}
+```
+
+### 2. Минимизируйте время удержания мьютекса
+
+```go
+// Плохо
+func slowOperation() {
+    mu.Lock()
+    // Долгие вычисления
+    result = heavyCalculation()
+    sharedData = result
+    mu.Unlock()
+}
+
+// Хорошо
+func fastOperation() {
+    result := heavyCalculation() // Вычисления без блокировки
+    mu.Lock()
+    sharedData = result          // Только запись под блокировкой
+    mu.Unlock()
+}
+```
+
+### 3. Избегайте вложенных блокировок
+
+```go
+// Опасный код - может привести к deadlock
+func nestedLocks() {
+    mu1.Lock()
+    mu2.Lock() // Если другая горутина сделает наоборот - deadlock
+    // ...
+    mu2.Unlock()
+    mu1.Unlock()
+}
+```
+
+## Распространенные ошибки
+
+### 1. Забытый Unlock()
+Приводит к deadlock - все остальные горутины ждут вечно.
+
+### 2. Повторный Lock()
+Попытка захватить уже захваченный мьютекс приводит к deadlock.
+
+### 3. Использование копий мьютекса
+Мьютексы нельзя копировать - нужно использовать указатели.
+
+### 4. Неправильная область видимости
+Мьютекс должен защищать данные, а не наоборот.
+
+## Альтернативы мьютексам
+
+### 1. Каналы
+Для некоторых сценариев каналы могут быть более идиоматичным решением.
+
+### 2. Atomic операции
+Для простых счетчиков используйте `sync/atomic`.
+
+### 3. sync.Map
+Для определенных паттернов доступа к map.
+
+## Производительность
+
+Мьютексы в Go оптимизированы для:
+- **Низкой конкуренции** — быстрый путь через атомарные операции
+- **Высокой конкуренции** — эффективная очередь ожидания
+- **Самоспиннинга** — кратковременное активное ожидание перед блокировкой
+
+## Заключение
+
+Мьютексы — фундаментальный инструмент синхронизации в Go. Понимание их работы и правильное использование критически важно для создания корректных конкурентных программ. Основные правила: защищайте мьютексом данные, а не код, минимизируйте время блокировки и всегда используйте defer для гарантированного освобождения.
 # 13 - Принудительное завершение горутин
+
+## Почему нельзя принудительно завершать горутины?
+
+В Go **нет механизма** для принудительного завершения горутин извне. Это сознательное дизайнерское решение, основанное на нескольких принципах:
+
+### Причины отсутствия принудительного завершения:
+- **Безопасность памяти** - риск оставить данные в некорректном состоянии
+- **Утечки ресурсов** - незакрытые файлы, сетевые соединения, мьютексы
+- **Непредсказуемость** - сложно гарантировать корректность работы
+
+## Правильные подходы к завершению горутин
+
+### 1. Паттерн отмены через канал
+
+```go
+done := make(chan struct{})
+go func() {
+    for {
+        select {
+        case <-done:  // Проверяем сигнал отмены
+            return    // Корректно завершаемся
+        default:
+            // Работа
+        }
+    }
+}()
+
+// Завершаем горутину
+close(done)
+```
+
+### 2. Использование Context
+
+```go
+ctx, cancel := context.WithCancel(context.Background())
+
+go func(ctx context.Context) {
+    for {
+        select {
+        case <-ctx.Done():  // Получаем сигнал отмены
+            // Корректно освобождаем ресурсы
+            cleanup()
+            return
+        default:
+            performWork()
+        }
+    }
+}(ctx)
+
+// Завершаем все горутины, использующие этот контекст
+cancel()
+```
+
+### 3. Таймауты и дедлайны
+
+```go
+// Горутина автоматически завершится через 5 секунд
+ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+defer cancel()
+
+go worker(ctx)
+```
+
+## Проблемные сценарии и решения
+
+### 1. Зависшие горутины
+
+**Проблема**: Горутина заблокирована на операции, которая никогда не завершится.
+
+**Решение**: Использование таймаутов:
+```go
+select {
+case result := <-operationChan:
+    // Обрабатываем результат
+case <-time.After(5 * time.Second):
+    // Таймаут - выходим из горутины
+    return
+}
+```
+
+### 2. Горутины, игнорирующие сигналы отмены
+
+**Проблема**: Горутина не проверяет каналы отмены.
+
+**Решение**: Структурировать код для периодической проверки:
+```go
+func worker(ctx context.Context) {
+    for i := 0; i < 1000; i++ {
+        // Периодически проверяем контекст
+        if i%10 == 0 {
+            select {
+            case <-ctx.Done():
+                return
+            default:
+            }
+        }
+        // Работа
+    }
+}
+```
+
+## Опасные обходные пути
+
+### 1. Runtime.Goexit (не рекомендуется)
+
+```go
+go func() {
+    defer fmt.Println("Завершение")
+    runtime.Goexit()  // Немедленно завершает текущую горутину
+}()
+```
+
+**Проблемы**: Может привести к утечкам ресурсов, незавершенным операциям.
+
+### 2. Паника в горутине
+
+```go
+go func() {
+    defer func() {
+        if r := recover(); r != nil {
+            // Обработка паники
+        }
+    }()
+    panic("принудительное завершение")
+}()
+```
+
+**Проблемы**: Неструктурированное завершение, сложность отладки.
+
+## Лучшие практики
+
+### 1. Всегда используйте defer для очистки
+```go
+go func() {
+    resource := acquireResource()
+    defer releaseResource(resource)  // Гарантированная очистка
+    
+    // Работа с ресурсом
+}()
+```
+
+### 2. Проектируйте горутины с возможностью завершения
+```go
+type Worker struct {
+    quit chan struct{}
+}
+
+func (w *Worker) Stop() {
+    close(w.quit)  // Сигнал завершения
+}
+```
+
+### 3. Мониторинг завершения
+```go
+var wg sync.WaitGroup
+wg.Add(1)
+
+go func() {
+    defer wg.Done()
+    // Работа горутины
+}()
+
+// Ждем завершения
+wg.Wait()
+```
+
+## Исключения: когда принудительное завершение оправдано
+
+### 1. Тестовые сценарии
+```go
+func TestTimeout(t *testing.T) {
+    go func() {
+        time.Sleep(10 * time.Second)  // Долгая операция
+    }()
+    
+    // В тестах иногда используют таймауты
+    select {
+    case <-time.After(1 * time.Second):
+        t.Fatal("тест превысил время выполнения")
+    }
+}
+```
+
+### 2. Критические ошибки
+```go
+go func() {
+    if criticalError {
+        log.Fatal("критическая ошибка")  // Завершает программу
+    }
+}()
+```
+
+## Заключение
+
+В Go принудительное завершение горутин считается антипаттерном. Вместо этого используйте:
+
+- **Каналы отмены** для сигнализации о необходимости завершения
+- **Context** для распространения сигналов отмены
+- **Таймауты** для ограничения времени выполнения
+- **WaitGroup** для ожидания корректного завершения
+
+Такой подход обеспечивает надежность, предсказуемость и безопасность ваших concurrent-программ.
 # 14 - контекст
+
+## Что такое Context?
+
+**Context** (контекст) — это стандартный механизм в Go для передачи метаданных, сигналов отмены и дедлайнов между горутинами. Это один из самых важных инструментов для управления жизненным циклом горутин.
+
+## Основные концепции
+
+### Назначение Context:
+- **Передача сигналов отмены** между горутинами
+- **Установка таймаутов** и дедлайнов
+- **Передача значений** (request-scoped данных)
+- **Координация работы** нескольких горутин
+
+## Типы Context
+
+### 1. Background Context
+```go
+ctx := context.Background() // Базовый контекст, никогда не отменяется
+```
+
+### 2. TODO Context
+```go
+ctx := context.TODO() // Заглушка, когда не ясно какой контекст использовать
+```
+
+### 3. Производные контексты
+
+#### WithCancel - с возможностью отмены
+```go
+ctx, cancel := context.WithCancel(context.Background())
+defer cancel() // Важно вызывать cancel для освобождения ресурсов
+
+// Где-то в коде: cancel() - отменяет все производные контексты
+```
+
+#### WithTimeout - с таймаутом
+```go
+// Автоматическая отмена через 5 секунд
+ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+defer cancel()
+```
+
+#### WithDeadline - с абсолютным временем
+```go
+// Автоматическая отмена в конкретное время
+deadline := time.Now().Add(2 * time.Hour)
+ctx, cancel := context.WithDeadline(context.Background(), deadline)
+defer cancel()
+```
+
+#### WithValue - для передачи значений
+```go
+type keyType string
+const userKey keyType = "user"
+
+ctx := context.WithValue(context.Background(), userKey, "Alice")
+```
+
+## Практическое использование
+
+### Базовый шаблон работы с контекстом
+```go
+func worker(ctx context.Context) {
+    for {
+        select {
+        case <-ctx.Done(): // Проверяем отмену контекста
+            fmt.Println("Worker stopped:", ctx.Err())
+            return
+        default:
+            // Выполняем работу
+            performTask()
+        }
+    }
+}
+```
+
+### Пример с HTTP запросом
+```go
+func httpCallWithTimeout(ctx context.Context, url string) (string, error) {
+    req, _ := http.NewRequestWithContext(ctx, "GET", url, nil)
+    client := &http.Client{}
+    
+    resp, err := client.Do(req)
+    if err != nil {
+        return "", err
+    }
+    defer resp.Body.Close()
+    
+    body, _ := io.ReadAll(resp.Body)
+    return string(body), nil
+}
+
+// Использование
+ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+defer cancel()
+
+result, err := httpCallWithTimeout(ctx, "https://api.example.com")
+```
+
+## Методы Context интерфейса
+
+### Deadline() 
+Возвращает время, когда контекст будет автоматически отменен
+```go
+if deadline, ok := ctx.Deadline(); ok {
+    fmt.Println("Context will expire at:", deadline)
+}
+```
+
+### Done()
+Возвращает канал, который закрывается при отмене контекста
+```go
+select {
+case <-ctx.Done():
+    return ctx.Err() // Context canceled или Deadline exceeded
+}
+```
+
+### Err()
+Возвращает ошибку отмены контекста
+```go
+if err := ctx.Err(); err != nil {
+    switch err {
+    case context.Canceled:
+        fmt.Println("Context was canceled")
+    case context.DeadlineExceeded:
+        fmt.Println("Context deadline exceeded")
+    }
+}
+```
+
+### Value(key)
+Получение значения из контекста
+```go
+if userID, ok := ctx.Value("userID").(string); ok {
+    fmt.Println("User ID:", userID)
+}
+```
+
+## Best Practices
+
+### 1. Передавайте Context как первый параметр
+```go
+// Правильно
+func ProcessData(ctx context.Context, data []byte) error
+
+// Неправильно  
+func ProcessData(data []byte, ctx context.Context) error
+```
+
+### 2. Всегда проверяйте Context в циклах
+```go
+func longRunningTask(ctx context.Context) error {
+    for i := 0; i < 1000; i++ {
+        // Периодически проверяем контекст
+        if i%100 == 0 {
+            select {
+            case <-ctx.Done():
+                return ctx.Err()
+            default:
+            }
+        }
+        // Работа
+    }
+    return nil
+}
+```
+
+### 3. Используйте defer cancel()
+```go
+func operation() {
+    ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+    defer cancel() // Гарантированно освобождаем ресурсы
+    
+    // Используем ctx
+}
+```
+
+### 4. Вложенные контексты
+```go
+func handleRequest(parentCtx context.Context) {
+    // Создаем дочерний контекст с более строгим таймаутом
+    ctx, cancel := context.WithTimeout(parentCtx, 100*time.Millisecond)
+    defer cancel()
+    
+    processData(ctx)
+}
+```
+
+## Распространенные ошибки
+
+### 1. Игнорирование контекста
+```go
+// Плохо - функция игнорирует переданный контекст
+func badFunction(ctx context.Context) {
+    time.Sleep(10 * time.Second) // Не проверяет отмену контекста
+}
+```
+
+### 2. Неправильное использование WithValue
+```go
+// Плохо - использование базовых типов как ключей
+ctx := context.WithValue(ctx, "userID", 123)
+
+// Хорошо - использование пользовательских типов
+type contextKey string
+const userIDKey contextKey = "userID"
+ctx := context.WithValue(ctx, userIDKey, 123)
+```
+
+### 3. Утечка горутин
+```go
+// Плохо - горутина может работать вечно
+go func() {
+    for {
+        // работа без проверки контекста
+    }
+}()
+
+// Хорошо - горутина слушает контекст
+go func(ctx context.Context) {
+    for {
+        select {
+        case <-ctx.Done():
+            return
+        default:
+            // работа
+        }
+    }
+}(ctx)
+```
+
+## Пример полного приложения
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "time"
+)
+
+func databaseQuery(ctx context.Context, query string) (string, error) {
+    // Имитация долгого запроса к БД
+    select {
+    case <-time.After(2 * time.Second):
+        return "query result", nil
+    case <-ctx.Done():
+        return "", ctx.Err()
+    }
+}
+
+func apiCall(ctx context.Context, url string) (string, error) {
+    // Имитация API вызова
+    select {
+    case <-time.After(1 * time.Second):
+        return "api response", nil
+    case <-ctx.Done():
+        return "", ctx.Err()
+    }
+}
+
+func processUserRequest(ctx context.Context, userID string) error {
+    // Добавляем userID в контекст
+    ctx = context.WithValue(ctx, "userID", userID)
+    
+    // Параллельные операции с общим таймаутом
+    ctx, cancel := context.WithTimeout(ctx, 3*time.Second)
+    defer cancel()
+    
+    // Запускаем параллельные операции
+    resultCh := make(chan string, 2)
+    errCh := make(chan error, 2)
+    
+    go func() {
+        result, err := databaseQuery(ctx, "SELECT * FROM users")
+        if err != nil {
+            errCh <- err
+            return
+        }
+        resultCh <- result
+    }()
+    
+    go func() {
+        result, err := apiCall(ctx, "https://api.example.com/user")
+        if err != nil {
+            errCh <- err
+            return
+        }
+        resultCh <- result
+    }()
+    
+    // Ожидаем результаты
+    for i := 0; i < 2; i++ {
+        select {
+        case result := <-resultCh:
+            fmt.Println("Received:", result)
+        case err := <-errCh:
+            return err
+        case <-ctx.Done():
+            return ctx.Err()
+        }
+    }
+    
+    return nil
+}
+
+func main() {
+    ctx := context.Background()
+    
+    if err := processUserRequest(ctx, "user123"); err != nil {
+        fmt.Println("Error:", err)
+    }
+}
+```
+
+## Когда использовать Context
+
+### Обязательно:
+- **HTTP handlers** - используйте `r.Context()`
+- **GRPC** - встроенная поддержка контекста
+- **Фоновые задачи** с возможностью отмены
+- **Работа с внешними API** и базами данных
+
+### Рекомендуется:
+- **Любые долгие операции**
+- **Параллельная обработка** данных
+- **Сервисы** с возможностью graceful shutdown
+
+## Заключение
+
+Context — это мощный инструмент для управления жизненным циклом операций в Go. Правильное использование контекста позволяет:
+
+- Эффективно управлять ресурсами
+- Обеспечивать отзывчивость приложений
+- Координировать работу множества горутин
+- Реализовывать graceful shutdown
+
+Контекст стал стандартом де-факто для передачи метаданных и сигналов отмены в современных Go-приложениях.
 # 15 - select
+
+## Что такое select?
+
+**Select** — это конструкция в Go, которая позволяет горутине ожидать выполнения нескольких операций с каналами одновременно. Это мощный инструмент для работы с конкурентностью, похожий на switch, но для каналов.
+
+## Базовый синтаксис
+
+```go
+select {
+case <-channel1:
+    // обработка данных из channel1
+case data := <-channel2:
+    // обработка данных из channel2
+case channel3 <- value:
+    // отправка успешна
+default:
+    // выполняется, если ни один канал не готов
+}
+```
+
+## Основные возможности
+
+### 1. Ожидание нескольких каналов
+```go
+ch1 := make(chan string)
+ch2 := make(chan int)
+
+go func() {
+    time.Sleep(1 * time.Second)
+    ch1 <- "hello"
+}()
+
+go func() {
+    time.Sleep(2 * time.Second) 
+    ch2 <- 42
+}()
+
+select {
+case msg := <-ch1:
+    fmt.Println("Received:", msg)
+case num := <-ch2:
+    fmt.Println("Received:", num)
+}
+```
+
+### 2. Таймауты
+```go
+select {
+case result := <-longOperation():
+    fmt.Println("Operation completed:", result)
+case <-time.After(3 * time.Second):
+    fmt.Println("Operation timed out")
+}
+```
+
+### 3. Non-blocking операции
+```go
+select {
+case value := <-channel:
+    fmt.Println("Received:", value)
+default:
+    fmt.Println("No value ready") // Не блокируется
+}
+```
+
+## Практические примеры
+
+### Ожидание с таймаутом
+```go
+func waitWithTimeout() {
+    done := make(chan bool)
+    
+    go func() {
+        time.Sleep(5 * time.Second) // Долгая операция
+        done <- true
+    }()
+    
+    select {
+    case <-done:
+        fmt.Println("Operation completed")
+    case <-time.After(3 * time.Second):
+        fmt.Println("Timeout exceeded")
+    }
+}
+```
+
+### Приоритетная обработка
+```go
+func prioritySelect() {
+    urgent := make(chan string)
+    normal := make(chan string)
+    
+    // Сначала проверяем срочные сообщения
+    select {
+    case msg := <-urgent:
+        fmt.Println("Urgent:", msg)
+    case msg := <-normal:
+        fmt.Println("Normal:", msg) 
+    default:
+        fmt.Println("No messages")
+    }
+}
+```
+
+### Multiple select в цикле
+```go
+func worker(stopCh <-chan struct{}, dataCh <-chan int) {
+    for {
+        select {
+        case data := <-dataCh:
+            fmt.Println("Processing:", data)
+        case <-stopCh:
+            fmt.Println("Worker stopping")
+            return
+        }
+    }
+}
+```
+
+## Особенности работы
+
+### Случайный выбор при множестве готовых каналов
+```go
+ch1 := make(chan int, 1)
+ch2 := make(chan int, 1)
+
+ch1 <- 1
+ch2 <- 2
+
+// Выбор случая будет случайным
+select {
+case v := <-ch1:
+    fmt.Println("From ch1:", v)
+case v := <-ch2:
+    fmt.Println("From ch2:", v)
+}
+```
+
+### Select с отправкой в каналы
+```go
+func sendWithBackpressure() {
+    ch := make(chan int, 1)
+    
+    // Пытаемся отправить без блокировки
+    select {
+    case ch <- 42:
+        fmt.Println("Sent successfully")
+    default:
+        fmt.Println("Channel full, skipping")
+    }
+}
+```
+
+## Паттерны использования
+
+### 1. Graceful shutdown
+```go
+func server(shutdownCh <-chan struct{}, requests <-chan Request) {
+    for {
+        select {
+        case req := <-requests:
+            handleRequest(req)
+        case <-shutdownCh:
+            cleanup()
+            return
+        }
+    }
+}
+```
+
+### 2. Ограничение времени выполнения
+```go
+func operationWithDeadline() error {
+    resultCh := make(chan string)
+    
+    go func() {
+        result := expensiveOperation()
+        resultCh <- result
+    }()
+    
+    select {
+    case result := <-resultCh:
+        fmt.Println("Success:", result)
+        return nil
+    case <-time.After(5 * time.Second):
+        return errors.New("operation timed out")
+    }
+}
+```
+
+### 3. Периодические задачи
+```go
+func periodicWorker() {
+    ticker := time.NewTicker(1 * time.Second)
+    defer ticker.Stop()
+    
+    for {
+        select {
+        case <-ticker.C:
+            performPeriodicTask()
+        case <-stopCh:
+            return
+        }
+    }
+}
+```
+
+## Обработка закрытых каналов
+
+### Обнаружение закрытия канала
+```go
+func readUntilClosed(ch <-chan int) {
+    for {
+        select {
+        case value, ok := <-ch:
+            if !ok {
+                fmt.Println("Channel closed")
+                return
+            }
+            fmt.Println("Received:", value)
+        }
+    }
+}
+```
+
+## Продвинутые техники
+
+### Select с контекстом
+```go
+func operationWithContext(ctx context.Context, ch <-chan int) {
+    for {
+        select {
+        case data := <-ch:
+            process(data)
+        case <-ctx.Done():
+            fmt.Println("Context canceled:", ctx.Err())
+            return
+        }
+    }
+}
+```
+
+### Мультиплексирование каналов
+```go
+func fanIn(inputs ...<-chan int) <-chan int {
+    output := make(chan int)
+    
+    for _, input := range inputs {
+        go func(ch <-chan int) {
+            for value := range ch {
+                output <- value
+            }
+        }(input)
+    }
+    
+    return output
+}
+
+// Использование
+func main() {
+    ch1 := make(chan int)
+    ch2 := make(chan int)
+    
+    multiplexed := fanIn(ch1, ch2)
+    
+    for value := range multiplexed {
+        fmt.Println("Received:", value)
+    }
+}
+```
+
+## Распространенные ошибки
+
+### 1. Deadlock с пустым select
+```go
+select {} // Вечный deadlock
+```
+
+### 2. Игнорирование закрытых каналов
+```go
+select {
+case value := <-ch: // Может получать нулевые значения после закрытия
+    // ...
+}
+```
+
+### 3. Неправильная работа с default
+```go
+// Плохо - может создать busy loop
+for {
+    select {
+    case data := <-ch:
+        process(data)
+    default:
+        // Пустой default создает активное ожидание
+    }
+}
+
+// Лучше - добавить небольшую паузу
+for {
+    select {
+    case data := <-ch:
+        process(data)
+    default:
+        time.Sleep(10 * time.Millisecond)
+    }
+}
+```
+
+## Best Practices
+
+### 1. Всегда обрабатывайте все случаи
+```go
+select {
+case result := <-resultCh:
+    handleResult(result)
+case err := <-errorCh:
+    handleError(err)
+case <-time.After(timeout):
+    handleTimeout()
+}
+```
+
+### 2. Используйте default для non-blocking операций
+```go
+select {
+case ch <- value:
+    // отправлено
+default:
+    // не блокируемся если канал полный
+}
+```
+
+### 3. Комбинируйте с контекстом для отмены
+```go
+select {
+case <-ctx.Done():
+    return ctx.Err()
+case result := <-operation():
+    return result
+}
+```
+
+### 4. Избегайте вложенных select
+```go
+// Плохо
+select {
+case a := <-ch1:
+    select {
+    case b := <-ch2:
+        // сложная логика
+    }
+}
+
+// Лучше - используйте отдельные функции
+```
+
+## Производительность
+
+Select в Go оптимизирован и эффективен:
+- **O(1)** сложность для небольшого количества случаев
+- **Случайный выбор** предотвращает голодание
+- **Минимальные накладные расходы** по сравнению с другими подходами
+
+## Заключение
+
+Select — это фундаментальный инструмент для работы с конкурентностью в Go. Он позволяет:
+- Координировать работу нескольких горутин
+- Реализовывать таймауты и дедлайны
+- Создавать неблокирующие операции
+- Эффективно мультиплексировать каналы
+
+Правильное использование select делает Go-программы более отзывчивыми, надежными и эффективными.
 # 16 - виды контекст
 # 17 - Примитивы Lock\RWlock
 # 18 - каналы
