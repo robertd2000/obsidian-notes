@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/data types/slices/range.md",
+                "file": "go/вопросы/Тех собеседование В WB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "range"
+              "title": "Тех собеседование В WB"
             }
           },
           {
@@ -200,8 +200,8 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/range.md",
+    "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/Slice to Array Conversion.md",
     "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
     "go/core/data types/slices/Slices.md",
