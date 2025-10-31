@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/Тех собеседование В WB.md",
+                "file": "go/patterns/Паттерны каналов.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Тех собеседование В WB"
+              "title": "Паттерны каналов"
             }
           },
           {
@@ -200,6 +200,14 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "Pasted image 20251031175353.png",
+    "Pasted image 20251031173409.png",
+    "Pasted image 20251031173231.png",
+    "Pasted image 20251031171141.png",
+    "Pasted image 20251031170826.png",
+    "Pasted image 20251031170258.png",
+    "go/вопросы/Тех собеседование В WB.md",
+    "go/patterns/Паттерны каналов.md",
     "go/core/data types/slices/range.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/Slice to Array Conversion.md",
@@ -223,25 +231,17 @@
     "go/core/map/How the Go runtime implements maps efficiently.md",
     "go/core/map/Go maps in action.md",
     "go/core/map/Карты.md",
-    "go/core/map/Macro View of Map Internals In Go.md",
-    "go/задачи/Задачи Альфа.md",
     "Pasted image 20251022144416.png",
     "Pasted image 20251022141759.png",
     "Pasted image 20251021174022.png",
     "Pasted image 20251021174004.png",
-    "go/core/data types/strings/Строка из слайса без копирования.md",
     "Pasted image 20251021173620.png",
-    "Pasted image 20251021173546.png",
-    "Pasted image 20251021173421.png",
-    "Pasted image 20251021173316.png",
-    "Pasted image 20251021172342.png",
     "go/core/concurrency/Concurrency Patterns",
     "Untitled",
     "backend/security/OWASP/top 10",
     "backend/security/OWASP",
     "backend/security",
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
-    "Pasted image 20251009111203.png",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность",
     "Алгоритмика/1. Анализ алгоритмов",
