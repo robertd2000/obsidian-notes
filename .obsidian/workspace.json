@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/patterns/Паттерны каналов.md",
+                "file": "go/core/interface/Interface pollution.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Паттерны каналов"
+              "title": "Interface pollution"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "go/patterns/Паттерны каналов.md",
+    "go/core/interface/Interface pollution.md",
     "Pasted image 20251031175353.png",
     "Pasted image 20251031173409.png",
     "Pasted image 20251031173231.png",
@@ -207,7 +209,6 @@
     "Pasted image 20251031170826.png",
     "Pasted image 20251031170258.png",
     "go/вопросы/Тех собеседование В WB.md",
-    "go/patterns/Паттерны каналов.md",
     "go/core/data types/slices/range.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/Slice to Array Conversion.md",
@@ -235,7 +236,6 @@
     "Pasted image 20251022141759.png",
     "Pasted image 20251021174022.png",
     "Pasted image 20251021174004.png",
-    "Pasted image 20251021173620.png",
     "go/core/concurrency/Concurrency Patterns",
     "Untitled",
     "backend/security/OWASP/top 10",
