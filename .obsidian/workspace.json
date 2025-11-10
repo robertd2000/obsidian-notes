@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/garbage collector/A Guide to the Go Garbage Collector.md",
+                "file": "go/задачи/LAMODA НА 300К.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A Guide to the Go Garbage Collector"
+              "title": "LAMODA НА 300К"
             }
           },
           {
             "id": "45d69b1b423ec3ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "go/задачи/Задача сложная ютуб.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Задача сложная ютуб"
+            }
+          },
+          {
+            "id": "eb762300b57a9f4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,17 +50,17 @@
             }
           },
           {
-            "id": "eb762300b57a9f4b",
+            "id": "c1106fc93dc6e427",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/interface/Погружение в интерфейсы Go.md",
+                "file": "go/core/data types/maps/Go maps in action.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Погружение в интерфейсы Go"
+              "title": "Go maps in action"
             }
           }
         ]
@@ -200,42 +214,43 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
-    "go/core/garbage collector/Garbage Collection In Go  Part I - Semantics.md",
+    "Pasted image 20251110212156.png",
+    "Pasted image 20251110183405.png",
+    "Pasted image 20251110183356.png",
+    "Pasted image 20251110183050.png",
+    "go/задачи/LAMODA.md",
+    "go/задачи/LAMODA НА 300К.md",
+    "go/вопросы/kafka/Pros.md",
+    "go/задачи/Задача сложная ютуб.md",
+    "go/core/data types/maps/Go maps in action.md",
+    "go/core/data types/maps/Go maps in action 1.md",
+    "go/core/data types/maps/Maps.md",
+    "go/core/concurrency/data race and race condition.md",
+    "Pasted image 20251110174953.png",
+    "Pasted image 20251110174622.png",
+    "go/вопросы/kafka/kafka.md",
+    "go/вопросы/kafka",
+    "Pasted image 20251110172611.png",
+    "go/core/concurrency/Модель памяти Go.md",
+    "go/core/concurrency/scheduler/Планировщик Go.md",
+    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "go/core/concurrency/Goroutines/Goroutines.md",
+    "go/core/concurrency/Goroutines/Горутины.md",
+    "go/core/interface/Погружение в интерфейсы Go.md",
+    "go/core/concurrency/worker pool/How to Write a Worker Pool.md",
+    "собес/TG.md",
     "go/core/garbage collector/A Guide to the Go Garbage Collector.md",
+    "go/core/garbage collector/Garbage Collection In Go  Part I - Semantics.md",
     "go/core/interface/Interface pollution.md",
     "go/patterns/Паттерны каналов.md",
     "Pasted image 20251031175353.png",
     "Pasted image 20251031173409.png",
     "Pasted image 20251031173231.png",
     "Pasted image 20251031171141.png",
-    "Pasted image 20251031170826.png",
-    "Pasted image 20251031170258.png",
     "go/вопросы/Тех собеседование В WB.md",
     "go/core/data types/slices/range.md",
     "go/core/data types/slices/How to slice arrays correctly.md",
     "go/core/data types/slices/Slice to Array Conversion.md",
-    "go/core/data types/slices/The new() vs make() Functions in Go – When to Use Each One.md",
-    "go/core/data types/slices/Slices.md",
-    "go/core/data types/slices/удаление.md",
-    "go/core/data types/slices/Array to Slice Conversion.md",
-    "go/core/data types/slices/Срезы(slices) в Go.md",
-    "go/core/data types/slices/Слайс без инициализации значений.md",
-    "go/core/slice/Срезы.md",
-    "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
-    "go/core/slice/Go Slices - usage and internals.md",
-    "go/core/slice/SliceTricks.md",
-    "go/вопросы/Senior Golang разработчика НА ИЗИ.md",
-    "go/core/concurrency/Select/Select Statement in Go (Golang).md",
-    "go/core/concurrency/Select/Select.md",
-    "go/core/concurrency/scheduler/Планировщик Go.md",
-    "go/core/concurrency/Goroutines/Goroutines.md",
-    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
-    "go/core/concurrency/Goroutines/Горутины.md",
-    "go/core/map/How the Go runtime implements maps efficiently.md",
-    "Pasted image 20251022144416.png",
-    "Pasted image 20251022141759.png",
-    "Pasted image 20251021174022.png",
-    "Pasted image 20251021174004.png",
     "go/core/concurrency/Concurrency Patterns",
     "Untitled",
     "backend/security/OWASP/top 10",
@@ -244,7 +259,6 @@
     "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
     "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность",
-    "Алгоритмика/1. Анализ алгоритмов",
-    "Алгоритмика"
+    "Алгоритмика/1. Анализ алгоритмов"
   ]
 }
