@@ -30,8 +30,53 @@ func uniqRandn(n int) []int {
 	
 	return res
 }
+
 ```
 
+```go
+
+package main
+
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
+
+func main() {
+	fmt.Println(uniqRandn(3))
+}
+
+// Оптимизированная функция uniqRandn с минимальными аллокациями памяти
+func uniqRandn(n int) []int {
+	if n <= 0 {
+		return nil
+	}
+
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	
+	// Единственная аллокация - сразу создаем срез нужного размера
+	result := make([]int, n)
+	
+	// Используем map с предварительным выделением емкости для уменьшения реаллокаций
+	unique := make(map[int]struct{}, n)
+	
+	i := 0
+	for i < n {
+		num := r.Int()
+		
+		// Проверяем наличие через пустую структуру (0 байт)
+		if _, exists := unique[num]; !exists {
+			unique[num] = struct{}{} // struct{}{} занимает 0 байт
+			result[i] = num
+			i++
+		}
+	}
+	
+	return result
+}
+
+```
 
 # 2 
 

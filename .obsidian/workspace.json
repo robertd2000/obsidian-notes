@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "собес/soft/Прроблемы.md",
+                "file": "go/задачи/OZON 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Прроблемы"
+              "title": "OZON 2"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/задачи/Задача сложная ютуб.md",
+                "file": "собес/soft/Проблемы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задача сложная ютуб"
+              "title": "Проблемы"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/scheduler/Планировщик Go.md",
+                "file": "собес/soft/Вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Планировщик Go"
+              "title": "Вопросы"
             }
           },
           {
@@ -63,7 +63,8 @@
               "title": "Задача сложная ютуб"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,14 +213,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7dca43435214a1db",
+  "active": "eb762300b57a9f4b",
   "lastOpenFiles": [
+    "собес/soft/Что ищешь.md",
+    "собес/soft/Постановка задач.md",
+    "go/core/concurrency/scheduler/Планировщик Go.md",
+    "собес/soft/Проблемы.md",
     "собес/soft/Вопросы.md",
-    "собес/soft/Прроблемы.md",
+    "собес/soft/Бывали ли у тебя конфликты в команде Если да, то расскажи про них. Из-за чего они возникли и как ты их решал.md",
+    "go/задачи/Задача сложная ютуб.md",
+    "go/задачи/OZON 2.md",
+    "go/core/concurrency/channels/Go Channels Explained.md",
+    "go/core/concurrency/channels/Channels in Golang.md",
+    "go/задачи/Задачи Озон.md",
     "собес/soft/Как обучаешься.md",
     "собес/soft/как оцениваешь свою продуктивность.md",
-    "собес/soft/Что ищешь.md",
-    "собес/soft/Бывали ли у тебя конфликты в команде Если да, то расскажи про них. Из-за чего они возникли и как ты их решал.md",
     "собес/soft/Софт скиллы.md",
     "собес/soft/Сквозное тестирование.md",
     "собес/soft/Самая сложная задача.md",
@@ -227,19 +235,12 @@
     "собес/soft/Рассказ о себе.md",
     "собес/soft/Расскажи про свое последнее место работы.md",
     "собес/soft/проекты.md",
-    "собес/soft/Постановка задач.md",
     "собес/soft/Методологии тестирования фронтенда.md",
     "собес/soft/Какие технологии вы используете.md",
     "собес/soft/Как у вас устроен процесс разработки в команде.md",
     "собес/soft/Есть ли регулярные встречи Если да, то какие.md",
     "собес/soft/Есть ли процесс код-ревью.md",
-    "go/задачи/Задача сложная ютуб.md",
     "go/задачи/Untitled.md",
-    "go/задачи/LAMODA НА 300К.md",
-    "go/задачи/LAMODA.md",
-    "go/core/concurrency/scheduler/Планировщик Go.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "go/core/concurrency/scheduler/Scalable Go Scheduler Design Doc.md",
     "Pasted image 20251110212156.png",
     "Pasted image 20251110183405.png",
     "Pasted image 20251110183356.png",
