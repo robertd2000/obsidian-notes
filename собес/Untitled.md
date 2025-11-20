@@ -1,0 +1,14 @@
+- ozon 
+	- hr
+- lamoda 
+	- hr
+	- tech
+	- final
+	- final
+- Kvando
+	- hr
+	- tech
+- ddos heard 
+	- hr
+- MAX Group
+	- hr
