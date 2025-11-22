@@ -1,0 +1,51 @@
+![[Pasted image 20251121123427.png]]
+![[Pasted image 20251121123526.png]]
+![[Pasted image 20251121123404.png]]
+![[Pasted image 20251121123612.png]]
+![[Pasted image 20251121123642.png]]
+![[Pasted image 20251121123801.png]]
+![[Pasted image 20251121123811.png]]
+![[Pasted image 20251121123834.png]]
+![[Pasted image 20251121124755.png]]
+![[Pasted image 20251121124907.png]]
+![[Pasted image 20251121124917.png]]
+![[Pasted image 20251121125012.png]]
+![[Pasted image 20251121125019.png]]
+![[Pasted image 20251121125041.png]]
+![[Pasted image 20251121125104.png]]
+![[Pasted image 20251121125110.png]]
+![[Pasted image 20251121125135.png]]
+![[Pasted image 20251121125213.png]]
+![[Pasted image 20251121125245.png]]
+![[Pasted image 20251121125252.png]]
+![[Pasted image 20251121125302.png]]
+![[Pasted image 20251121125315.png]]
+![[Pasted image 20251121125322.png]]
+![[Pasted image 20251121125354.png]]
+![[Pasted image 20251121125407.png]]
+![[Pasted image 20251121125432.png]]
+![[Pasted image 20251121125540.png]]
+![[Pasted image 20251121125600.png]]
+![[Pasted image 20251121125636.png]]
+![[Pasted image 20251121125718.png]]
+![[Pasted image 20251121125734.png]]
+![[Pasted image 20251121125807.png]]
+![[Pasted image 20251121125820.png]]
+![[Pasted image 20251121125854.png]]
+![[Pasted image 20251121125911.png]]
+![[Pasted image 20251121125935.png]]
+![[Pasted image 20251121125941.png]]
+![[Pasted image 20251121125946.png]]
+![[Pasted image 20251121130011.png]]
+![[Pasted image 20251121130033.png]]
+![[Pasted image 20251121130039.png]]
+![[Pasted image 20251121130057.png]]
+
+
+
+
+
+
+
+
+
