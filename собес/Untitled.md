@@ -1,11 +1,12 @@
 - ozon 
 	- hr
+	- тех скрининг
 - lamoda 
 	- hr
 	- tech
 	- final
 	- final
-- Kvando
+- Kvando - после тех собеса отказали
 	- hr
 	- tech
 - ddos heard 
