@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+                "file": "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Внутренности планировщика Go"
+              "title": "Вопросы 2"
             }
           },
           {
@@ -228,6 +228,16 @@
   },
   "active": "7dca43435214a1db",
   "lastOpenFiles": [
+    "собес/задачи реализация/сервис мониторинга/Вопросы.md",
+    "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
+    "собес/задачи реализация/сервис мониторинга/Полный флоу системы с хранением данных.md",
+    "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
+    "собес/задачи реализация/сервис мониторинга/Processing Service.md",
+    "собес/задачи реализация/сервис мониторинга/Real-time Service.md",
+    "собес/задачи реализация/сервис мониторинга/Сервис приемки данных с датчиков.md",
+    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "собес/задачи реализация/сервис мониторинга",
+    "собес/задачи реализация",
     "go/core/concurrency/Goroutines/Горутины.md",
     "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
     "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
@@ -243,17 +253,9 @@
     "go/core/concurrency/channels/channel struct.md",
     "go/core/concurrency/channels/Go Channels Explained.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "собес/hard/задачи платформа.md",
     "собес/hard/задачи алгоритмы.md",
     "задачи.md",
-    "go/на чем надо сфокусироваться.md",
-    "темы для изучения/Untitled.md",
-    "темы для изучения/Темы для изучения.md",
-    "собес/Untitled.md",
-    "собес/TG.md",
-    "go/core/garbage collector/GC.md",
-    "go/задачи/Ozon 1.md",
     "Pasted image 20251121155153.png",
     "Pasted image 20251121155105.png",
     "Pasted image 20251121155044.png",
@@ -271,8 +273,6 @@
     "backend/security/OWASP/top 10",
     "backend/security/OWASP",
     "backend/security",
-    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки",
-    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность/1. Асимптотический анализ",
-    "Алгоритмика/1. Анализ алгоритмов/1. Вычислительная сложность"
+    "Алгоритмика/1. Анализ алгоритмов/2. Сортировки"
   ]
 }
