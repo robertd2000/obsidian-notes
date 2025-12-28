@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algorithms/70. Climbing Stairs.md",
+                "file": "go/core/Выжимаем из Go максимум производительности.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "70. Climbing Stairs"
+              "title": "Выжимаем из Go максимум производительности"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/на чем надо сфокусироваться.md",
+                "file": "go/core/concurrency/Эффект стаи собак (The thundering herd problem).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "на чем надо сфокусироваться"
+              "title": "Эффект стаи собак (The thundering herd problem)"
             }
           },
           {
@@ -214,11 +214,34 @@
   },
   "active": "45d69b1b423ec3ec",
   "lastOpenFiles": [
+    "Pasted image 20251228211237.png",
+    "Pasted image 20251228211203.png",
+    "Pasted image 20251228211132.png",
+    "Pasted image 20251228211110.png",
+    "Pasted image 20251228211051.png",
+    "Pasted image 20251228210956.png",
+    "Pasted image 20251228210947.png",
+    "Pasted image 20251228210856.png",
+    "Pasted image 20251228210816.png",
+    "Pasted image 20251228210659.png",
+    "Pasted image 20251228210654.png",
+    "algorithms/70. Climbing Stairs.md",
+    "go/core/Выжимаем из Go максимум производительности.md",
+    "go/core/concurrency/Эффект стаи собак (The thundering herd problem).md",
+    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
+    "go/core/concurrency/Goroutines/Горутины.md",
+    "go/core/concurrency/Concurrency Patterns/fan in.md",
+    "go/core/concurrency/Concurrency Patterns/Fan In and Fan Out.md",
+    "go/core/concurrency/Concurrency Patterns/Go Concurrency Patterns Pipelines and cancellation.md",
+    "go/core/concurrency/Concurrency Patterns/Mastering Concurrency in Go.md",
+    "go/core/concurrency/Модель памяти Go.md",
+    "go/на чем надо сфокусироваться.md",
+    "frontend/вопросы на собес/React/React.md",
     "собес/soft/Бывали ли у тебя конфликты в команде Если да, то расскажи про них. Из-за чего они возникли и как ты их решал.md",
     "Untitled 1.base",
     "Untitled.base",
     "go/задачи/20 ЗАДАЧ С СОБЕСЕДОВАНИЙ GOLANG 2025-2026.md",
-    "Pasted image 20251221170914.png",
     "go/задачи/Задача сложная ютуб.md",
     "go/вопросы/Вопросы Авито платформа.md",
     "собес/soft/Вопросы.md",
@@ -229,30 +252,8 @@
     "Вопросы.md",
     "go/задачи/Untitled.md",
     "собес/задачи реализация/сервис мониторинга/Вопросы.md",
-    "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
-    "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
-    "собес/задачи реализация/сервис мониторинга/Полный флоу системы с хранением данных.md",
-    "собес/задачи реализация/сервис мониторинга/Сервис приемки данных с датчиков.md",
-    "собес/Untitled.md",
-    "go/вопросы/kafka/kafka.md",
-    "go/задачи/Merge sorted channels.md",
-    "go/задачи/printNumber.md",
-    "go/задачи/4 Задачи с ютуба.md",
-    "go/задачи/создание среза без инициализации.md",
-    "Pasted image 20251205132830.png",
-    "go/core/concurrency/Concurrency Patterns/fan in.md",
-    "go/задачи/Самая Коварная Задача на Горутины с Golang-собеса в Авито.md",
-    "собес/задачи реализация/сервис мониторинга/Processing Service.md",
     "собес/задачи реализация/сервис мониторинга",
     "собес/задачи реализация",
-    "Pasted image 20251121155153.png",
-    "Pasted image 20251121155105.png",
-    "Pasted image 20251121155044.png",
-    "Pasted image 20251121130057.png",
-    "Pasted image 20251121130039.png",
-    "Pasted image 20251121130033.png",
-    "Pasted image 20251121130011.png",
-    "Pasted image 20251121130004.png",
     "go/вопросы/теория",
     "go/вопросы/kafka",
     "go/core/concurrency/Concurrency Patterns",
