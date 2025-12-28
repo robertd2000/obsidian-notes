@@ -13,8 +13,11 @@ Small size в 2.5 раза быстрее
 ## Interface
 
 ![[Pasted image 20251228210636.png]]
+
 ![[Pasted image 20251228210644.png]]
+
 ![[Pasted image 20251228210654.png]]
+
 ![[Pasted image 20251228210659.png]]
 
 ![[Pasted image 20251228210816.png]]
