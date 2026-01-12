@@ -40,3 +40,15 @@ Small size в 2.5 раза быстрее
 
 ![[Pasted image 20251228211237.png]]
 
+## Stack
+
+![[Pasted image 20251229112614.png]]
+![[Pasted image 20251229112811.png]]
+
+## CPU
+
+## For
+
+![[Pasted image 20251229150510.png]]
+![[Pasted image 20251229153427.png]]
+![[Pasted image 20251229153551.png]]
