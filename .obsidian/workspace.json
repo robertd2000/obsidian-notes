@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+                "file": "go/вопросы/Частые вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Что такое горутины и каков их размер"
+              "title": "Частые вопросы"
+            }
+          },
+          {
+            "id": "ac205be1c595d639",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "go/core/concurrency/Goroutines/Goroutine Leaks.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Goroutine Leaks"
             }
           },
           {
@@ -27,16 +41,27 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/channels/Channels.md",
+                "file": "go/вопросы/Вопросы и ответы для собеседования Back-end Golang.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Channels"
+              "title": "Вопросы и ответы для собеседования Back-end Golang"
+            }
+          },
+          {
+            "id": "9ebec3e6d62a344d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,45 +210,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8b3add67801454e",
+  "active": "404d2b9f9d95646b",
   "lastOpenFiles": [
+    "go/core/concurrency/Goroutines/Goroutine Leaks.md",
+    "go/core/concurrency/Deadlocks, Livelocks и Starvation.md",
+    "go/вопросы/Частые вопросы.md",
+    "go/core/concurrency/Race condition и Data Race.md",
+    "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
+    "go/core/concurrency/Goroutines/Горутины.md",
+    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
+    "go/вопросы/Golang Interview Questions.md",
+    "go/вопросы/Вопросы и ответы для собеседования Back-end Golang.md",
+    "go/Go ysndex.md",
+    "go/50 оттенков Go.md",
+    "собес/soft/Что ищешь.md",
+    "собес/soft/Софт скиллы.md",
+    "собес/задачи реализация/сервис мониторинга/Сервис приемки данных с датчиков.md",
+    "собес/задачи реализация/сервис мониторинга/Полный флоу системы с хранением данных.md",
+    "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
+    "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
+    "собес/задачи реализация/сервис мониторинга/Вопросы.md",
+    "go/core/concurrency/channels/Channels.md",
     "Pasted image 20260112121855.png",
     "go/core/concurrency/channels/channel struct.md",
-    "go/core/concurrency/channels/Channels.md",
     "go/core/concurrency/channels/Channels in Golang.md",
     "go/core/concurrency/channels/Go Channels Explained.md",
     "go/core/Go Style Decisions.md",
     "go/core/Методические рекомендации по написанию Go кода от Uber.md",
     "собес/задачи/Тинькофф.md",
-    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
-    "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
-    "go/core/concurrency/Goroutines/Горутины.md",
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
     "Pasted image 20260111143956.png",
     "задачи.md",
     "собес/задачи",
-    "go/core/concurrency/scheduler/Планировщик Go.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "go/core/concurrency/data race and race condition.md",
-    "go/core/concurrency/Модель памяти Go.md",
-    "go/core/concurrency/Эффект стаи собак (The thundering herd problem).md",
-    "backend/sql/Оптимизация.md",
     "Pasted image 20260102170143.png",
-    "go/core/interface/Интерфейсы.md",
-    "frontend/вопросы на собес/JS/JS.md",
-    "go/core/Выжимаем из Go максимум производительности.md",
     "Pasted image 20251229153551.png",
     "Pasted image 20251229153427.png",
     "Pasted image 20251229150510.png",
-    "frontend/вопросы на собес/React/React.md",
-    "frontend/css/CSS performance optimization.md",
-    "frontend/render/Блокировка рендеринга CSS.md",
-    "frontend/react/reconciliation/React Reconciliation.md",
-    "frontend/react/reconciliation/Согласование.md",
     "Pasted image 20251229112811.png",
     "Pasted image 20251229112614.png",
-    "Pasted image 20251229112606.png",
     "Untitled 1.base",
     "Untitled.base",
     "собес/задачи реализация/сервис мониторинга",
