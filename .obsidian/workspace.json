@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Goroutines/Goroutine Leaks.md",
+                "file": "go/core/concurrency/channels/Channels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Goroutine Leaks"
+              "title": "Channels"
             }
           },
           {
@@ -212,9 +212,12 @@
   },
   "active": "404d2b9f9d95646b",
   "lastOpenFiles": [
+    "go/core/concurrency/channels/Channels.md",
+    "go/core/concurrency/channels/channel struct.md",
+    "go/core/concurrency/scheduler/Планировщик Go.md",
+    "go/вопросы/Частые вопросы.md",
     "go/core/concurrency/Goroutines/Goroutine Leaks.md",
     "go/core/concurrency/Deadlocks, Livelocks и Starvation.md",
-    "go/вопросы/Частые вопросы.md",
     "go/core/concurrency/Race condition и Data Race.md",
     "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
     "go/core/concurrency/Goroutines/Горутины.md",
@@ -230,9 +233,7 @@
     "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
     "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
     "собес/задачи реализация/сервис мониторинга/Вопросы.md",
-    "go/core/concurrency/channels/Channels.md",
     "Pasted image 20260112121855.png",
-    "go/core/concurrency/channels/channel struct.md",
     "go/core/concurrency/channels/Channels in Golang.md",
     "go/core/concurrency/channels/Go Channels Explained.md",
     "go/core/Go Style Decisions.md",
@@ -241,7 +242,6 @@
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
     "Pasted image 20260111143956.png",
-    "задачи.md",
     "собес/задачи",
     "Pasted image 20260102170143.png",
     "Pasted image 20251229153551.png",
