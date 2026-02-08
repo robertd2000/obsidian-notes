@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "собес/проекты/Платформа мониторинга транспорта и управления автопарком (B2B SaaS).md",
+                "file": "собес/проекты/онлайн-промо-игра.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Платформа мониторинга транспорта и управления автопарком (B2B SaaS)"
+              "title": "онлайн-промо-игра"
             }
           },
           {
@@ -75,8 +75,7 @@
               "title": "Release Notes 1.11.5"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,10 +224,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab56e4b9fc6f6db0",
+  "active": "404d2b9f9d95646b",
   "lastOpenFiles": [
-    "собес/проекты/Платформа мониторинга транспорта и управления автопарком (B2B SaaS).md",
     "собес/проекты/B2B-платформа для автоматизации транспортных перевозок.md",
+    "собес/проекты/онлайн-промо-игра.md",
+    "собес/проекты/Платформа мониторинга транспорта и управления автопарком (B2B SaaS).md",
     "go/вопросы/Частые вопросы.md",
     "собес/задачи реализация/сервис мониторинга/Полный флоу системы с хранением данных.md",
     "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
@@ -254,7 +254,6 @@
     "Pasted image 20260112121855.png",
     "go/core/concurrency/channels/Channels in Golang.md",
     "go/core/concurrency/channels/Go Channels Explained.md",
-    "go/core/Go Style Decisions.md",
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
     "Pasted image 20260111143956.png",
