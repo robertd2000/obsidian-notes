@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "собес/задачи реализация/сервис мониторинга/Untitled.md",
+                "file": "собес/задачи реализация/сервис мониторинга/платформа мониторинга и аналитики транспорта в реальном времени.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "платформа мониторинга и аналитики транспорта в реальном времени"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "собес/проекты/B2B-платформа для автоматизации транспортных перевозок.md",
+                "file": "собес/проекты/aero/метрики.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B2B-платформа для автоматизации транспортных перевозок"
+              "title": "метрики"
             }
           },
           {
@@ -75,7 +75,8 @@
               "title": "Release Notes 1.11.5"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -224,12 +225,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "404d2b9f9d95646b",
+  "active": "ab56e4b9fc6f6db0",
   "lastOpenFiles": [
+    "собес/проекты/aero/логи.md",
+    "собес/проекты/aero/метрики.md",
+    "собес/проекты/aero/Объемы.md",
+    "собес/проекты/aero/Описание.md",
+    "собес/проекты/aero/Проблемы.md",
+    "собес/проекты/janti/логи.md",
+    "собес/проекты/janti/Вопросы.md",
+    "собес/проекты/janti/kafka.md",
+    "собес/проекты/janti/ClickHouse.md",
+    "собес/проекты/janti/Real-time сервис.md",
+    "собес/проекты/janti/сервис обработки телеметрии.md",
+    "собес/проекты/aero",
+    "собес/проекты/janti/ingestion-сервис.md",
+    "собес/проекты/Untitled.md",
+    "собес/проекты/janti",
+    "собес/проекты/вопросы к джанти.md",
     "собес/проекты/онлайн-промо-игра.md",
-    "собес/задачи реализация/сервис мониторинга/Untitled.md",
     "собес/проекты/B2B-платформа для автоматизации транспортных перевозок.md",
     "собес/проекты/Платформа мониторинга транспорта и управления автопарком (B2B SaaS).md",
+    "собес/задачи реализация/сервис мониторинга/платформа мониторинга и аналитики транспорта в реальном времени.md",
     "go/вопросы/Частые вопросы.md",
     "собес/задачи реализация/сервис мониторинга/Полный флоу системы с хранением данных.md",
     "собес/задачи реализация/сервис мониторинга/Полный флоу.md",
@@ -239,21 +256,7 @@
     "go/core/concurrency/channels/Channels.md",
     "go/core/concurrency/channels/channel struct.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
-    "go/core/concurrency/Goroutines/Goroutine Leaks.md",
-    "go/core/concurrency/Deadlocks, Livelocks и Starvation.md",
-    "go/core/concurrency/Race condition и Data Race.md",
-    "go/core/concurrency/Goroutines/Работа с гонками данных (data race) в Golang.md",
-    "go/core/concurrency/Goroutines/Горутины.md",
-    "go/core/concurrency/Goroutines/Что такое горутины и каков их размер.md",
-    "go/вопросы/Golang Interview Questions.md",
-    "go/вопросы/Вопросы и ответы для собеседования Back-end Golang.md",
-    "go/Go ysndex.md",
-    "go/50 оттенков Go.md",
-    "собес/soft/Что ищешь.md",
-    "собес/soft/Софт скиллы.md",
-    "собес/задачи реализация/сервис мониторинга/Вопросы 2.md",
     "Pasted image 20260112121855.png",
-    "go/core/concurrency/channels/Channels in Golang.md",
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
     "Pasted image 20260111143956.png",
@@ -269,8 +272,6 @@
     "собес/задачи реализация/сервис мониторинга",
     "собес/задачи реализация",
     "go/вопросы/теория",
-    "go/вопросы/kafka",
-    "go/core/concurrency/Concurrency Patterns",
-    "Untitled"
+    "go/вопросы/kafka"
   ]
 }
