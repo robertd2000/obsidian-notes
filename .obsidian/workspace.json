@@ -75,8 +75,7 @@
               "title": "Release Notes 1.11.5"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,10 +224,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab56e4b9fc6f6db0",
+  "active": "404d2b9f9d95646b",
   "lastOpenFiles": [
-    "собес/проекты/aero/логи.md",
+    "go/core/concurrency/channels/Channels.md",
     "собес/проекты/aero/метрики.md",
+    "собес/проекты/aero/логи.md",
     "собес/проекты/aero/Объемы.md",
     "собес/проекты/aero/Описание.md",
     "собес/проекты/aero/Проблемы.md",
@@ -253,7 +253,6 @@
     "собес/задачи реализация/сервис мониторинга/Сервис приемки данных с датчиков.md",
     "собес/задачи реализация/сервис мониторинга/Вопросы.md",
     "собес/проекты",
-    "go/core/concurrency/channels/Channels.md",
     "go/core/concurrency/channels/channel struct.md",
     "go/core/concurrency/scheduler/Планировщик Go.md",
     "Pasted image 20260112121855.png",
