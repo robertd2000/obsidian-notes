@@ -3,7 +3,6 @@ https://go.dev/blog/slices
 ## Introduction[¶](https://go.dev/blog/slices#introduction)
 
 One of the most common features of procedural programming languages is the concept of an array. Arrays seem like simple things but there are many questions that must be answered when adding them to a language, such as:
-
 - fixed-size or variable-size?
 - is the size part of the type?
 - what do multidimensional arrays look like?
