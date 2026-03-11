@@ -18,29 +18,18 @@ What if I say that same byte represents a number? Your answer would probably be 
 
 **Number Bases:**  
   
-All numbering systems have a base that they function within. Since you were  
-a baby you were taught to count in base 10. This may be due to the fact that  
-most of us have 10 fingers and 10 toes. Also, it seems natural to perform  
-math in base 10.  
+All numbering systems have a base that they function within. Since you were  a baby you were taught to count in base 10. This may be due to the fact that  most of us have 10 fingers and 10 toes. Also, it seemsnatural to perform  math in base 10.  
   
-Base defines the number of symbols a numbering system contains. In base 10  
-there are 10 distinct symbols we use to represent the infinite number of  
-things we can count. In base 10 the symbols are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.  
-Once we reach the symbol 9 we need to grow the length of the number. As an  
-example, 10, 100 and 1000.  
+Base defines the number of symbols a numbering system contains. In base 10  there are 10 distinct symbols we use to represent the infinite number of  things we can count. In base 10 the symbols are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.  
+Once we reach the symbol 9 we need to grow the length of the number. As an  example, 10, 100 and 1000.  
   
-There are two other bases we use all the time in computing. Base 2 or binary  
-numbers, such as the bits represented in the diagram above. Base 16 or  
-hexadecimal numbers, such as the addresses represented in the diagram above.  
+There are two other bases we use all the time in computing. Base 2 or binary  numbers, such as the bits represented in the diagram above. Base 16 or  hexadecimal numbers, such as the addresses represented in the diagram above.  
   
-In a binary numbering system (base 2), there are only 2 symbols and those  
-symbols are 0 and 1.  
+In a binary numbering system (base 2), there are only 2 symbols and those  symbols are 0 and 1.  
   
-In a hexadecimal number system (base 16), there are 16 symbols and those  
-symbols are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.  
+In a hexadecimal number system (base 16), there are 16 symbols and those  symbols are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.  
   
-If there were apples sitting on a table, those apples could be represented  
-in any numbering system. We could say there are:  
+If there were apples sitting on a table, those apples could be represented  in any numbering system. We could say there are:  
   
 In Base 2:  10010001 apples  
 In Base 10: 145 apples  
@@ -48,11 +37,9 @@ In Base 16: 91 apples
   
 All of those answers are correct when given the correct base.  
   
-Notice the number of symbols required in each numbering system to represent  
-those apples. The larger the base, the more efficient the numbering system.  
+Notice the number of symbols required in each numbering system to represent  those apples. The larger the base, the more efficient the numbering system.  
   
-Using base 16 for computer addresses, IP addresses and color codes makes  
-a lot of sense now.  
+Using base 16 for computer addresses, IP addresses and color codes makes  a lot of sense now.  
   
 Look at the number for the HTML color white in all three bases:  
   
@@ -61,8 +48,7 @@ In Base 10: 16777215 (10 characters)
 In Base 16: FFFFFF (6 characters)  
   
 Which numbering system would you have chosen to represent colors?
-
-  
+ 
 Now if I tell you the byte at address FFE1 represents a base 10 number,  your answer of 10 is correct.  
   
 Type provides two pieces of information that both the compiler and you need to perform the same exercise we just went through.  
@@ -91,8 +77,6 @@ The names for these keywords provide both pieces of the type information.
 The uint8 contains a base 10 number using one byte of memory. The value can be between 0 to 255.  
   
 The int32 contains a base 10 number using 4 bytes of memory. The value can be between -2147483648 to 2147483647.  
-
-  
 
 The predeclared integers get mapped based on the architecture you are building the code against. On a 64 bit OS, int will map to int64 and on a 32 bit OS, it will be mapped to int32.  
   

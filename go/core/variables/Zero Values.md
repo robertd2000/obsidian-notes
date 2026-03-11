@@ -52,16 +52,16 @@ The `"%v"` verb used in the `fmt.Printf` string displays a value in its defa
 
 Below is a table containing the zero values for all of the major data types in Go:
 
-|Data Type|Zero Value|
-|---|---|
-|`int`, `int8`, `int16`, `int32`, `int64`|`0`|
-|`uint`, `uint8`, `uint16`, `uint32`, `uint64`|`0`|
-|`byte`, `rune`|`0`|
-|`float32`, `float64`|`0.0`|
-|`string`|`""`|
-|`bool`|`false`|
-|`chan`, `interface`, `map`, `func`|`nil`|
-|pointer, slice, array|`nil`|
+| Data Type                                     | Zero Value |     |
+| --------------------------------------------- | ---------- | --- |
+| `int`, `int8`, `int16`, `int32`, `int64`      | `0`        |     |
+| `uint`, `uint8`, `uint16`, `uint32`, `uint64` | `0`        |     |
+| `byte`, `rune`                                | `0`        |     |
+| `float32`, `float64`                          | `0.0`      |     |
+| `string`                                      | `""`       |     |
+| `bool`                                        | `false`    |     |
+| `chan`, `interface`, `map`, `func`            | `nil`      |     |
+| pointer, slice, array                         | `nil`      |     |
 
 Most of the zero values are obvious defaults. It makes sense for integers to start from zero, for instance. It also makes sense for strings to be initialized as empty, with a length of zero, and for `boolean` variables to be false, if not explicitly set to `true`.
 
