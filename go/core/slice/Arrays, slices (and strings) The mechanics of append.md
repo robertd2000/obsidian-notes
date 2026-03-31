@@ -22,7 +22,9 @@ Arrays are not often seen in Go programs because the size of an array is part of
 
 The declaration
 
+```go
 var buffer [256]byte
+```
 
 declares the variable `buffer`, which holds 256 bytes. The type of `buffer` includes its size, `[256]byte`. An array with 512 bytes would be of the distinct type `[512]byte`.
 
@@ -46,23 +48,25 @@ A slice is a data structure describing a contiguous section of an array stored s
 
 Given our `buffer` array variable from the previous section, we could create a slice that describes elements 100 through 150 (to be precise, 100 through 149, inclusive) by _slicing_ the array:
 
+```go
 var slice []byte = buffer[100:150]
+```
 
 In that snippet we used the full variable declaration to be explicit. The variable `slice` has type `[]byte`, pronounced “slice of bytes”, and is initialized from the array, called `buffer`, by slicing elements 100 (inclusive) through 150 (exclusive). The more idiomatic syntax would drop the type, which is set by the initializing expression:
 
-```
+```go
 var slice = buffer[100:150]
 ```
 
 Inside a function we could use the short declaration form,
 
-```
+```go
 slice := buffer[100:150]
 ```
 
 What exactly is this slice variable? It’s not quite the full story, but for now think of a slice as a little data structure with two elements: a length and a pointer to an element of an array. You can think of it as being built like this behind the scenes:
 
-```
+```go
 type sliceHeader struct {
     Length        int
     ZerothElement *byte
@@ -78,13 +82,13 @@ Of course, this is just an illustration. Despite what this snippet says that `s
 
 So far we’ve used a slice operation on an array, but we can also slice a slice, like this:
 
-```
+```go
 slice2 := slice[5:10]
 ```
 
 Just as before, this operation creates a new slice, in this case with elements 5 through 9 (inclusive) of the original slice, which means elements 105 through 109 of the original array. The underlying `sliceHeader` struct for the `slice2` variable looks like this:
 
-```
+```go
 slice2 := sliceHeader{
     Length:        5,
     ZerothElement: &buffer[105],
@@ -95,13 +99,13 @@ Notice that this header still points to the same underlying array, stored in the
 
 We can also _reslice_, which is to say slice a slice and store the result back in the original slice structure. After
 
-```
+```go
 slice = slice[5:10]
 ```
 
 the `sliceHeader` structure for the `slice` variable looks just like it did for the `slice2` variable. You’ll see reslicing used often, for example to truncate a slice. This statement drops the first and last elements of our slice:
 
-```
+```go
 slice = slice[1:len(slice)-1]
 ```
 
@@ -109,7 +113,7 @@ slice = slice[1:len(slice)-1]
 
 You’ll often hear experienced Go programmers talk about the “slice header” because that really is what’s stored in a slice variable. For instance, when you call a function that takes a slice as an argument, such as [bytes.IndexRune](https://go.dev/pkg/bytes/#IndexRune), that header is what gets passed to the function. In this call,
 
-```
+```go
 slashPos := bytes.IndexRune(slice, '/')
 ```
 
@@ -127,16 +131,20 @@ When we called `IndexRune` in the previous example, it was passed a _copy_ o
 
 Consider this simple function:
 
+```go
 func AddOneToEachElement(slice []byte) {
     for i := range slice {
         slice[i]++
     }
 }
+```
+
 
 It does just what its name implies, iterating over the indices of a slice (using a `for` `range` loop), incrementing its elements.
 
 Try it:
 
+```go
 func main() {
     slice := buffer[10:20]
     for i := 0; i < len(slice); i++ {
@@ -146,6 +154,8 @@ func main() {
     AddOneToEachElement(slice)
     fmt.Println("after", slice)
 }
+```
+
 
 Run
 
@@ -155,6 +165,7 @@ Even though the slice _header_ is passed by value, the header includes a point
 
 The argument to the function really is a copy, as this example shows:
 
+```go
 func SubtractOneFromLength(slice []byte) []byte {
     slice = slice[0 : len(slice)-1]
     return slice
@@ -166,6 +177,8 @@ func main() {
     fmt.Println("After:  len(slice) =", len(slice))
     fmt.Println("After:  len(newSlice) =", len(newSlice))
 }
+```
+
 
 Run
 
@@ -175,6 +188,7 @@ Here we see that the _contents_ of a slice argument can be modified by a funct
 
 Another way to have a function modify the slice header is to pass a pointer to it. Here’s a variant of our previous example that does this:
 
+```go
 func PtrSubtractOneFromLength(slicePtr *[]byte) {
     slice := *slicePtr
     *slicePtr = slice[0 : len(slice)-1]
@@ -185,6 +199,8 @@ func main() {
     PtrSubtractOneFromLength(&slice)
     fmt.Println("After:  len(slice) =", len(slice))
 }
+```
+
 
 Run
 
@@ -192,6 +208,7 @@ It seems clumsy in that example, especially dealing with the extra level of indi
 
 Let’s say we wanted to have a method on a slice that truncates it at the final slash. We could write it like this:
 
+```go
 type path []byte
 
 func (p *path) TruncateAtFinalSlash() {
@@ -206,6 +223,8 @@ func main() {
     pathName.TruncateAtFinalSlash()
     fmt.Printf("%s\n", pathName)
 }
+```
+
 
 Run
 
@@ -215,6 +234,7 @@ If you run this example you’ll see that it works properly, updating the slice 
 
 On the other hand, if we wanted to write a method for `path` that upper-cases the ASCII letters in the path (parochially ignoring non-English names), the method could be a value because the value receiver will still point to the same underlying array.
 
+```go
 type path []byte
 
 func (p path) ToUpper() {
@@ -230,6 +250,8 @@ func main() {
     pathName.ToUpper()
     fmt.Printf("%s\n", pathName)
 }
+```
+
 
 Run
 
@@ -243,15 +265,19 @@ Here the `ToUpper` method uses two variables in the `for` `range` construct
 
 Look at the following function that extends its argument slice of `ints` by one element:
 
+```go
 func Extend(slice []int, element int) []int {
     n := len(slice)
     slice = slice[0 : n+1]
     slice[n] = element
     return slice
 }
+```
+
 
 (Why does it need to return the modified slice?) Now run it:
 
+```go
 func main() {
     var iBuffer [10]int
     slice := iBuffer[0:0]
@@ -260,6 +286,8 @@ func main() {
         fmt.Println(slice)
     }
 }
+```
+
 
 Run
 
@@ -267,7 +295,7 @@ See how the slice grows until… it doesn’t.
 
 It’s time to talk about the third component of the slice header: its _capacity_. Besides the array pointer and length, the slice header also stores its capacity:
 
-```
+```go
 type sliceHeader struct {
     Length        int
     Capacity      int
@@ -279,13 +307,13 @@ The `Capacity` field records how much space the underlying array actually has;
 
 After our example slice is created by
 
-```
+```go
 slice := iBuffer[0:0]
 ```
 
 its header looks like this:
 
-```
+```go
 slice := sliceHeader{
     Length:        0,
     Capacity:      10,
@@ -295,7 +323,7 @@ slice := sliceHeader{
 
 The `Capacity` field is equal to the length of the underlying array, minus the index in the array of the first element of the slice (zero in this case). If you want to inquire what the capacity is for a slice, use the built-in function `cap`:
 
-```
+```go
 if cap(slice) == len(slice) {
     fmt.Println("slice is full!")
 }
@@ -307,13 +335,17 @@ What if we want to grow the slice beyond its capacity? You can’t! By definitio
 
 Let’s start with allocation. We could use the `new` built-in function to allocate a bigger array and then slice the result, but it is simpler to use the `make` built-in function instead. It allocates a new array and creates a slice header to describe it, all at once. The `make` function takes three arguments: the type of the slice, its initial length, and its capacity, which is the length of the array that `make` allocates to hold the slice data. This call creates a slice of length 10 with room for 5 more (15-10), as you can see by running it:
 
-    slice := make([]int, 10, 15)
-    fmt.Printf("len: %d, cap: %d\n", len(slice), cap(slice))
+```go
+slice := make([]int, 10, 15)
+fmt.Printf("len: %d, cap: %d\n", len(slice), cap(slice))
+```
+    
 
 Run
 
 This snippet doubles the capacity of our `int` slice but keeps its length the same:
 
+```go
     slice := make([]int, 10, 15)
     fmt.Printf("len: %d, cap: %d\n", len(slice), cap(slice))
     newSlice := make([]int, len(slice), 2*cap(slice))
@@ -322,6 +354,8 @@ This snippet doubles the capacity of our `int` slice but keeps its length the 
     }
     slice = newSlice
     fmt.Printf("len: %d, cap: %d\n", len(slice), cap(slice))
+```
+
 
 Run
 
@@ -329,7 +363,7 @@ After running this code the slice has much more room to grow before needing anot
 
 When creating slices, it’s often true that the length and capacity will be same. The `make` built-in has a shorthand for this common case. The length argument defaults to the capacity, so you can leave it out to set them both to the same value. After
 
-```
+```go
 gophers := make([]Gopher, 10)
 ```
 
@@ -339,8 +373,11 @@ the `gophers` slice has both its length and capacity set to 10.
 
 When we doubled the capacity of our slice in the previous section, we wrote a loop to copy the old data to the new slice. Go has a built-in function, `copy`, to make this easier. Its arguments are two slices, and it copies the data from the right-hand argument to the left-hand argument. Here’s our example rewritten to use `copy`:
 
-    newSlice := make([]int, len(slice), 2*cap(slice))
-    copy(newSlice, slice)
+```go
+newSlice := make([]int, len(slice), 2*cap(slice))
+copy(newSlice, slice)
+```
+
 
 Run
 
@@ -348,6 +385,7 @@ The `copy` function is smart. It only copies what it can, paying attention to 
 
 The `copy` function also gets things right when source and destination overlap, which means it can be used to shift items around in a single slice. Here’s how to use `copy` to insert a value into the middle of a slice.
 
+```go
 // Insert inserts the value into the slice at the specified index,
 // which must be in range.
 // The slice must have room for the new element.
@@ -361,40 +399,44 @@ func Insert(slice []int, index, value int) []int {
     // Return the result.
     return slice
 }
+```
 
 There are a couple of things to notice in this function. First, of course, it must return the updated slice because its length has changed. Second, it uses a convenient shorthand. The expression
 
-```
+```go
 slice[i:]
 ```
 
 means exactly the same as
 
-```
+```go
 slice[i:len(slice)]
 ```
 
 Also, although we haven’t used the trick yet, we can leave out the first element of a slice expression too; it defaults to zero. Thus
 
-```
+```go
 slice[:]
 ```
 
 just means the slice itself, which is useful when slicing an array. This expression is the shortest way to say “a slice describing all the elements of the array”:
 
-```
+```go
 array[:]
 ```
 
 Now that’s out of the way, let’s run our `Insert` function.
 
-    slice := make([]int, 10, 20) // Note capacity > length: room to add element.
-    for i := range slice {
-        slice[i] = i
-    }
-    fmt.Println(slice)
-    slice = Insert(slice, 5, 99)
-    fmt.Println(slice)
+```go
+slice := make([]int, 10, 20) // Note capacity > length: room to add element.
+for i := range slice {
+	slice[i] = i
+}
+fmt.Println(slice)
+slice = Insert(slice, 5, 99)
+fmt.Println(slice)
+```
+
 
 Run
 
@@ -402,6 +444,7 @@ Run
 
 A few sections back, we wrote an `Extend` function that extends a slice by one element. It was buggy, though, because if the slice’s capacity was too small, the function would crash. (Our `Insert` example has the same problem.) Now we have the pieces in place to fix that, so let’s write a robust implementation of `Extend` for integer slices.
 
+```go
 func Extend(slice []int, element int) []int {
     n := len(slice)
     if n == cap(slice) {
@@ -415,15 +458,20 @@ func Extend(slice []int, element int) []int {
     slice[n] = element
     return slice
 }
+```
+
 
 In this case it’s especially important to return the slice, since when it reallocates the resulting slice describes a completely different array. Here’s a little snippet to demonstrate what happens as the slice fills up:
 
-    slice := make([]int, 0, 5)
-    for i := 0; i < 10; i++ {
-        slice = Extend(slice, i)
-        fmt.Printf("len=%d cap=%d slice=%v\n", len(slice), cap(slice), slice)
-        fmt.Println("address of 0th element:", &slice[0])
-    }
+```go
+slice := make([]int, 0, 5)
+for i := 0; i < 10; i++ {
+	slice = Extend(slice, i)
+	fmt.Printf("len=%d cap=%d slice=%v\n", len(slice), cap(slice), slice)
+	fmt.Println("address of 0th element:", &slice[0])
+}
+```
+
 
 Run
 
@@ -433,12 +481,13 @@ With the robust `Extend` function as a guide we can write an even nicer functi
 
 Let’s call the function `Append`. For the first version, we can just call `Extend` repeatedly so the mechanism of the variadic function is clear. The signature of `Append` is this:
 
-```
+```go
 func Append(slice []int, items ...int) []int
 ```
 
 What that says is that `Append` takes one argument, a slice, followed by zero or more `int` arguments. Those arguments are exactly a slice of `int` as far as the implementation of `Append` is concerned, as you can see:
 
+```go
 // Append appends the items to the slice.
 // First version: just loop calling Extend.
 func Append(slice []int, items ...int) []int {
@@ -447,34 +496,46 @@ func Append(slice []int, items ...int) []int {
     }
     return slice
 }
+```
+
 
 Notice the `for` `range` loop iterating over the elements of the `items` argument, which has implied type `[]int`. Also notice the use of the blank identifier `_` to discard the index in the loop, which we don’t need in this case.
 
 Try it:
 
-    slice := []int{0, 1, 2, 3, 4}
-    fmt.Println(slice)
-    slice = Append(slice, 5, 6, 7, 8)
-    fmt.Println(slice)
+```go
+slice := []int{0, 1, 2, 3, 4}
+fmt.Println(slice)
+slice = Append(slice, 5, 6, 7, 8)
+fmt.Println(slice)
+```
+
 
 Run
 
 Another new technique in this example is that we initialize the slice by writing a composite literal, which consists of the type of the slice followed by its elements in braces:
 
-    slice := []int{0, 1, 2, 3, 4}
+```go
+slice := []int{0, 1, 2, 3, 4}
+```
+    
 
 The `Append` function is interesting for another reason. Not only can we append elements, we can append a whole second slice by “exploding” the slice into arguments using the `...` notation at the call site:
 
-    slice1 := []int{0, 1, 2, 3, 4}
-    slice2 := []int{55, 66, 77}
-    fmt.Println(slice1)
-    slice1 = Append(slice1, slice2...) // The '...' is essential!
-    fmt.Println(slice1)
+```go
+slice1 := []int{0, 1, 2, 3, 4}
+slice2 := []int{55, 66, 77}
+fmt.Println(slice1)
+slice1 = Append(slice1, slice2...) // The '...' is essential!
+fmt.Println(slice1)
+```
+
 
 Run
 
 Of course, we can make `Append` more efficient by allocating no more than once, building on the innards of `Extend`:
 
+```go
 // Append appends the elements to the slice.
 // Efficient version.
 func Append(slice []int, elements ...int) []int {
@@ -491,16 +552,21 @@ func Append(slice []int, elements ...int) []int {
     copy(slice[n:], elements)
     return slice
 }
+```
+
 
 Here, notice how we use `copy` twice, once to move the slice data to the newly allocated memory, and then to copy the appending items to the end of the old data.
 
 Try it; the behavior is the same as before:
 
-    slice1 := []int{0, 1, 2, 3, 4}
-    slice2 := []int{55, 66, 77}
-    fmt.Println(slice1)
-    slice1 = Append(slice1, slice2...) // The '...' is essential!
-    fmt.Println(slice1)
+```go
+slice1 := []int{0, 1, 2, 3, 4}
+slice2 := []int{55, 66, 77}
+fmt.Println(slice1)
+slice1 = Append(slice1, slice2...) // The '...' is essential!
+fmt.Println(slice1)
+```
+
 
 Run
 
@@ -514,28 +580,31 @@ Remember, since the slice header is always updated by a call to `append`, you n
 
 Here are some one-liners intermingled with print statements. Try them, edit them and explore:
 
-    // Create a couple of starter slices.
-    slice := []int{1, 2, 3}
-    slice2 := []int{55, 66, 77}
-    fmt.Println("Start slice: ", slice)
-    fmt.Println("Start slice2:", slice2)
+```go
+// Create a couple of starter slices.
+slice := []int{1, 2, 3}
+slice2 := []int{55, 66, 77}
+fmt.Println("Start slice: ", slice)
+fmt.Println("Start slice2:", slice2)
 
-    // Add an item to a slice.
-    slice = append(slice, 4)
-    fmt.Println("Add one item:", slice)
+// Add an item to a slice.
+slice = append(slice, 4)
+fmt.Println("Add one item:", slice)
 
-    // Add one slice to another.
-    slice = append(slice, slice2...)
-    fmt.Println("Add one slice:", slice)
+// Add one slice to another.
+slice = append(slice, slice2...)
+fmt.Println("Add one slice:", slice)
 
-    // Make a copy of a slice (of int).
-    slice3 := append([]int(nil), slice...)
-    fmt.Println("Copy a slice:", slice3)
+// Make a copy of a slice (of int).
+slice3 := append([]int(nil), slice...)
+fmt.Println("Copy a slice:", slice3)
 
-    // Copy a slice to the end of itself.
-    fmt.Println("Before append to self:", slice)
-    slice = append(slice, slice...)
-    fmt.Println("After append to self:", slice)
+// Copy a slice to the end of itself.
+fmt.Println("Before append to self:", slice)
+slice = append(slice, slice...)
+fmt.Println("After append to self:", slice)
+
+```
 
 Run
 
@@ -547,7 +616,7 @@ There are lots more examples of `append`, `copy`, and other ways to use slices
 
 As an aside, with our newfound knowledge we can see what the representation of a `nil` slice is. Naturally, it is the zero value of the slice header:
 
-```
+```go
 sliceHeader{
     Length:        0,
     Capacity:      0,
@@ -557,13 +626,13 @@ sliceHeader{
 
 or just
 
-```
+```go
 sliceHeader{}
 ```
 
 The key detail is that the element pointer is `nil` too. The slice created by
 
-```
+```go
 array[0:0]
 ```
 
@@ -583,13 +652,13 @@ Because they are read-only, there is no need for a capacity (you can’t grow th
 
 For starters, we can index them to access individual bytes:
 
-```
+```go
 slash := "/usr/ken"[0] // yields the byte value '/'.
 ```
 
 We can slice a string to grab a substring:
 
-```
+```go
 usr := "/usr/ken"[0:4] // yields the string "/usr"
 ```
 
@@ -597,13 +666,13 @@ It should be obvious now what’s going on behind the scenes when we slice a str
 
 We can also take a normal slice of bytes and create a string from it with the simple conversion:
 
-```
+```go
 str := string(slice)
 ```
 
 and go in the reverse direction as well:
 
-```
+```go
 slice := []byte(usr)
 ```
 

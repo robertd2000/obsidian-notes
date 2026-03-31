@@ -34,21 +34,8 @@
               "icon": "lucide-file",
               "title": "About me"
             }
-          },
-          {
-            "id": "3d3ad0d8dc0f7661",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "примечания к выпуску 1.12.7"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,7 +184,7 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "3d3ad0d8dc0f7661",
+  "active": "8b6b149b07084bf3",
   "lastOpenFiles": [
     "собес/questions/jant.md",
     "собес/questions/projects.md",
