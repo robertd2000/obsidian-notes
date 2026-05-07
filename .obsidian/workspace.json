@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "c388fee3e6c73b3f",
+        "id": "808e94604b857ed4",
         "type": "tabs",
         "children": [
           {
-            "id": "8b6b149b07084bf3",
+            "id": "5dda2eef4e0fafec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
+                "file": "go/вопросы/oz/algos/шахматн.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arrays, slices (and strings) The mechanics of append"
-            }
-          },
-          {
-            "id": "7c631fb56a922732",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "собес/questions/About me.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "About me"
+              "title": "шахматн"
             }
           }
         ]
@@ -184,53 +170,53 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "8b6b149b07084bf3",
+  "active": "5dda2eef4e0fafec",
   "lastOpenFiles": [
-    "собес/questions/jant.md",
-    "собес/questions/projects.md",
-    "собес/questions/what you did.md",
-    "собес/questions/role.md",
-    "собес/questions/About me.md",
-    "собес/questions/med service.md",
-    "собес/questions/promo.md",
-    "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
+    "go/вопросы/oz/kafka/transactional outbox.md",
+    "go/вопросы/oz/algos/шахматн.md",
+    "backend/kafka/Transactional Outbox от идеи до open-source.md",
+    "backend/kafka/Transactional outbox.md",
+    "go/вопросы/oz/kafka/retry topic retry queue.md",
+    "go/вопросы/oz/kafka/dead letter queue.md",
+    "go/вопросы/oz/kafka/Паттерны AMQP.md",
+    "go/вопросы/oz/kafka/Стратегии доставки и дедупликации сообщений.md",
+    "go/вопросы/oz/kafka/За счет чего кафка отказоустойчивая.md",
+    "backend/kafka/Kafka для начинающих.md",
+    "go/вопросы/oz/kafka/Kafka.md",
+    "go/вопросы/oz/kafka/Основные понятия и действующие лица (consumer, producer, etc).md",
+    "backend/kafka/Kafka — для самых маленьких.md",
+    "backend/kafka/RabbitMQ против Kafka.md",
+    "go/вопросы/oz/kafka/Чем отличается Kafka от rabbitMQ.md",
+    "backend/kafka",
+    "go/вопросы/oz/db/Какие виды репликации баз данных существуют.md",
+    "go/вопросы/oz/kafka",
+    "go/вопросы/oz/db/Анамалии в базах данных.md",
+    "go/вопросы/oz/db/Разница между write skew и lost update.md",
+    "go/вопросы/oz/db/write skew.md",
+    "go/вопросы/oz/db/уровни изоляции.md",
+    "backend/sql/transactions/Уровни изоляции транзакций с примерами на PostgreSQL.md",
+    "backend/sql/transactions/Изоляция транзакций.md",
+    "Уровни изоляции транзакций с примерами на PostgreSQL.md",
+    "backend/sql/transactions/Явные блокировки.md",
+    "backend/sql/Оптимизация.md",
+    "go/вопросы/oz/db/Требования ACID на простом языке.md",
+    "backend/sql/transactions",
+    "go/вопросы/oz/db",
+    "go/вопросы/oz/algos/search",
+    "go/вопросы/oz/algos/sort",
+    "go/вопросы/oz/algos",
+    "go/вопросы/oz",
+    "backend/sql/core",
     "собес/questions",
-    "go/core/slice/Срезы.md",
-    "go/core/Type conversions/Type Casting and Conversions.md",
-    "go/core/Type conversions/Type conversions.md",
-    "go/core/Type conversions/Type inference.md",
-    "go/core/types/Understanding Type in Go.md",
-    "go/core/types/Deconstructing Type Parameters.md",
-    "go/core/types/A brief history of “type”.md",
-    "go/core/variables/Zero Values in Golang.md",
-    "go/core/variables/Zero Values.md",
-    "go/core/variables/Short variable declarations.md",
-    "go/core/variables/scope.md",
-    "go/core/variables/Iota.md",
-    "go/core/variables/Constants.md",
-    "go/core/Выжимаем из Go максимум производительности.md",
-    "собес/задачи реализация/сервис мониторинга/платформа мониторинга и аналитики транспорта в реальном времени.md",
-    "go/core/concurrency/channels/Channels.md",
-    "собес/проекты/aero/метрики.md",
-    "собес/проекты/aero/логи.md",
-    "собес/проекты/aero",
-    "собес/проекты/janti",
-    "собес/проекты",
     "Pasted image 20260112121855.png",
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
     "Pasted image 20260111143956.png",
-    "собес/задачи",
     "Pasted image 20260102170143.png",
     "Pasted image 20251229153551.png",
     "Pasted image 20251229153427.png",
     "Pasted image 20251229150510.png",
     "Pasted image 20251229112811.png",
-    "Pasted image 20251229112614.png",
-    "Untitled 1.base",
-    "Untitled.base",
-    "собес/задачи реализация/сервис мониторинга",
-    "собес/задачи реализация",
-    "go/вопросы/теория"
+    "Pasted image 20251229112614.png"
   ]
 }
