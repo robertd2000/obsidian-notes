@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/oz/algos/шахматн.md",
+                "file": "backend/sql/joins/Пересечение множеств. INTERSECT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "шахматн"
+              "title": "Пересечение множеств. INTERSECT"
             }
           }
         ]
@@ -172,8 +172,17 @@
   },
   "active": "5dda2eef4e0fafec",
   "lastOpenFiles": [
-    "go/вопросы/oz/kafka/transactional outbox.md",
+    "backend/sql/joins/Разность множеств. EXCEPT.md",
+    "backend/sql/joins/Пересечение множеств. INTERSECT.md",
+    "backend/sql/joins/Объединение множеств. UNION.md",
+    "backend/sql/joins/Группировка в соединениях.md",
+    "backend/sql/joins/OUTER JOIN и CROSS JOIN.md",
+    "backend/sql/joins/INNER JOIN.md",
+    "backend/sql/joins/Неявное соединение таблиц.md",
+    "go/core/error/Управление обработкой множественных ошибок.md",
+    "backend/sql/joins",
     "go/вопросы/oz/algos/шахматн.md",
+    "go/вопросы/oz/kafka/transactional outbox.md",
     "backend/kafka/Transactional Outbox от идеи до open-source.md",
     "backend/kafka/Transactional outbox.md",
     "go/вопросы/oz/kafka/retry topic retry queue.md",
@@ -192,14 +201,6 @@
     "go/вопросы/oz/kafka",
     "go/вопросы/oz/db/Анамалии в базах данных.md",
     "go/вопросы/oz/db/Разница между write skew и lost update.md",
-    "go/вопросы/oz/db/write skew.md",
-    "go/вопросы/oz/db/уровни изоляции.md",
-    "backend/sql/transactions/Уровни изоляции транзакций с примерами на PostgreSQL.md",
-    "backend/sql/transactions/Изоляция транзакций.md",
-    "Уровни изоляции транзакций с примерами на PostgreSQL.md",
-    "backend/sql/transactions/Явные блокировки.md",
-    "backend/sql/Оптимизация.md",
-    "go/вопросы/oz/db/Требования ACID на простом языке.md",
     "backend/sql/transactions",
     "go/вопросы/oz/db",
     "go/вопросы/oz/algos/search",
@@ -207,7 +208,6 @@
     "go/вопросы/oz/algos",
     "go/вопросы/oz",
     "backend/sql/core",
-    "собес/questions",
     "Pasted image 20260112121855.png",
     "Pasted image 20260111144032.png",
     "Pasted image 20260111144012.png",
