@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/joins/Пересечение множеств. INTERSECT.md",
+                "file": "go/вопросы/oz/algos/sort/External Sorting - merge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Пересечение множеств. INTERSECT"
+              "title": "External Sorting - merge"
             }
           }
         ]
@@ -172,8 +172,10 @@
   },
   "active": "5dda2eef4e0fafec",
   "lastOpenFiles": [
-    "backend/sql/joins/Разность множеств. EXCEPT.md",
+    "go/вопросы/oz/algos/sort/External Sorting.md",
+    "go/вопросы/oz/algos/sort/External Sorting - merge.md",
     "backend/sql/joins/Пересечение множеств. INTERSECT.md",
+    "backend/sql/joins/Разность множеств. EXCEPT.md",
     "backend/sql/joins/Объединение множеств. UNION.md",
     "backend/sql/joins/Группировка в соединениях.md",
     "backend/sql/joins/OUTER JOIN и CROSS JOIN.md",
@@ -199,8 +201,6 @@
     "backend/kafka",
     "go/вопросы/oz/db/Какие виды репликации баз данных существуют.md",
     "go/вопросы/oz/kafka",
-    "go/вопросы/oz/db/Анамалии в базах данных.md",
-    "go/вопросы/oz/db/Разница между write skew и lost update.md",
     "backend/sql/transactions",
     "go/вопросы/oz/db",
     "go/вопросы/oz/algos/search",
