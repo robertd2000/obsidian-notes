@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/o-prepare/algos/External merge sort.md",
+                "file": "backend/kafka/Microservices 101 Transactional Outbox and Inbox.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "External merge sort"
+              "title": "Microservices 101 Transactional Outbox and Inbox"
             }
           },
           {
@@ -186,8 +186,9 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "go/вопросы/o-prepare/algos/Без названия.md",
     "go/вопросы/o-prepare/algos/External merge sort.md",
+    "backend/kafka/Microservices 101 Transactional Outbox and Inbox.md",
+    "go/вопросы/o-prepare/algos/Без названия.md",
     "go/вопросы/o-prepare/algos/какие алгоритмы сортировки бывают.md",
     "go/вопросы/o-prepare/algos/шахматн.md",
     "go/вопросы/o-prepare/algos/sort/Merge Sort in Golang with Examples.md",
@@ -215,7 +216,6 @@
     "go/core/error/Управление обработкой множественных ошибок.md",
     "go/вопросы/o-prepare/kafka/Чем отличается Kafka от rabbitMQ.md",
     "go/вопросы/o-prepare/kafka/Стратегии доставки и дедупликации сообщений.md",
-    "go/вопросы/o-prepare/kafka/Паттерны AMQP.md",
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka",
