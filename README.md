@@ -1,1 +1,1 @@
-Obsidian notes
+## Obsidian notes
