@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/kafka/обработка ошибок и Dead Letter Queues.md",
+                "file": "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "обработка ошибок и Dead Letter Queues"
+              "title": "Знакомимся с Apache Kafka. Основы"
             }
           },
           {
@@ -186,8 +186,11 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/kafka/работа с оффсетами на практике.md",
+    "backend/kafka/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
+    "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
+    "go/вопросы/o-prepare/kafka/За счет чего кафка отказоустойчивая.md",
     "backend/kafka/обработка ошибок и Dead Letter Queues.md",
+    "backend/kafka/работа с оффсетами на практике.md",
     "backend/kafka/Гарантии доставки на практике и идемпотентность.md",
     "backend/kafka/Начало работы на практике.md",
     "backend/kafka/Microservices 101 Transactional Outbox and Inbox.md",
@@ -213,9 +216,6 @@
     "go/core/concurrency/Select/Select Statement in Go (Golang).md",
     "go/core/concurrency/Select/Селект.md",
     "go/core/Type conversions/Type Casting and Conversions.md",
-    "go/core/types/Understanding Type in Go.md",
-    "go/core/types/Deconstructing Type Parameters.md",
-    "go/core/types/A brief history of “type”.md",
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka",
