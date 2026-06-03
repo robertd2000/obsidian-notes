@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
+                "file": "backend/kafka/Apache Avro и Schema Registry.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Знакомимся с Apache Kafka. Основы"
+              "title": "Apache Avro и Schema Registry"
             }
           },
           {
@@ -186,8 +186,9 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/kafka/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
     "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
+    "backend/kafka/Apache Avro и Schema Registry.md",
+    "backend/kafka/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
     "go/вопросы/o-prepare/kafka/За счет чего кафка отказоустойчивая.md",
     "backend/kafka/обработка ошибок и Dead Letter Queues.md",
     "backend/kafka/работа с оффсетами на практике.md",
@@ -215,7 +216,6 @@
     "go/core/concurrency/Select/Select.md",
     "go/core/concurrency/Select/Select Statement in Go (Golang).md",
     "go/core/concurrency/Select/Селект.md",
-    "go/core/Type conversions/Type Casting and Conversions.md",
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka",
