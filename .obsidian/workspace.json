@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "b6a1babb5a4405de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Singleflight in Go  A Clean Solution to Cache Stampede"
+            }
+          },
+          {
             "id": "fb33089e48d48bef",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "DFS Stack"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -184,10 +199,23 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "780283bf6a0769ea",
+  "active": "b6a1babb5a4405de",
   "lastOpenFiles": [
-    "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
+    "backend/sql/Thundering herd problem.md",
+    "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
+    "go/core/Танцы с мьютексами в Go.md",
+    "backend/sql/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
+    "backend/middleware/порядок.md",
+    "Pasted image 20260604134750.png",
+    "Pasted image 20260604134735.png",
+    "backend/middleware/fail fast.md",
+    "Pasted image 20260604134700.png",
+    "Pasted image 20260604134648.png",
+    "Pasted image 20260604134543.png",
+    "Без названия.md",
     "backend/kafka/Apache Avro и Schema Registry.md",
+    "backend/middleware",
+    "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
     "backend/kafka/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
     "go/вопросы/o-prepare/kafka/За счет чего кафка отказоустойчивая.md",
     "backend/kafka/обработка ошибок и Dead Letter Queues.md",
@@ -205,17 +233,10 @@
     "go/вопросы/o-prepare/algos/sort/Implementing Radix Sort in Golang.md",
     "go/вопросы/o-prepare/algos/sort/External Sorting.md",
     "backend/kafka/Стратегии доставки и дедупликации сообщений.md",
-    "go/DFS.md",
-    "go/DFS Stack.md",
     "Pasted image 20260526155015.png",
-    "go/Search path.md",
-    "go/BFS.md",
     "Pasted image 20260525164458.png",
     "Pasted image 20260525164132.png",
     "Pasted image 20260525163644.png",
-    "go/core/concurrency/Select/Select.md",
-    "go/core/concurrency/Select/Select Statement in Go (Golang).md",
-    "go/core/concurrency/Select/Селект.md",
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka",
@@ -225,12 +246,6 @@
     "go/вопросы/o-prepare/algos/sort",
     "go/вопросы/o-prepare/algos",
     "go/вопросы/o-prepare",
-    "backend/sql/core",
-    "Pasted image 20260112121855.png",
-    "Pasted image 20260111144032.png",
-    "Pasted image 20260111144012.png",
-    "Pasted image 20260111143956.png",
-    "Pasted image 20260102170143.png",
-    "Pasted image 20251229153551.png"
+    "Pasted image 20260112121855.png"
   ]
 }
