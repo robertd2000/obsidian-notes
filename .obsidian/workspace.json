@@ -27,30 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
+                "file": "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Singleflight in Go  A Clean Solution to Cache Stampede"
-            }
-          },
-          {
-            "id": "fb33089e48d48bef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "go/DFS Stack.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DFS Stack"
+              "title": "Что такое PCI DSS и как происходит проверка на соответствие стандарту"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,10 +184,12 @@
       "bases:Создать новую базу": false
     }
   },
-  "active": "b6a1babb5a4405de",
+  "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/sql/Thundering herd problem.md",
+    "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+    "go/DFS Stack.md",
     "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
+    "backend/sql/Thundering herd problem.md",
     "go/core/Танцы с мьютексами в Go.md",
     "backend/sql/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
     "backend/middleware/порядок.md",
@@ -231,8 +218,6 @@
     "go/вопросы/o-prepare/algos/sort/External Sorting - merge.md",
     "go/вопросы/o-prepare/algos/sort/Heap-Sort in the Go Standard Library.md",
     "go/вопросы/o-prepare/algos/sort/Implementing Radix Sort in Golang.md",
-    "go/вопросы/o-prepare/algos/sort/External Sorting.md",
-    "backend/kafka/Стратегии доставки и дедупликации сообщений.md",
     "Pasted image 20260526155015.png",
     "Pasted image 20260525164458.png",
     "Pasted image 20260525164132.png",
