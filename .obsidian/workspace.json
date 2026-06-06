@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/kafka/Apache Avro и Schema Registry.md",
+                "file": "go/core/concurrency/scheduler/QA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Apache Avro и Schema Registry"
+              "title": "QA"
             }
           },
           {
@@ -186,6 +186,10 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
+    "Pasted image 20260605221244.png",
+    "Pasted image 20260605221157.png",
+    "backend/kafka/Apache Avro и Schema Registry.md",
+    "go/core/concurrency/scheduler/QA.md",
     "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
     "go/DFS Stack.md",
     "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
@@ -200,7 +204,6 @@
     "Pasted image 20260604134648.png",
     "Pasted image 20260604134543.png",
     "Без названия.md",
-    "backend/kafka/Apache Avro и Schema Registry.md",
     "backend/middleware",
     "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
     "backend/kafka/Kafka за 20 минут. Ментальная модель и как с ней работать.md",
@@ -216,8 +219,6 @@
     "go/вопросы/o-prepare/algos/шахматн.md",
     "go/вопросы/o-prepare/algos/sort/Merge Sort in Golang with Examples.md",
     "go/вопросы/o-prepare/algos/sort/External Sorting - merge.md",
-    "go/вопросы/o-prepare/algos/sort/Heap-Sort in the Go Standard Library.md",
-    "go/вопросы/o-prepare/algos/sort/Implementing Radix Sort in Golang.md",
     "Pasted image 20260526155015.png",
     "Pasted image 20260525164458.png",
     "Pasted image 20260525164132.png",
@@ -230,7 +231,6 @@
     "go/вопросы/o-prepare/algos/search",
     "go/вопросы/o-prepare/algos/sort",
     "go/вопросы/o-prepare/algos",
-    "go/вопросы/o-prepare",
-    "Pasted image 20260112121855.png"
+    "go/вопросы/o-prepare"
   ]
 }
