@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/vacuum/VACUUM  deeepseek.md",
+                "file": "backend/SLA, SLO, SLI простыми словами и с примерами.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VACUUM  deeepseek"
+              "title": "SLA, SLO, SLI простыми словами и с примерами"
             }
           },
           {
@@ -186,8 +186,12 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/sql/core/WAL.md",
+    "backend/sql/The Thundering Herd Problem.md",
+    "backend/SLA, SLO, SLI простыми словами и с примерами.md",
+    "backend/sql/Thundering herd problem.md",
+    "go/Singleflight in Go.md",
     "backend/sql/vacuum/VACUUM  deeepseek.md",
+    "backend/sql/core/WAL.md",
     "backend/sql/Без названия",
     "backend/sql/core/как хранятся данные в базах данных.md",
     "backend/sql/core/Как хранятся данные.md",
@@ -212,10 +216,6 @@
     "go/вопросы/o-prepare/db/Чем postgreSQL отличается от mysql.md",
     "go/вопросы/o-prepare/db/write skew.md",
     "go/вопросы/o-prepare/db/Что такое ACID.md",
-    "go/вопросы/o-prepare/db/Что такое такое CAP-теорема.md",
-    "go/вопросы/o-prepare/db/Что такое составные индексы.md",
-    "go/вопросы/o-prepare/db/уровни изоляции.md",
-    "go/вопросы/o-prepare/db/Требования ACID на простом языке.md",
     "Pasted image 20260605221244.png",
     "Pasted image 20260605221157.png",
     "Pasted image 20260604134750.png",
