@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/SLA, SLO, SLI простыми словами и с примерами.md",
+                "file": "go/вопросы/o-prepare/db/вопросы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SLA, SLO, SLI простыми словами и с примерами"
+              "title": "вопросы"
             }
           },
           {
@@ -186,13 +186,26 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/sql/The Thundering Herd Problem.md",
+    "backend/sql/Блокировки/дедлоки.md",
+    "go/вопросы/o-prepare/db/вопросы.md",
+    "backend/sql/Блокировки/Блокировки в PostgreSQL.md",
+    "backend/sql/index/Правильный порядок колонок в B-tree индексах PostgreSQL или правило ESR.md",
+    "backend/sql/index/Индексы и селективность (PostgreSQL).md",
+    "backend/sql/ACID/Что такое ACID и причем тут базы данных.md",
+    "backend/sql/ACID/Требования ACID на простом языке.md",
+    "backend/sql/ACID/ACID.md",
+    "backend/sql/ACID",
+    "backend/sql/index/Селективность и кардинальность.md",
+    "backend/sql/index/Частичные индексы (Partial Index) в PostgreSQL.md",
+    "backend/sql/index/Составные индексы в PostgreSQL.md",
+    "backend/sql/index/Индексы в SQL.md",
     "backend/SLA, SLO, SLI простыми словами и с примерами.md",
+    "backend/sql/The Thundering Herd Problem.md",
     "backend/sql/Thundering herd problem.md",
     "go/Singleflight in Go.md",
     "backend/sql/vacuum/VACUUM  deeepseek.md",
     "backend/sql/core/WAL.md",
-    "backend/sql/Без названия",
+    "backend/sql/Блокировки",
     "backend/sql/core/как хранятся данные в базах данных.md",
     "backend/sql/core/Как хранятся данные.md",
     "backend/sql/CAP/Мифы о CAP теореме.md",
@@ -201,21 +214,9 @@
     "backend/sql/CAP/CAP-теорема простым, доступным языком.md",
     "backend/sql/CAP/CAP-теорема простое объяснение, примеры и ограничения.md",
     "backend/sql/CAP/CAP-теорема принципы согласованности, доступности и устойчивости.md",
-    "backend/sql/CAP/CAP теорема.md",
-    "backend/sql/NoSQL/SQL и NoSQL. Правда ли одно лучше другого.md",
-    "backend/sql/NoSQL/SQL и NoSQL в чем разница.md",
-    "backend/sql/CAP.md",
-    "backend/sql/NoSQL/Базы данных. NoSQL vs SQL. В чем разница и есть она вообще.md",
     "backend/sql/CAP",
-    "backend/sql/NoSQL/Сравнение SQL- и NoSQL-баз данных.md",
-    "backend/sql/vacuum/Как не утонуть в мусоре PostgreSQL VACUUM.md",
     "backend/sql/NoSQL",
-    "backend/sql/vacuum/VACUUM.md",
-    "go/вопросы/o-prepare/db/Что будет, если WAL переполнится или закончится место на диске.md",
     "backend/sql/vacuum",
-    "go/вопросы/o-prepare/db/Чем postgreSQL отличается от mysql.md",
-    "go/вопросы/o-prepare/db/write skew.md",
-    "go/вопросы/o-prepare/db/Что такое ACID.md",
     "Pasted image 20260605221244.png",
     "Pasted image 20260605221157.png",
     "Pasted image 20260604134750.png",
@@ -230,7 +231,6 @@
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka",
-    "backend/sql/transactions",
-    "go/вопросы/o-prepare/db"
+    "backend/sql/transactions"
   ]
 }
