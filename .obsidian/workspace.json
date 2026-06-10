@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/вопросы/o-prepare/db/вопросы.md",
+                "file": "backend/sql/index/Глава 11. Индексы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "вопросы"
+              "title": "Глава 11. Индексы"
             }
           },
           {
@@ -186,8 +186,10 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
-    "backend/sql/Блокировки/дедлоки.md",
+    "backend/sql/transactions/Изоляция транзакций.md",
+    "backend/sql/index/Глава 11. Индексы.md",
     "go/вопросы/o-prepare/db/вопросы.md",
+    "backend/sql/Блокировки/дедлоки.md",
     "backend/sql/Блокировки/Блокировки в PostgreSQL.md",
     "backend/sql/index/Правильный порядок колонок в B-tree индексах PostgreSQL или правило ESR.md",
     "backend/sql/index/Индексы и селективность (PostgreSQL).md",
@@ -212,8 +214,6 @@
     "backend/sql/CAP/Всё, что вы не знали о CAP теореме.md",
     "backend/sql/CAP/Забудьте САР теорему как более не актуальную.md",
     "backend/sql/CAP/CAP-теорема простым, доступным языком.md",
-    "backend/sql/CAP/CAP-теорема простое объяснение, примеры и ограничения.md",
-    "backend/sql/CAP/CAP-теорема принципы согласованности, доступности и устойчивости.md",
     "backend/sql/CAP",
     "backend/sql/NoSQL",
     "backend/sql/vacuum",
