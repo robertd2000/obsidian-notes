@@ -27,15 +27,17 @@ https://habr.com/ru/articles/856272/
 
 Чтобы объявить интерфейс, используется ключевое слово `type`, затем указывается имя интерфейса и ключевое слово `interface`, после чего в фигурных скобках перечисляются сигнатуры методов, которые должны быть реализованы типами, удовлетворяющими этому интерфейсу. Например:
 
-```
-type MyInterface interface {	MyMethod()}
+```go
+type MyInterface interface {	
+	MyMethod()
+}
 ```
 
 ### Встраивание интерфейсов
 
 В Go интерфейсы поддерживает встраивание. Для этого нужно в объявлении нового интерфейса указать название какого-то другого интерфейса.
 
-```
+```go
 type I interface {	MyInterface}
 ```
 
@@ -53,19 +55,19 @@ type I interface {	MyInterface}
 
 Создадим интерфейс Animal, который требует реализации метода Speak().
 
-```
+```go
 type Animal interface {    Speak() string}
 ```
 
 Затем создадим переменную animal интерфейсного типа Animal:
 
-```
+```go
 var animal Animal
 ```
 
 Через конструкцию `fmt.Printf("Value %v, type %T\n", animal, animal)` выведем на экран значение и тип интерфейса `animal`. Увидим следующие сообщение:
 
-```
+```go
 Value <nil>, type <nil>
 ```
 
@@ -73,19 +75,19 @@ Value <nil>, type <nil>
 
 При попытке сравнить интерфейс с nil мы видим, что сообщение "animal is not nil" не распечатается.
 
-```
+```go
 if animal != nil {    fmt.Println("animal is not nil")}
 ```
 
 Создадим указатель на новый объект Dog и присвоим dog интерфейсу animal.
 
-```
+```go
 dog := &Dog{}animal = dog
 ```
 
 Теперь, когда animal указывает на объект Dog, мы можем вызвать метод Speak. Это безопасно, потому что Dog реализует метод Speak, требуемый интерфейсом Animal.
 
-```
+```go
 animal.Speak() // OK
 ```
 
@@ -99,7 +101,7 @@ Value &{}, type *main.Dog
 
 Затем мы проверяем, не равна ли animal nil:
 
-```
+```go
 if animal != nil {    fmt.Println("animal is not nil")}
 ```
 
@@ -107,7 +109,7 @@ if animal != nil {    fmt.Println("animal is not nil")}
 
 Изменим поле Name у объекта Dog, на который указывает dog
 
-```
+```go
 dog.Name = "Шайтан"
 ```
 
@@ -123,7 +125,7 @@ Value &{Шайтан}, type *main.Dog
 
 Значение интерфейсного типа != nil, когда конкретный тип != nil. Мы можем безопасно вызвать метод у интерфейса только в случае, когда значение интерфейсного типа != nil. В противном случае при вызове метода мы словим панику.
 
-```
+```go
 var animal Animalanimal.Speak() // паника при попытке вызвать (interface == nil)dog := &Dog{}animal = dog // interface != nilanimal.Speak() // OK
 ```
 

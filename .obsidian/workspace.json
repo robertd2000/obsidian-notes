@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/array/Массивы.md",
+                "file": "go/core/interface/Погружение в интерфейсы Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Массивы"
+              "title": "Погружение в интерфейсы Go"
             }
           },
           {
@@ -186,6 +186,7 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
+    "go/core/array/Массивы.md",
     "go/core/allocation/stack/Contiguous stacks.md",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
     "go/core/allocation/Allocation with make.md",
@@ -212,7 +213,6 @@
     "backend/sql/ANALYZE",
     "backend/sql/index/Глава 11. Индексы.md",
     "backend/sql/index/Что такое составной индекс.md",
-    "backend/sql/transactions/Изоляция транзакций.md",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
     "backend/sql/CAP",
