@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/interface/Погружение в интерфейсы Go.md",
+                "file": "go/core/array/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Погружение в интерфейсы Go"
+              "title": "Без названия"
             }
           },
           {
@@ -186,7 +186,14 @@
   },
   "active": "780283bf6a0769ea",
   "lastOpenFiles": [
+    "Pasted image 20260622182454.png",
+    "Pasted image 20260622182313.png",
+    "Pasted image 20260622172502.png",
+    "Pasted image 20260622171506.png",
+    "Pasted image 20260622171458.png",
     "go/core/array/Массивы.md",
+    "go/core/array/Без названия.md",
+    "go/core/interface/Погружение в интерфейсы Go.md",
     "go/core/allocation/stack/Contiguous stacks.md",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
     "go/core/allocation/Allocation with make.md",
@@ -209,10 +216,7 @@
     "задачи по деревьям.md",
     "backend/sql/Сравнение MySQL и PostgreSQL в 2023 году.md",
     "backend/sql/ANALYZE/ANALYZE.md",
-    "backend/sql/vacuum/VACUUM.md",
     "backend/sql/ANALYZE",
-    "backend/sql/index/Глава 11. Индексы.md",
-    "backend/sql/index/Что такое составной индекс.md",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
     "backend/sql/CAP",
@@ -224,11 +228,7 @@
     "Pasted image 20260604134735.png",
     "Pasted image 20260604134700.png",
     "Pasted image 20260604134648.png",
-    "Pasted image 20260604134543.png",
     "backend/middleware",
-    "Pasted image 20260526155015.png",
-    "Pasted image 20260525164458.png",
-    "Pasted image 20260525164132.png",
     "backend/sql/joins",
     "backend/kafka",
     "go/вопросы/o-prepare/kafka"
