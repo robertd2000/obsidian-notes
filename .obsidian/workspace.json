@@ -11,14 +11,29 @@
             "id": "780283bf6a0769ea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "go/core/array/Без названия.md",
-                "mode": "source",
-                "source": false
+                "file": "m/Без названия.canvas",
+                "viewState": {
+                  "x": 24.6666259765625,
+                  "y": -58.66668701171875,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
+              "icon": "lucide-layout-dashboard",
               "title": "Без названия"
+            }
+          },
+          {
+            "id": "2a09004e0c721e64",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 12.01.41.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 12.01.41.excalidraw"
             }
           },
           {
@@ -35,7 +50,8 @@
               "title": "Что такое PCI DSS и как происходит проверка на соответствие стандарту"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,14 +180,33 @@
               "icon": "lucide-list",
               "title": "Outline of fan in"
             }
+          },
+          {
+            "id": "0d77cd85394dc9c9",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "c01b098e4f6a262e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 242.5,
-    "collapsed": true
+    "width": 242.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,19 +216,33 @@
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
       "command-palette:Открыть палитру команд": false,
-      "bases:Создать новую базу": false
+      "bases:Создать новую базу": false,
+      "obsidian-excalidraw-plugin:Создать новый чертеж": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "780283bf6a0769ea",
+  "active": "2a09004e0c721e64",
   "lastOpenFiles": [
-    "Pasted image 20260622192452.png",
-    "Pasted image 20260622182454.png",
-    "Pasted image 20260622182313.png",
-    "Pasted image 20260622172502.png",
-    "Pasted image 20260622171506.png",
-    "Pasted image 20260622171458.png",
-    "go/core/array/Массивы.md",
+    "m/Без названия.canvas",
+    "m/Drawing 2026-06-23 12.01.41.excalidraw.md",
+    "go/core/slice/Без названия.md",
+    "m",
+    "Pasted image 20260623113414.png",
+    "go/core/slice/mutate string.md",
+    "Pasted image 20260623104711.png",
+    "Pasted image 20260623101908.png",
+    "Pasted image 20260623101832.png",
+    "Pasted image 20260623101801.png",
+    "Pasted image 20260623100720.png",
+    "Pasted image 20260623091145.png",
+    "Pasted image 20260623091028.png",
+    "Pasted image 20260623091017.png",
+    "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
+    "go/core/slice/Срезы.md",
     "go/core/array/Без названия.md",
+    "Pasted image 20260622192452.png",
+    "go/core/array/Массивы.md",
     "go/core/interface/Погружение в интерфейсы Go.md",
     "go/core/allocation/stack/Contiguous stacks.md",
     "go/core/allocation/stack/Стек (Stack) в Go.md",
@@ -212,25 +261,14 @@
     "backend/sql/index/Уникальные индексы.md",
     "backend/sql/index/Объединение нескольких индексов.md",
     "backend/sql/index/Индексы и предложения ORDER BY.md",
-    "DB inners.md",
-    "задачи.md",
-    "задачи по деревьям.md",
-    "backend/sql/Сравнение MySQL и PostgreSQL в 2023 году.md",
-    "backend/sql/ANALYZE/ANALYZE.md",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
     "backend/sql/CAP",
     "backend/sql/NoSQL",
     "backend/sql/vacuum",
-    "Pasted image 20260605221244.png",
-    "Pasted image 20260605221157.png",
-    "Pasted image 20260604134750.png",
-    "Pasted image 20260604134735.png",
-    "Pasted image 20260604134700.png",
     "backend/middleware",
     "backend/sql/joins",
-    "backend/kafka",
-    "go/вопросы/o-prepare/kafka"
+    "backend/kafka"
   ]
 }
