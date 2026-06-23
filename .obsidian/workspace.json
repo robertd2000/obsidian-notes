@@ -4,54 +4,61 @@
     "type": "split",
     "children": [
       {
-        "id": "655ba6c87c649cc1",
+        "id": "cdf93db9e937a2e2",
         "type": "tabs",
         "children": [
           {
-            "id": "780283bf6a0769ea",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "m/Без названия.canvas",
-                "viewState": {
-                  "x": 24.6666259765625,
-                  "y": -58.66668701171875,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Без названия"
-            }
-          },
-          {
-            "id": "2a09004e0c721e64",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-06-23 12.01.41.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 12.01.41.excalidraw"
-            }
-          },
-          {
-            "id": "b6a1babb5a4405de",
+            "id": "88cab84da278caa7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+                "file": "go/core/slice/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Что такое PCI DSS и как происходит проверка на соответствие стандарту"
+              "title": "Без названия"
+            }
+          },
+          {
+            "id": "97d88edbc876296b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 13.06.19.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 13.06.19.excalidraw"
+            }
+          },
+          {
+            "id": "b5ccb94376c57108",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 14.47.07.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 14.47.07.excalidraw"
+            }
+          },
+          {
+            "id": "76cf47a85203d1ea",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 15.09.15.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 15.09.15.excalidraw"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -113,100 +120,10 @@
   "right": {
     "id": "3f73fb5aadaed71d",
     "type": "split",
-    "children": [
-      {
-        "id": "813ff01b528c4ac9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d27b38f0114beb02",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "go/core/Type conversions/Type Casting and Conversions.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for Type Casting and Conversions"
-            }
-          },
-          {
-            "id": "3ad299d84dc1b28d",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "frontend/@layer.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from @layer"
-            }
-          },
-          {
-            "id": "df21e17d3d37daee",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "6ec055ff39a9ef2a",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "go/core/concurrency/Concurrency Patterns/fan in.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of fan in"
-            }
-          },
-          {
-            "id": "0d77cd85394dc9c9",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "c01b098e4f6a262e",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          }
-        ],
-        "currentTab": 5
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,11 +139,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a09004e0c721e64",
+  "active": "76cf47a85203d1ea",
   "lastOpenFiles": [
+    "m/Drawing 2026-06-23 14.47.07.excalidraw.md",
+    "m/Drawing 2026-06-23 15.09.15.excalidraw.md",
+    "m/Drawing 2026-06-23 13.06.19.excalidraw.md",
     "m/Без названия.canvas",
-    "m/Drawing 2026-06-23 12.01.41.excalidraw.md",
     "go/core/slice/Без названия.md",
+    "Pasted image 20260623125944.png",
+    "Pasted image 20260623125921.png",
+    "m/Drawing 2026-06-23 12.34.58.excalidraw.md",
+    "m/Drawing 2026-06-23 12.25.15.excalidraw.md",
+    "m/Drawing 2026-06-23 12.17.19.excalidraw.md",
+    "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+    "m/Без названия.md",
+    "m/Drawing 2026-06-23 12.01.41.excalidraw.md",
     "m",
     "Pasted image 20260623113414.png",
     "go/core/slice/mutate string.md",
@@ -237,11 +164,9 @@
     "Pasted image 20260623100720.png",
     "Pasted image 20260623091145.png",
     "Pasted image 20260623091028.png",
-    "Pasted image 20260623091017.png",
     "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
     "go/core/slice/Срезы.md",
     "go/core/array/Без названия.md",
-    "Pasted image 20260622192452.png",
     "go/core/array/Массивы.md",
     "go/core/interface/Погружение в интерфейсы Go.md",
     "go/core/allocation/stack/Contiguous stacks.md",
@@ -254,13 +179,6 @@
     "backend/sql/index/Индексы и правила сортировки.md",
     "backend/sql/index/Семейства и классы операторов.md",
     "backend/sql/index/Сканирование только индекса и покрывающие индексы.md",
-    "backend/sql/index/Составные индексы в PostgreSQL.md",
-    "backend/sql/index/Составные индексы.md",
-    "backend/sql/index/Частичные индексы.md",
-    "backend/sql/index/Индексы по выражениям.md",
-    "backend/sql/index/Уникальные индексы.md",
-    "backend/sql/index/Объединение нескольких индексов.md",
-    "backend/sql/index/Индексы и предложения ORDER BY.md",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
