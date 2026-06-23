@@ -56,9 +56,33 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-06-23 15.09.15.excalidraw"
             }
+          },
+          {
+            "id": "a7215c9cfa7320b4",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 17.37.33.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 17.37.33.excalidraw"
+            }
+          },
+          {
+            "id": "c51ccd189a48347b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-06-23 17.50.15.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-06-23 17.50.15.excalidraw"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -115,7 +139,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 232.5,
+    "collapsed": true
   },
   "right": {
     "id": "3f73fb5aadaed71d",
@@ -139,15 +164,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76cf47a85203d1ea",
+  "active": "c51ccd189a48347b",
   "lastOpenFiles": [
-    "m/Drawing 2026-06-23 14.47.07.excalidraw.md",
+    "m/Drawing 2026-06-23 17.37.33.excalidraw.md",
+    "m/Drawing 2026-06-23 17.50.15.excalidraw.md",
     "m/Drawing 2026-06-23 15.09.15.excalidraw.md",
+    "go/core/slice/Без названия.md",
+    "Pasted image 20260623153502.png",
+    "Pasted image 20260623153426.png",
+    "Pasted image 20260623153416.png",
+    "Pasted image 20260623153336.png",
+    "Pasted image 20260623153316.png",
+    "Pasted image 20260623153307.png",
+    "Pasted image 20260623153222.png",
+    "Pasted image 20260623153152.png",
+    "Pasted image 20260623153139.png",
+    "m/Drawing 2026-06-23 14.47.07.excalidraw.md",
     "m/Drawing 2026-06-23 13.06.19.excalidraw.md",
     "m/Без названия.canvas",
-    "go/core/slice/Без названия.md",
     "Pasted image 20260623125944.png",
-    "Pasted image 20260623125921.png",
     "m/Drawing 2026-06-23 12.34.58.excalidraw.md",
     "m/Drawing 2026-06-23 12.25.15.excalidraw.md",
     "m/Drawing 2026-06-23 12.17.19.excalidraw.md",
@@ -155,15 +190,7 @@
     "m/Без названия.md",
     "m/Drawing 2026-06-23 12.01.41.excalidraw.md",
     "m",
-    "Pasted image 20260623113414.png",
     "go/core/slice/mutate string.md",
-    "Pasted image 20260623104711.png",
-    "Pasted image 20260623101908.png",
-    "Pasted image 20260623101832.png",
-    "Pasted image 20260623101801.png",
-    "Pasted image 20260623100720.png",
-    "Pasted image 20260623091145.png",
-    "Pasted image 20260623091028.png",
     "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
     "go/core/slice/Срезы.md",
     "go/core/array/Без названия.md",
@@ -177,8 +204,6 @@
     "go/core/allocation/Allocation with new.md",
     "backend/sql/index/Контроль использования индексов.md",
     "backend/sql/index/Индексы и правила сортировки.md",
-    "backend/sql/index/Семейства и классы операторов.md",
-    "backend/sql/index/Сканирование только индекса и покрывающие индексы.md",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
