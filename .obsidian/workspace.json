@@ -4,85 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "cdf93db9e937a2e2",
+        "id": "c07cfda49ae47b90",
         "type": "tabs",
         "children": [
           {
-            "id": "88cab84da278caa7",
+            "id": "ebcf33f9ae7f91ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/slice/Без названия.md",
+                "file": "go/core/concurrency/Модель памяти Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "Модель памяти Go"
             }
           },
           {
-            "id": "97d88edbc876296b",
+            "id": "1a0744fe860dfce0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "m/Без названия 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Без названия 1"
+            }
+          },
+          {
+            "id": "309f0f1446917204",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "m/Drawing 2026-06-23 13.06.19.excalidraw.md"
+                "file": "m/Drawing 2026-06-26 18.34.08.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 13.06.19.excalidraw"
-            }
-          },
-          {
-            "id": "b5ccb94376c57108",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-06-23 14.47.07.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 14.47.07.excalidraw"
-            }
-          },
-          {
-            "id": "76cf47a85203d1ea",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-06-23 15.09.15.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 15.09.15.excalidraw"
-            }
-          },
-          {
-            "id": "a7215c9cfa7320b4",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-06-23 17.37.33.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 17.37.33.excalidraw"
-            }
-          },
-          {
-            "id": "c51ccd189a48347b",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-06-23 17.50.15.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-06-23 17.50.15.excalidraw"
+              "title": "Drawing 2026-06-26 18.34.08.excalidraw"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -139,13 +104,92 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5,
-    "collapsed": true
+    "width": 232.5
   },
   "right": {
     "id": "3f73fb5aadaed71d",
     "type": "split",
-    "children": [],
+    "children": [
+      {
+        "id": "0f97256de7700281",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5139a9147aa945f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "go/core/slice/Без названия.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Без названия"
+            }
+          },
+          {
+            "id": "cd4825ff51fdbe74",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "go/core/slice/Без названия.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Без названия"
+            }
+          },
+          {
+            "id": "7389cedf4c5fe539",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "4edf0d45059f0cb8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "go/core/slice/Без названия.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура Без названия"
+            }
+          },
+          {
+            "id": "044cb992b131c7e4",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
     "direction": "horizontal",
     "width": 200,
     "collapsed": true
@@ -164,46 +208,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c51ccd189a48347b",
+  "active": "ebcf33f9ae7f91ca",
   "lastOpenFiles": [
-    "m/Drawing 2026-06-23 17.37.33.excalidraw.md",
-    "m/Drawing 2026-06-23 17.50.15.excalidraw.md",
-    "m/Drawing 2026-06-23 15.09.15.excalidraw.md",
-    "go/core/slice/Без названия.md",
-    "Pasted image 20260623153502.png",
-    "Pasted image 20260623153426.png",
-    "Pasted image 20260623153416.png",
-    "Pasted image 20260623153336.png",
-    "Pasted image 20260623153316.png",
-    "Pasted image 20260623153307.png",
-    "Pasted image 20260623153222.png",
-    "Pasted image 20260623153152.png",
-    "Pasted image 20260623153139.png",
-    "m/Drawing 2026-06-23 14.47.07.excalidraw.md",
-    "m/Drawing 2026-06-23 13.06.19.excalidraw.md",
+    "m/Без названия 1.md",
+    "m/Drawing 2026-06-26 18.34.08.excalidraw.md",
+    "Pasted image 20260626113928.png",
+    "m/Drawing 2026-06-26 11.04.06.excalidraw.md",
     "m/Без названия.canvas",
-    "Pasted image 20260623125944.png",
+    "m/Без названия.md",
+    "m/Drawing 2026-06-26 10.51.44.excalidraw.md",
+    "Pasted image 20260626105103.png",
+    "m/Drawing 2026-06-26 10.44.32.excalidraw.md",
+    "m/Drawing 2026-06-26 09.28.25.excalidraw.md",
+    "m/Drawing 2026-06-25 22.12.23.excalidraw.md",
+    "m/Drawing 2026-06-25 21.49.43.excalidraw.md",
+    "m/Drawing 2026-06-25 20.31.04.excalidraw.md",
+    "m/Drawing 2026-06-25 18.36.42.excalidraw.md",
+    "m/Drawing 2026-06-24 21.17.42.excalidraw.md",
+    "m/Drawing 2026-06-23 13.06.19.excalidraw.md",
+    "go/core/slice/Без названия.md",
+    "Pasted image 20260624100523.png",
+    "Pasted image 20260624100457.png",
+    "Pasted image 20260624095538.png",
+    "Pasted image 20260624095246.png",
+    "Pasted image 20260624094243.png",
+    "Pasted image 20260624094208.png",
+    "Pasted image 20260624092545.png",
+    "Pasted image 20260624091808.png",
+    "m/Drawing 2026-06-23 17.50.15.excalidraw.md",
+    "m/Drawing 2026-06-23 17.37.33.excalidraw.md",
+    "m/Drawing 2026-06-23 15.09.15.excalidraw.md",
+    "m/Drawing 2026-06-23 14.47.07.excalidraw.md",
     "m/Drawing 2026-06-23 12.34.58.excalidraw.md",
     "m/Drawing 2026-06-23 12.25.15.excalidraw.md",
     "m/Drawing 2026-06-23 12.17.19.excalidraw.md",
     "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
-    "m/Без названия.md",
     "m/Drawing 2026-06-23 12.01.41.excalidraw.md",
     "m",
     "go/core/slice/mutate string.md",
     "go/core/slice/Arrays, slices (and strings) The mechanics of append.md",
     "go/core/slice/Срезы.md",
-    "go/core/array/Без названия.md",
-    "go/core/array/Массивы.md",
-    "go/core/interface/Погружение в интерфейсы Go.md",
-    "go/core/allocation/stack/Contiguous stacks.md",
-    "go/core/allocation/stack/Стек (Stack) в Go.md",
-    "go/core/allocation/Allocation with make.md",
-    "go/core/allocation/Go Escape Analysis Flaws.md",
-    "go/core/allocation/Compiler And Runtime Optimizations.md",
-    "go/core/allocation/Allocation with new.md",
-    "backend/sql/index/Контроль использования индексов.md",
-    "backend/sql/index/Индексы и правила сортировки.md",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
     "backend/sql/Блокировки",
