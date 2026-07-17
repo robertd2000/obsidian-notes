@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/Select/Селект.md",
+                "file": "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Селект"
+              "title": "Внутренности планировщика Go"
             }
           },
           {
@@ -210,8 +210,8 @@
   },
   "active": "ebcf33f9ae7f91ca",
   "lastOpenFiles": [
-    "go/core/concurrency/Select/Select.md",
     "go/core/concurrency/Select/Селект.md",
+    "go/core/concurrency/Select/Select.md",
     "go/core/concurrency/channels/Go Channels Explained.md",
     "go/core/concurrency/channels/Channels.md",
     "go/core/concurrency/channels/Channels in Golang.md",
