@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -209,8 +209,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a0744fe860dfce0",
+  "active": "309f0f1446917204",
   "lastOpenFiles": [
+    "m/Ответы.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
     "go/core/concurrency/Select/Селект.md",
     "go/core/concurrency/Select/Select.md",
@@ -219,7 +220,6 @@
     "go/core/concurrency/channels/Channels in Golang.md",
     "go/core/concurrency/channels/channel struct.md",
     "go/core/concurrency/Модель памяти Go.md",
-    "m/Ответы.md",
     "m/Drawing 2026-06-26 18.34.08.excalidraw.md",
     "Pasted image 20260626113928.png",
     "m/Drawing 2026-06-26 11.04.06.excalidraw.md",
