@@ -42,12 +42,14 @@
             "id": "9178c62b39467e9d",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "m/Drawing 2026-07-23 17.35.39.excalidraw.md"
+                "file": "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-07-23 17.35.39.excalidraw"
+              "icon": "lucide-file",
+              "title": "Что такое PCI DSS и как происходит проверка на соответствие стандарту"
             }
           }
         ],
@@ -214,8 +216,8 @@
   },
   "active": "9178c62b39467e9d",
   "lastOpenFiles": [
-    "m/Без названия.canvas",
     "m/Drawing 2026-07-23 17.35.39.excalidraw.md",
+    "m/Без названия.canvas",
     "m/Ответы.md",
     "m/Без названия.md",
     "m/Drawing 2026-06-26 18.34.08.excalidraw.md",
