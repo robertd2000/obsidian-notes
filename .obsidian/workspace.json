@@ -25,17 +25,14 @@
             "id": "1a0744fe860dfce0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "m/Без названия.canvas",
-                "viewState": {
-                  "x": 25,
-                  "y": -59,
-                  "zoom": 0
-                }
+                "file": "go/core/concurrency/channels/Каналы (channels) в Go.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Без названия"
+              "icon": "lucide-file",
+              "title": "Каналы (channels) в Go"
             }
           },
           {
@@ -44,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+                "file": "backend/i/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Что такое PCI DSS и как происходит проверка на соответствие стандарту"
+              "title": "Без названия"
+            }
+          },
+          {
+            "id": "69cbd20f59ae42d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "backend/sql/index/Индексы и предложения ORDER BY.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Индексы и предложения ORDER BY"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -214,34 +227,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9178c62b39467e9d",
+  "active": "1a0744fe860dfce0",
   "lastOpenFiles": [
-    "m/Drawing 2026-07-23 17.35.39.excalidraw.md",
+    "go/core/concurrency/channels/Go Channels Internals.md",
+    "go/core/concurrency/channels/Каналы (channels) в Go.md",
+    "backend/i/Без названия.md",
+    "go/core/concurrency/scheduler/Goroutine Stacks in Go.md",
+    "backend/sql/index/Индексы и предложения ORDER BY.md",
+    "backend/sql/index/Индексы и правила сортировки.md",
+    "backend/sql/index/Индексы в SQL.md",
+    "backend/sql/index/Глава 11. Индексы.md",
+    "backend/sql/joins/Группировка в соединениях.md",
+    "backend/sql/Оптимизация.md",
+    "backend/sql/vacuum/VACUUM.md",
+    "backend/sql/vacuum/VACUUM  deeepseek.md",
+    "backend/sql/vacuum/Как не утонуть в мусоре PostgreSQL VACUUM.md",
+    "backend/sql/transactions/Явные блокировки.md",
+    "backend/sql/transactions/Изоляция транзакций.md",
+    "backend/sql/transactions/Уровни изоляции транзакций с примерами на PostgreSQL.md",
+    "m/Drawing 2026-08-04 12.59.08.excalidraw.md",
+    "m/Drawing 2026-08-04 12.44.30.excalidraw.md",
+    "m/Drawing 2026-08-04 12.24.41.excalidraw.md",
+    "m/Drawing 2026-08-04 12.17.13.excalidraw.md",
     "m/Без названия.canvas",
+    "backend/i/Без названия 1.md",
+    "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
+    "backend/i",
+    "m/Drawing 2026-07-23 17.35.39.excalidraw.md",
     "m/Ответы.md",
     "m/Без названия.md",
     "m/Drawing 2026-06-26 18.34.08.excalidraw.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "go/core/concurrency/Select/Селект.md",
-    "go/core/concurrency/Select/Select.md",
-    "go/core/concurrency/channels/Go Channels Explained.md",
-    "go/core/concurrency/channels/Channels.md",
-    "go/core/concurrency/channels/Channels in Golang.md",
-    "go/core/concurrency/channels/channel struct.md",
-    "go/core/concurrency/Модель памяти Go.md",
     "Pasted image 20260626113928.png",
-    "m/Drawing 2026-06-26 11.04.06.excalidraw.md",
-    "m/Drawing 2026-06-26 10.51.44.excalidraw.md",
     "Pasted image 20260626105103.png",
-    "m/Drawing 2026-06-26 10.44.32.excalidraw.md",
-    "m/Drawing 2026-06-26 09.28.25.excalidraw.md",
-    "m/Drawing 2026-06-25 22.12.23.excalidraw.md",
-    "m/Drawing 2026-06-25 21.49.43.excalidraw.md",
-    "m/Drawing 2026-06-25 20.31.04.excalidraw.md",
-    "m/Drawing 2026-06-25 18.36.42.excalidraw.md",
-    "m/Drawing 2026-06-24 21.17.42.excalidraw.md",
-    "m/Drawing 2026-06-23 13.06.19.excalidraw.md",
-    "go/core/slice/Без названия.md",
     "Pasted image 20260624100523.png",
     "Pasted image 20260624100457.png",
     "Pasted image 20260624095538.png",
@@ -250,8 +267,6 @@
     "Pasted image 20260624094208.png",
     "Pasted image 20260624092545.png",
     "Pasted image 20260624091808.png",
-    "m/Drawing 2026-06-23 17.50.15.excalidraw.md",
-    "m/Drawing 2026-06-23 17.37.33.excalidraw.md",
     "m",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
@@ -260,7 +275,6 @@
     "backend/sql/NoSQL",
     "backend/sql/vacuum",
     "backend/middleware",
-    "backend/sql/joins",
-    "backend/kafka"
+    "backend/sql/joins"
   ]
 }
