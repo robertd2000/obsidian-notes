@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+                "file": "backend/sql/index/Частичные индексы.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Внутренности планировщика Go"
+              "title": "Частичные индексы"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/core/concurrency/channels/Каналы (channels) в Go.md",
+                "file": "go/core/garbage collector/The Green Tea Garbage Collector.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Каналы (channels) в Go"
+              "title": "The Green Tea Garbage Collector"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "Индексы и предложения ORDER BY"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,16 +226,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a0744fe860dfce0",
+  "active": "ebcf33f9ae7f91ca",
   "lastOpenFiles": [
-    "go/core/concurrency/channels/Go Channels Internals.md",
-    "go/core/concurrency/channels/Каналы (channels) в Go.md",
+    "backend/sql/index/Индексы в SQL.md",
+    "backend/sql/index/Глава 11. Индексы.md",
+    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
+    "go/core/garbage collector/The Green Tea Garbage Collector.md",
     "backend/i/Без названия.md",
+    "go/core/garbage collector/Green Tea GC что на самом деле поменялось в сборщике мусора Go 1 26.md",
+    "go/core/concurrency/channels/Каналы (channels) в Go.md",
+    "go/core/concurrency/channels/Go Channels Internals.md",
     "go/core/concurrency/scheduler/Goroutine Stacks in Go.md",
     "backend/sql/index/Индексы и предложения ORDER BY.md",
     "backend/sql/index/Индексы и правила сортировки.md",
-    "backend/sql/index/Индексы в SQL.md",
-    "backend/sql/index/Глава 11. Индексы.md",
     "backend/sql/joins/Группировка в соединениях.md",
     "backend/sql/Оптимизация.md",
     "backend/sql/vacuum/VACUUM.md",
@@ -254,9 +256,6 @@
     "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
     "backend/i",
     "m/Drawing 2026-07-23 17.35.39.excalidraw.md",
-    "m/Ответы.md",
-    "m/Без названия.md",
-    "m/Drawing 2026-06-26 18.34.08.excalidraw.md",
     "Pasted image 20260626113928.png",
     "Pasted image 20260626105103.png",
     "Pasted image 20260624100523.png",

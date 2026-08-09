@@ -30,7 +30,7 @@ func main() {
 
 ## Преамбула
 
-Для ответа на этот вопрос предлагаю сначала углубиться в runtime.GOMAXPROCS и как он устроен. Уверен, что всем Golang разработчикам хорошо известна модель G-M-P, но приведут ссылку на [документ](https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit?tab=t.0#heading=h.mmq8lm48qfcw) от разработчиков планировщика. Из всего документа интересует вот этот абзац
+Для ответа на этот вопрос предлагаю сначала углубиться в runtime.GOMAXPROCS и как он устроен. Уверен, что всем Golang разработчикам хорошо известна модель G-M-P, но приведу ссылку на [документ](https://docs.google.com/document/d/1TTj4T2JO42uD5ID9e89oa0sLKhJYD0Y_kqxDv3I3XMw/edit?tab=t.0#heading=h.mmq8lm48qfcw) от разработчиков планировщика. Из всего документа интересует вот этот абзац
 
 > When a new G is created or an existing G becomes runnable, it is pushed onto a list of runnable goroutines of current P. When P finishes executing G, it first tries to pop a G from own list of runnable goroutines; if the list is empty, P chooses a random victim (another P) and tries to steal a half of runnable goroutines from it.
 
