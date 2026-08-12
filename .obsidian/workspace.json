@@ -55,15 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/index/Индексы и предложения ORDER BY.md",
+                "file": "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Индексы и предложения ORDER BY"
+              "title": "СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -226,18 +227,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ebcf33f9ae7f91ca",
+  "active": "69cbd20f59ae42d4",
   "lastOpenFiles": [
+    "Screenshot 2026-08-12 123640.png",
+    "Screenshot 2026-08-12 123630.png",
+    "Screenshot 2026-08-12 123120.png",
+    "Screenshot 2026-08-12 122721.png",
+    "Screenshot 2026-08-12 122705.png",
+    "Screenshot 2026-08-12 122557.png",
+    "Screenshot 2026-08-12 122458.png",
+    "Screenshot 2026-08-12 122440.png",
+    "Screenshot 2026-08-12 122324.png",
+    "Screenshot 2026-08-12 121914.png",
+    "Screenshot 2026-08-12 121827.png",
+    "backend/sql/index/Индексы и предложения ORDER BY.md",
+    "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
+    "go/core/garbage collector/The Green Tea Garbage Collector.md",
     "backend/sql/index/Индексы в SQL.md",
     "backend/sql/index/Глава 11. Индексы.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "go/core/garbage collector/The Green Tea Garbage Collector.md",
     "backend/i/Без названия.md",
     "go/core/garbage collector/Green Tea GC что на самом деле поменялось в сборщике мусора Go 1 26.md",
     "go/core/concurrency/channels/Каналы (channels) в Go.md",
     "go/core/concurrency/channels/Go Channels Internals.md",
     "go/core/concurrency/scheduler/Goroutine Stacks in Go.md",
-    "backend/sql/index/Индексы и предложения ORDER BY.md",
     "backend/sql/index/Индексы и правила сортировки.md",
     "backend/sql/joins/Группировка в соединениях.md",
     "backend/sql/Оптимизация.md",
@@ -253,19 +266,7 @@
     "m/Drawing 2026-08-04 12.17.13.excalidraw.md",
     "m/Без названия.canvas",
     "backend/i/Без названия 1.md",
-    "backend/Что такое PCI DSS и как происходит проверка на соответствие стандарту.md",
     "backend/i",
-    "m/Drawing 2026-07-23 17.35.39.excalidraw.md",
-    "Pasted image 20260626113928.png",
-    "Pasted image 20260626105103.png",
-    "Pasted image 20260624100523.png",
-    "Pasted image 20260624100457.png",
-    "Pasted image 20260624095538.png",
-    "Pasted image 20260624095246.png",
-    "Pasted image 20260624094243.png",
-    "Pasted image 20260624094208.png",
-    "Pasted image 20260624092545.png",
-    "Pasted image 20260624091808.png",
     "m",
     "backend/sql/ANALYZE",
     "backend/sql/ACID",
