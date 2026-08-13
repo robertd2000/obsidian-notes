@@ -62,9 +62,21 @@
               "icon": "lucide-file",
               "title": "СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!"
             }
+          },
+          {
+            "id": "c8a54001f72ff52a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "примечания к выпуску 1.13.7"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -227,7 +239,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "69cbd20f59ae42d4",
+  "active": "c8a54001f72ff52a",
   "lastOpenFiles": [
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
