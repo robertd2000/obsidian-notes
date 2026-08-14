@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/i/Без названия.md",
+                "file": "backend/i/РОАДМАП Go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "РОАДМАП Go"
             }
           },
           {
@@ -62,21 +62,9 @@
               "icon": "lucide-file",
               "title": "СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!"
             }
-          },
-          {
-            "id": "c8a54001f72ff52a",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.13.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "примечания к выпуску 1.13.7"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -135,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 246.83334350585938
   },
   "right": {
     "id": "3f73fb5aadaed71d",
@@ -239,8 +227,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c8a54001f72ff52a",
+  "active": "9178c62b39467e9d",
   "lastOpenFiles": [
+    "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
     "Screenshot 2026-08-12 123120.png",
@@ -251,14 +240,12 @@
     "Screenshot 2026-08-12 122440.png",
     "Screenshot 2026-08-12 122324.png",
     "Screenshot 2026-08-12 121914.png",
-    "Screenshot 2026-08-12 121827.png",
     "backend/sql/index/Индексы и предложения ORDER BY.md",
-    "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
     "go/core/garbage collector/The Green Tea Garbage Collector.md",
     "backend/sql/index/Индексы в SQL.md",
     "backend/sql/index/Глава 11. Индексы.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "backend/i/Без названия.md",
+    "backend/i/РОАДМАП Go.md",
     "go/core/garbage collector/Green Tea GC что на самом деле поменялось в сборщике мусора Go 1 26.md",
     "go/core/concurrency/channels/Каналы (channels) в Go.md",
     "go/core/concurrency/channels/Go Channels Internals.md",
