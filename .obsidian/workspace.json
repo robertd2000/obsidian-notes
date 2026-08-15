@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/i/РОАДМАП Go.md",
+                "file": "backend/SLA как инструмент, а не отчёт.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "РОАДМАП Go"
+              "title": "SLA как инструмент, а не отчёт"
             }
           },
           {
@@ -229,6 +229,8 @@
   },
   "active": "9178c62b39467e9d",
   "lastOpenFiles": [
+    "backend/i/РОАДМАП Go.md",
+    "backend/SLA как инструмент, а не отчёт.md",
     "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
@@ -245,7 +247,6 @@
     "backend/sql/index/Индексы в SQL.md",
     "backend/sql/index/Глава 11. Индексы.md",
     "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "backend/i/РОАДМАП Go.md",
     "go/core/garbage collector/Green Tea GC что на самом деле поменялось в сборщике мусора Go 1 26.md",
     "go/core/concurrency/channels/Каналы (channels) в Go.md",
     "go/core/concurrency/channels/Go Channels Internals.md",
