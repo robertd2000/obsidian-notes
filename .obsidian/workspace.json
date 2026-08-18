@@ -62,6 +62,18 @@
             }
           },
           {
+            "id": "00a6d80de77efebb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-08-18 15.59.21.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-08-18 15.59.21.excalidraw"
+            }
+          },
+          {
             "id": "0e9c02975140f814",
             "type": "leaf",
             "state": {
@@ -253,14 +265,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e9c02975140f814",
+  "active": "263decf4c0b98da3",
   "lastOpenFiles": [
-    "backend/example/Без названия 1.md",
+    "m/Drawing 2026-08-17 14.01.21.excalidraw.md",
+    "m/Drawing 2026-08-18 15.59.21.excalidraw.md",
     "backend/example/Без названия 2.md",
+    "backend/example/Без названия 1.md",
     "backend/example/Без названия.md",
     "m/Drawing 2026-08-17 14.11.35.excalidraw.md",
     "backend/example",
-    "m/Drawing 2026-08-17 14.01.21.excalidraw.md",
     "p/mephi/Глава 1. Путь, перемещение, скорость. Движение с постоянной скоростью. Относительность движения.md",
     "backend/SLA как инструмент, а не отчёт.md",
     "p/mephi",
@@ -293,7 +306,6 @@
     "backend/sql/vacuum/VACUUM  deeepseek.md",
     "backend/sql/vacuum/Как не утонуть в мусоре PostgreSQL VACUUM.md",
     "backend/sql/transactions/Явные блокировки.md",
-    "backend/sql/transactions/Изоляция транзакций.md",
     "m/Без названия.canvas",
     "backend/i",
     "m",
