@@ -74,17 +74,17 @@
             }
           },
           {
-            "id": "0e9c02975140f814",
+            "id": "791c4d49623fe9e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/example/Без названия 2.md",
+                "file": "proj/Write yourself a Git/Write yourself a Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия 2"
+              "title": "Write yourself a Git"
             }
           },
           {
@@ -93,12 +93,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
+                "file": "proj/Build Your Own Redis with C++/Part 2/8b. Hashtables (Part 2)/code/08_server.cpp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!"
+              "title": "08_server.cpp"
+            }
+          },
+          {
+            "id": "193888b4dca9d60a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "proj/Concurrent Servers/Part 7 - Rust.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Part 7 - Rust"
             }
           }
         ],
@@ -161,7 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.83334350585938
+    "width": 236.83334350585938
   },
   "right": {
     "id": "3f73fb5aadaed71d",
@@ -265,21 +279,44 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "263decf4c0b98da3",
+  "active": "00a6d80de77efebb",
   "lastOpenFiles": [
-    "m/Drawing 2026-08-17 14.01.21.excalidraw.md",
     "m/Drawing 2026-08-18 15.59.21.excalidraw.md",
-    "backend/example/Без названия 2.md",
-    "backend/example/Без названия 1.md",
-    "backend/example/Без названия.md",
-    "m/Drawing 2026-08-17 14.11.35.excalidraw.md",
-    "backend/example",
-    "p/mephi/Глава 1. Путь, перемещение, скорость. Движение с постоянной скоростью. Относительность движения.md",
-    "backend/SLA как инструмент, а не отчёт.md",
-    "p/mephi",
-    "p",
-    "backend/i/РОАДМАП Go.md",
-    "go/задачи/СОБЕСЕДОВАНИЕ Senior Golang Разработчика с ЗП 400к! СЛОЖНЫЕ ЗАДАЧИ на Live-coding!.md",
+    "proj/Write yourself a Git/Write yourself a Git.md",
+    "m/Drawing 2026-08-19 11.34.10.excalidraw.md",
+    "proj/Build Your Own Redis with C++/Part 2/8b. Hashtables (Part 2)/code/08_server.cpp.md",
+    "proj/Concurrent Servers/Part 7 - Rust.md",
+    "proj/Build Your Own Redis with C++/Part 2/8b. Hashtables (Part 2)/code/hashtable.cpp.md",
+    "proj/Concurrent Servers/Part 6 - Callbacks, Promises and async await.md",
+    "proj/Concurrent Servers/Part 5 - Redis case study.md",
+    "proj/Concurrent Servers/Part 4 - libuv.md",
+    "proj/Concurrent Servers/Part 3 - Event-driven.md",
+    "proj/Concurrent Servers/Part 2 - Threads.md",
+    "proj/Concurrent Servers/Part 1 - Introduction.md",
+    "proj/Concurrent Servers/Без названия",
+    "proj/Concurrent Servers",
+    "proj/Rust in Detail Writing Scalable Chat Service from Scratch/Part 2.md",
+    "proj/Write yourself a Git",
+    "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes/Part 14 - Splitting Internal Nodes.md",
+    "proj/Let's Build a Simple Database/Part 15 - Where to go next/Part 15 - Where to go next.md",
+    "proj/Let's Build a Simple Database/Part 15 - Where to go next",
+    "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split/Part 13 - Updating Parent Node After a Split.md",
+    "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes",
+    "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree/Part 12 - Scanning a Multi-Level B-Tree.md",
+    "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split",
+    "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree/Part 11 - Recursively Searching the B-Tree.md",
+    "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree",
+    "proj/Let's Build a Simple Database/Part 10 - Splitting a Leaf Node/Part 10 - Splitting a Leaf Node.md",
+    "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree",
+    "proj/Let's Build a Simple Database/Part 9 - Binary Search and Duplicate Keys/Part 9 - Binary Search and Duplicate Keys.md",
+    "proj/Let's Build a Simple Database/Part 10 - Splitting a Leaf Node",
+    "proj/Let's Build a Simple Database/Part 8 - B-Tree Leaf Node Format/Part 8 - B-Tree Leaf Node Format.md",
+    "proj/Let's Build a Simple Database/Part 9 - Binary Search and Duplicate Keys",
+    "proj/Let's Build a Simple Database/Part 7 - Introduction to the B-Tree/Part 7 - Introduction to the B-Tree.md",
+    "proj/Let's Build a Simple Database/Part 6 - The Cursor Abstraction/Part 6 - The Cursor Abstraction.md",
+    "proj/Let's Build a Simple Database/Part 5 - Persistence to Disk/Part 5 - Persistence to Disk.md",
+    "proj/Let's Build a Simple Database/Part 4 - Our First Tests (and Bugs)/Part 4 - Our First Tests (and Bugs).md",
+    "proj/Let's Build a Simple Database/Part 3 - An In-Memory, Append-Only, Single-Table Database/Part 3 - An In-Memory, Append-Only, Single-Table Database.md",
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
     "Screenshot 2026-08-12 123120.png",
@@ -290,29 +327,6 @@
     "Screenshot 2026-08-12 122440.png",
     "Screenshot 2026-08-12 122324.png",
     "Screenshot 2026-08-12 121914.png",
-    "backend/sql/index/Индексы и предложения ORDER BY.md",
-    "go/core/garbage collector/The Green Tea Garbage Collector.md",
-    "backend/sql/index/Индексы в SQL.md",
-    "backend/sql/index/Глава 11. Индексы.md",
-    "go/core/concurrency/scheduler/Внутренности планировщика Go.md",
-    "go/core/garbage collector/Green Tea GC что на самом деле поменялось в сборщике мусора Go 1 26.md",
-    "go/core/concurrency/channels/Каналы (channels) в Go.md",
-    "go/core/concurrency/channels/Go Channels Internals.md",
-    "go/core/concurrency/scheduler/Goroutine Stacks in Go.md",
-    "backend/sql/index/Индексы и правила сортировки.md",
-    "backend/sql/joins/Группировка в соединениях.md",
-    "backend/sql/Оптимизация.md",
-    "backend/sql/vacuum/VACUUM.md",
-    "backend/sql/vacuum/VACUUM  deeepseek.md",
-    "backend/sql/vacuum/Как не утонуть в мусоре PostgreSQL VACUUM.md",
-    "backend/sql/transactions/Явные блокировки.md",
-    "m/Без названия.canvas",
-    "backend/i",
-    "m",
-    "backend/sql/ANALYZE",
-    "backend/sql/ACID",
-    "backend/sql/Блокировки",
-    "backend/sql/CAP",
-    "backend/sql/NoSQL"
+    "m/Без названия.canvas"
   ]
 }
