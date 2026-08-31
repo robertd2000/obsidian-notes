@@ -8,127 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ebcf33f9ae7f91ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "backend/sql/index/Частичные индексы.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Частичные индексы"
-            }
-          },
-          {
-            "id": "1a0744fe860dfce0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "go/core/garbage collector/The Green Tea Garbage Collector.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "The Green Tea Garbage Collector"
-            }
-          },
-          {
-            "id": "9178c62b39467e9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "p/mephi/Глава 1. Путь, перемещение, скорость. Движение с постоянной скоростью. Относительность движения.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Глава 1. Путь, перемещение, скорость. Движение с постоянной скоростью. Относительность движения"
-            }
-          },
-          {
-            "id": "dbe099719477ad99",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-08-17 14.01.21.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-08-17 14.01.21.excalidraw"
-            }
-          },
-          {
-            "id": "00a6d80de77efebb",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-08-18 15.59.21.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-08-18 15.59.21.excalidraw"
-            }
-          },
-          {
             "id": "6f9b03d0abbd4c97",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "m/Drawing 2026-08-27 10.47.28.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-08-27 10.47.28.excalidraw"
-            }
-          },
-          {
-            "id": "791c4d49623fe9e9",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "proj/Write yourself a Git/Write yourself a Git.md",
+                "file": "backend/kafka/Kafka для начинающих.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Write yourself a Git"
+              "title": "Kafka для начинающих"
             }
           },
           {
-            "id": "69cbd20f59ae42d4",
+            "id": "bbe43d8726008434",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "proj/Build Your Own Redis with C++/Part 2/8b. Hashtables (Part 2)/code/08_server.cpp.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "08_server.cpp"
-            }
-          },
-          {
-            "id": "193888b4dca9d60a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "proj/Concurrent Servers/Part 7 - Rust.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Part 7 - Rust"
+              "title": "Новая вкладка"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -293,6 +196,14 @@
   },
   "active": "6f9b03d0abbd4c97",
   "lastOpenFiles": [
+    "backend/kafka/Kafka — для самых маленьких.md",
+    "backend/kafka/difference between exactly-once and at-least-once guarantees.md",
+    "backend/kafka/Apache Avro и Schema Registry.md",
+    "backend/kafka/Стратегии доставки и дедупликации сообщений.md",
+    "backend/kafka/работа с оффсетами на практике.md",
+    "backend/kafka/обработка ошибок и Dead Letter Queues.md",
+    "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
+    "backend/kafka/Гарантии доставки на практике и идемпотентность.md",
     "m/Drawing 2026-08-27 10.47.28.excalidraw.md",
     "m/Drawing 2026-08-18 15.59.21.excalidraw.md",
     "proj/Write yourself a Git/Write yourself a Git.md",
@@ -317,18 +228,10 @@
     "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes",
     "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree/Part 12 - Scanning a Multi-Level B-Tree.md",
     "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split",
-    "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree/Part 11 - Recursively Searching the B-Tree.md",
     "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree",
-    "proj/Let's Build a Simple Database/Part 10 - Splitting a Leaf Node/Part 10 - Splitting a Leaf Node.md",
     "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree",
-    "proj/Let's Build a Simple Database/Part 9 - Binary Search and Duplicate Keys/Part 9 - Binary Search and Duplicate Keys.md",
     "proj/Let's Build a Simple Database/Part 10 - Splitting a Leaf Node",
-    "proj/Let's Build a Simple Database/Part 8 - B-Tree Leaf Node Format/Part 8 - B-Tree Leaf Node Format.md",
     "proj/Let's Build a Simple Database/Part 9 - Binary Search and Duplicate Keys",
-    "proj/Let's Build a Simple Database/Part 7 - Introduction to the B-Tree/Part 7 - Introduction to the B-Tree.md",
-    "proj/Let's Build a Simple Database/Part 6 - The Cursor Abstraction/Part 6 - The Cursor Abstraction.md",
-    "proj/Let's Build a Simple Database/Part 5 - Persistence to Disk/Part 5 - Persistence to Disk.md",
-    "proj/Let's Build a Simple Database/Part 4 - Our First Tests (and Bugs)/Part 4 - Our First Tests (and Bugs).md",
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
     "Screenshot 2026-08-12 123120.png",
