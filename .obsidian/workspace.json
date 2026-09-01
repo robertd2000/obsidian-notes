@@ -25,6 +25,18 @@
             "id": "bbe43d8726008434",
             "type": "leaf",
             "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-09-01 12.32.19.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-01 12.32.19.excalidraw"
+            }
+          },
+          {
+            "id": "d1605fea9745d34f",
+            "type": "leaf",
+            "state": {
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
@@ -196,6 +208,8 @@
   },
   "active": "6f9b03d0abbd4c97",
   "lastOpenFiles": [
+    "m/Drawing 2026-09-01 12.32.19.excalidraw.md",
+    "backend/kafka/Kafka для начинающих.md",
     "backend/kafka/Kafka — для самых маленьких.md",
     "backend/kafka/difference between exactly-once and at-least-once guarantees.md",
     "backend/kafka/Apache Avro и Schema Registry.md",
@@ -224,9 +238,7 @@
     "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes/Part 14 - Splitting Internal Nodes.md",
     "proj/Let's Build a Simple Database/Part 15 - Where to go next/Part 15 - Where to go next.md",
     "proj/Let's Build a Simple Database/Part 15 - Where to go next",
-    "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split/Part 13 - Updating Parent Node After a Split.md",
     "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes",
-    "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree/Part 12 - Scanning a Multi-Level B-Tree.md",
     "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split",
     "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree",
     "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree",
