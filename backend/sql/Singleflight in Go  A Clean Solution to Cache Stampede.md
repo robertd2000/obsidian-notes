@@ -36,6 +36,7 @@ Below is the complete code with explanations for each part.
 
 This in-memory mock cache supports basic Set, Get, and Delete operations. The `Get` method simulates a cache miss if the key has expired or doesn’t exist.
 
+```go
 package distributed_cache  
   
 import (  
@@ -83,10 +84,13 @@ func (m *MockCache) Delete(ctx context.Context, key string) {
     delete(m.data, key)  
 }
 
+```
+
 ## Mock Repository
 
 The following repository simulates a database. Each time the method `GetTemplateByID` is called, it increments a counter to track how many times the database is actually hit.
 
+```go
 package database  
   
 import (  
@@ -124,12 +128,13 @@ func (m *MockTemplateRepository) GetTemplateByID(key string) (*Template, error) 
     return nil, fmt.Errorf("template not found")  
 }
 
+```
+
 ## Business Logic
 
 In this part, we apply singleflight to ensure that only less database call is made for a given key when the cache is missed.
 
-package usecase  
-  
+```go
 import (  
     "context"  
     "fmt"  
@@ -185,10 +190,16 @@ func (t templateObj) GetTemplateNameById(ctx context.Context,
     return name  
 }
 
+```
+package usecase  
+  
+
 ## main.go
 
 The following `main.go` initializes the mock cache, database, and business logic layer. It then simulates 100 concurrent requests for the same key using goroutines. This setup mimics a cache stampede scenario (as we don’t set any key value to mock cache) and shows how singleflight effectively reduces backend pressure.
 
+
+```go
 package main  
   
 import (  
@@ -218,6 +229,8 @@ func main() {
     }  
     time.Sleep(5 * time.Second)  
 }
+
+```
 
 ## Expected Output
 
