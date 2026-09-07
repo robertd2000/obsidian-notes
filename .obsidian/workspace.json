@@ -39,26 +39,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/CAP.md",
+                "file": "backend/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAP"
+              "title": "паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup"
             }
           },
           {
             "id": "2cd64c0a2df35d9e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "backend/sql/index/Селективность и кардинальность.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Селективность и кардинальность"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -221,10 +225,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1605fea9745d34f",
+  "active": "2cd64c0a2df35d9e",
   "lastOpenFiles": [
-    "go/singleflight.md",
+    "backend/sql/index/Правильный порядок колонок в B-tree индексах PostgreSQL или правило ESR.md",
+    "backend/sql/index/Объединение нескольких индексов.md",
+    "backend/sql/index/Контроль использования индексов.md",
+    "backend/sql/index/Индексы по выражениям.md",
+    "backend/sql/index/Индексы и селективность (PostgreSQL).md",
+    "backend/sql/index/Индексы и предложения ORDER BY.md",
+    "backend/sql/index/Индексы и правила сортировки.md",
+    "backend/sql/index/Индексы в SQL.md",
+    "backend/sql/index/Глава 11. Индексы.md",
+    "backend/sql/Оптимизация.md",
+    "backend/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
+    "backend/sql/Сравнение MySQL и PostgreSQL в 2023 году.md",
+    "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
     "backend/sql/CAP.md",
+    "go/singleflight.md",
     "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
     "backend/sql/SQL.md",
     "backend/sql/The Thundering Herd Problem.md",
@@ -236,19 +253,6 @@
     "m/Drawing 2026-09-01 12.32.19.excalidraw.md",
     "backend/Строка в Go.md",
     "go/задачи/LRU Cache.md",
-    "go/задачи/`select` по каналам.md",
-    "backend/страница памяти.md",
-    "backend/kafka/Kafka для начинающих.md",
-    "backend/kafka/Kafka — для самых маленьких.md",
-    "backend/kafka/difference between exactly-once and at-least-once guarantees.md",
-    "backend/kafka/Apache Avro и Schema Registry.md",
-    "backend/kafka/Стратегии доставки и дедупликации сообщений.md",
-    "backend/kafka/работа с оффсетами на практике.md",
-    "backend/kafka/обработка ошибок и Dead Letter Queues.md",
-    "backend/kafka/Знакомимся с Apache Kafka. Основы.md",
-    "backend/kafka/Гарантии доставки на практике и идемпотентность.md",
-    "m/Drawing 2026-08-27 10.47.28.excalidraw.md",
-    "m/Drawing 2026-08-18 15.59.21.excalidraw.md",
     "proj/Concurrent Servers/Без названия",
     "proj/Concurrent Servers",
     "proj/Write yourself a Git",
