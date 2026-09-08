@@ -62,7 +62,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,8 +225,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2cd64c0a2df35d9e",
+  "active": "bbe43d8726008434",
   "lastOpenFiles": [
+    "backend/sql/index/Селективность и кардинальность.md",
     "backend/sql/index/Правильный порядок колонок в B-tree индексах PostgreSQL или правило ESR.md",
     "backend/sql/index/Объединение нескольких индексов.md",
     "backend/sql/index/Контроль использования индексов.md",
@@ -252,7 +253,6 @@
     "go/core/garbage collector/The Green Tea Garbage Collector.md",
     "m/Drawing 2026-09-01 12.32.19.excalidraw.md",
     "backend/Строка в Go.md",
-    "go/задачи/LRU Cache.md",
     "proj/Concurrent Servers/Без названия",
     "proj/Concurrent Servers",
     "proj/Write yourself a Git",
