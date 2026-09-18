@@ -39,12 +39,14 @@
             "id": "79d7b3ff8ddb3410",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "m/Drawing 2026-09-09 09.42.02.excalidraw.md"
+                "file": "proj/Writing a C Compiler/Part 10.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-09-09 09.42.02.excalidraw"
+              "icon": "lucide-file",
+              "title": "Part 10"
             }
           },
           {
@@ -67,16 +69,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "backend/sql/index/Селективность и кардинальность.md",
+                "file": "vim/Команды.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Селективность и кардинальность"
+              "title": "Команды"
+            }
+          },
+          {
+            "id": "ffbf6fd6844283ef",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "m/Drawing 2026-09-13 16.06.02.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-09-13 16.06.02.excalidraw"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -239,13 +253,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79d7b3ff8ddb3410",
+  "active": "ffbf6fd6844283ef",
   "lastOpenFiles": [
-    "темы для изучения/Без названия.md",
-    "m/Drawing 2026-09-09 09.42.02.excalidraw.md",
-    "m/Drawing 2026-09-01 12.32.19.excalidraw.md",
-    "backend/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
+    "m/Drawing 2026-09-13 16.06.02.excalidraw.md",
+    "vim/Команды.md",
+    "Untitled/DNS сервер.md",
+    "vim",
     "backend/sql/index/Селективность и кардинальность.md",
+    "proj/Writing a C Compiler/Part 10.md",
+    "темы для изучения/Без названия.md",
+    "backend/паттерны конкурентного программирования в Golang SingleFlight, Moving Later и ErrGroup.md",
+    "proj/Writing a C Compiler/Part 9.md",
+    "proj/Writing a C Compiler/Part 8.md",
+    "proj/Writing a C Compiler/Part 7.md",
+    "proj/Writing a C Compiler/Part 6.md",
+    "proj/Writing a C Compiler/Part 5.md",
+    "proj/Writing a C Compiler/Part 4.md",
+    "proj/Writing a C Compiler/Part 3.md",
+    "proj/Writing a C Compiler/Part 2.md",
+    "proj/Writing a C Compiler/Part 1.md",
+    "proj/Memory Allocators 101 - Write a simple memory allocator/Memory Allocators 101 - Write a simple memory allocator.md",
+    "proj/Writing a C Compiler/Без названия",
+    "proj/Writing a C Compiler",
+    "m/Drawing 2026-09-09 09.42.02.excalidraw.md",
+    "proj/Memory Allocators 101 - Write a simple memory allocator",
+    "m/Drawing 2026-09-01 12.32.19.excalidraw.md",
     "backend/sql/index/Правильный порядок колонок в B-tree индексах PostgreSQL или правило ESR.md",
     "backend/sql/index/Объединение нескольких индексов.md",
     "backend/sql/index/Контроль использования индексов.md",
@@ -253,30 +285,12 @@
     "backend/sql/index/Индексы и селективность (PostgreSQL).md",
     "backend/sql/index/Индексы и предложения ORDER BY.md",
     "backend/sql/index/Индексы и правила сортировки.md",
-    "backend/sql/index/Индексы в SQL.md",
-    "backend/sql/index/Глава 11. Индексы.md",
-    "backend/sql/Оптимизация.md",
-    "backend/sql/Сравнение MySQL и PostgreSQL в 2023 году.md",
-    "backend/sql/Сравнение SQL- и NoSQL-баз данных.md",
-    "backend/sql/CAP.md",
-    "go/singleflight.md",
-    "backend/sql/Singleflight in Go  A Clean Solution to Cache Stampede.md",
-    "backend/sql/SQL.md",
-    "backend/sql/The Thundering Herd Problem.md",
-    "backend/sql/Thundering herd problem.md",
-    "backend/Индексы.md",
-    "backend/Сисколл.md",
-    "backend/Примитивы синхронизации.md",
     "proj/Concurrent Servers/Без названия",
     "proj/Concurrent Servers",
     "proj/Write yourself a Git",
     "proj/Let's Build a Simple Database/Part 15 - Where to go next",
     "proj/Let's Build a Simple Database/Part 14 - Splitting Internal Nodes",
     "proj/Let's Build a Simple Database/Part 13 - Updating Parent Node After a Split",
-    "proj/Let's Build a Simple Database/Part 12 - Scanning a Multi-Level B-Tree",
-    "proj/Let's Build a Simple Database/Part 11 - Recursively Searching the B-Tree",
-    "proj/Let's Build a Simple Database/Part 10 - Splitting a Leaf Node",
-    "proj/Let's Build a Simple Database/Part 9 - Binary Search and Duplicate Keys",
     "Screenshot 2026-08-12 123640.png",
     "Screenshot 2026-08-12 123630.png",
     "Screenshot 2026-08-12 123120.png",
