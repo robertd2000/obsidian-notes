@@ -100,6 +100,18 @@
               "icon": "excalidraw-icon",
               "title": "Drawing 2026-09-23 12.20.03.excalidraw"
             }
+          },
+          {
+            "id": "6288ef3fd4f0ef10",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.14.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "примечания к выпуску 1.14.4"
+            }
           }
         ],
         "currentTab": 6
@@ -265,7 +277,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e86a8d5a386b073e",
+  "active": "f01234d0bc250dcd",
   "lastOpenFiles": [
     "m/Drawing 2026-09-23 12.20.03.excalidraw.md",
     "m/Drawing 2026-09-13 16.06.02.excalidraw.md",
