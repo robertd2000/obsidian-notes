@@ -116,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -279,10 +279,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f01234d0bc250dcd",
+  "active": "ffbf6fd6844283ef",
   "lastOpenFiles": [
-    "m/Drawing 2026-09-23 12.20.03.excalidraw.md",
     "backend/sql/WAL/WAL (Write-Ahead Logging).md",
+    "m/Drawing 2026-09-23 12.20.03.excalidraw.md",
     "backend/sql/WAL",
     "m/Drawing 2026-09-13 16.06.02.excalidraw.md",
     "vim/Команды.md",
